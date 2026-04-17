@@ -1,0 +1,142 @@
+{
+  "generated_at": "2024-01-15T01:00:00+00:00",
+  "stats": {
+    "total": 8,
+    "high_risk": 2,
+    "by_category": {
+      "port": 2,
+      "imo": 2,
+      "china": 2,
+      "us": 2
+    },
+    "by_region": {
+      "asia": 3,
+      "europe": 2,
+      "america": 2,
+      "global": 1
+    },
+    "sources_count": 12
+  },
+  "items": [
+    {
+      "id": "demo001",
+      "category": "china",
+      "priority": "high",
+      "source": "中国海关总署",
+      "title": "海关总署发布2024年进出口货物通关便利化新规，压缩通关时间40%",
+      "summary": "新规要求进口货物平均通关时间降至28小时以内，出口货物降至1.5小时，适用范围覆盖全国所有主要港口。",
+      "link": "http://www.customs.gov.cn",
+      "time": "2小时前",
+      "region": "asia",
+      "icon": "🇨🇳",
+      "srcClass": "src-china",
+      "catClass": "cat-china-bg",
+      "tags": ["通关", "政策", "港口效率"]
+    },
+    {
+      "id": "demo002",
+      "category": "us",
+      "priority": "high",
+      "source": "美国贸易代表署",
+      "title": "美方宣布对中国造船业及港口服务征收新一轮附加税，最高达100%",
+      "summary": "根据新规，中国船厂建造的船舶进入美国港口将缴纳高额费用，预计影响全球50%以上的集装箱运力。",
+      "link": "https://ustr.gov",
+      "time": "3小时前",
+      "region": "america",
+      "icon": "🇺🇸",
+      "srcClass": "src-us",
+      "catClass": "cat-us-bg",
+      "tags": ["关税", "贸易战", "航运"]
+    },
+    {
+      "id": "demo003",
+      "category": "imo",
+      "priority": "medium",
+      "source": "IMO 国际海事组织",
+      "title": "IMO批准2024年GHG战略修订案，2050年前实现净零排放目标",
+      "summary": "新战略要求国际航运业在2030年前将碳排放强度降低40%，2050年前达到净零排放，影响全球9万余艘商船。",
+      "link": "https://www.imo.org",
+      "time": "5小时前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": ["减排", "GHG", "绿色航运"]
+    },
+    {
+      "id": "demo004",
+      "category": "port",
+      "priority": "medium",
+      "source": "新加坡港务局",
+      "title": "新加坡推出TUAS港口自动化全面升级计划，年处理能力提升至6500万TEU",
+      "summary": "计划于2026年完成全港自动化改造，配备800台自动导引车，将成为全球最大全自动化港口。",
+      "link": "https://www.mpa.gov.sg",
+      "time": "6小时前",
+      "region": "asia",
+      "icon": "🚢",
+      "srcClass": "src-port",
+      "catClass": "cat-port-bg",
+      "tags": ["自动化", "新加坡", "港口扩建"]
+    },
+    {
+      "id": "demo005",
+      "category": "us",
+      "priority": "medium",
+      "source": "EU 欧盟委员会",
+      "title": "欧盟航运ETS碳交易体系正式纳入跨大西洋航线，每吨CO₂碳价约65欧元",
+      "summary": "自2024年起，所有进出欧盟港口的船舶须为其50%的排放购买碳配额，远洋航线100%纳入。",
+      "link": "https://ec.europa.eu",
+      "time": "8小时前",
+      "region": "europe",
+      "icon": "🇪🇺",
+      "srcClass": "src-us",
+      "catClass": "cat-us-bg",
+      "tags": ["ETS", "欧盟", "碳交易"]
+    },
+    {
+      "id": "demo006",
+      "category": "china",
+      "priority": "low",
+      "source": "中国商务部",
+      "title": "商务部：扩大RCEP框架下物流合作，推动跨境电商物流标准统一",
+      "summary": "将与15个RCEP成员国协调建立统一的跨境物流标准体系，目标于2025年底完成主要规则对接。",
+      "link": "http://www.mofcom.gov.cn",
+      "time": "10小时前",
+      "region": "asia",
+      "icon": "🇨🇳",
+      "srcClass": "src-china",
+      "catClass": "cat-china-bg",
+      "tags": ["RCEP", "跨境电商", "标准化"]
+    },
+    {
+      "id": "demo007",
+      "category": "port",
+      "priority": "low",
+      "source": "鹿特丹港务局",
+      "title": "鹿特丹港年吞吐量突破4.7亿吨，创欧洲单一港口历史新高",
+      "summary": "能源类货物尤其是LNG和氢能源进口量同比增长23%，反映欧洲能源转型加速推进态势。",
+      "link": "https://www.portofrotterdam.com",
+      "time": "12小时前",
+      "region": "europe",
+      "icon": "🚢",
+      "srcClass": "src-port",
+      "catClass": "cat-port-bg",
+      "tags": ["鹿特丹", "吞吐量", "能源"]
+    },
+    {
+      "id": "demo008",
+      "category": "imo",
+      "priority": "low",
+      "source": "WTO 世界贸易组织",
+      "title": "WTO预测2024年全球货物贸易量增长2.6%，物流供应链稳定性持续改善",
+      "summary": "报告显示全球航运运力供需趋于平衡，预计集装箱运价将在2024年下半年趋于稳定。",
+      "link": "https://www.wto.org",
+      "time": "14小时前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": ["WTO", "贸易预测", "运价"]
+    }
+  ]
+}
