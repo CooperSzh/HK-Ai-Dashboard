@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-23T07:15:41.826633+00:00",
+  "generated_at": "2026-04-24T07:19:51.819599+00:00",
   "stats": {
-    "total": 26,
-    "high_risk": 8,
+    "total": 28,
+    "high_risk": 7,
     "by_category": {
       "port": 0,
-      "imo": 7,
+      "imo": 9,
       "china": 0,
       "us": 19
     },
@@ -13,11 +13,29 @@
       "asia": 0,
       "europe": 0,
       "america": 19,
-      "global": 7
+      "global": 9
     },
     "sources_count": 12
   },
   "items": [
+    {
+      "id": "056910580db6",
+      "category": "us",
+      "priority": "high",
+      "source": "美国贸易代表署",
+      "title": "President Trump’s Trade Policy is Delivering for the American People",
+      "summary": "President Trump’s Trade Policy is Delivering for the American People\nmyarbrough\nThu, 04/23/2026 - 18:01\n\n\n            WASHINGTON – This week, Ambassador Greer testified before the House Ways and Means",
+      "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/april/president-trumps-trade-policy-delivering-american-people",
+      "time": "9小时前",
+      "region": "america",
+      "icon": "🇺🇸",
+      "srcClass": "src-us",
+      "catClass": "cat-us-bg",
+      "tags": [
+        "港口",
+        "关税"
+      ]
+    },
     {
       "id": "98fad81593bb",
       "category": "us",
@@ -26,7 +44,7 @@
       "title": "Opening Statement by Ambassador Jamieson Greer Before the House Ways and Means Committee",
       "summary": "Opening Statement by Ambassador Jamieson Greer Before the House Ways and Means Committee\nmyarbrough\nWed, 04/22/2026 - 17:19\n\n\n            Thank you Chairman Smith and Ranking Member Neil. It is good t",
       "link": "https://ustr.gov/about/policy-offices/congressional-affairs/congressional-hearings-and-testimony/2026/opening-statement-ambassador-jamieson-greer-house-ways-and-means-committee",
-      "time": "9小时前",
+      "time": "1天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -45,7 +63,7 @@
       "title": "Joint Statement from Ambassador Jamieson Greer and Mexican Secretary of Economy Marcelo Ebrard",
       "summary": "Joint Statement from Ambassador Jamieson Greer and Mexican Secretary of Economy Marcelo Ebrard\nmyarbrough\nMon, 04/20/2026 - 18:03\n\n\n            MEXICO CITY — Ambassador Jamieson Greer met today with M",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/april/joint-statement-ambassador-jamieson-greer-and-mexican-secretary-economy-marcelo-ebrard",
-      "time": "2天前",
+      "time": "3天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -62,7 +80,7 @@
       "title": "Opening Statement of Ambassador Jamieson Greer Before the House Appropriations Committee",
       "summary": "Opening Statement of Ambassador Jamieson Greer Before the House Appropriations Committee\njgaertner\nFri, 04/17/2026 - 11:30\n\n\n            Thank you Chairman Rogers and Ranking Member Meng for having me",
       "link": "https://ustr.gov/about/policy-offices/congressional-affairs/congressional-hearings-and-testimony/2026/opening-statement-ambassador-jamieson-greer-house-appropriations-committee",
-      "time": "5天前",
+      "time": "6天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -81,7 +99,7 @@
       "title": "Opening Statement of Jeffrey Goettman Before the Senate Finance Committee",
       "summary": "Opening Statement of Jeffrey Goettman Before the Senate Finance Committee\nmyarbrough\nWed, 04/15/2026 - 12:03\n\n\n            Chairman Crapo, Ranking Member Wyden, and Members of this Committee, I am hon",
       "link": "https://ustr.gov/about/policy-offices/congressional-affairs/congressional-hearings-and-testimony/2025/opening-statement-jeffrey-goettman-senate-finance-committee",
-      "time": "7天前",
+      "time": "8天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -98,7 +116,7 @@
       "title": "Opening Statement of Dr. Julie Callahan Before the Senate Finance Committee",
       "summary": "Opening Statement of Dr. Julie Callahan Before the Senate Finance Committee\nmyarbrough\nWed, 04/15/2026 - 11:55\n\n\n            Chairman Crapo, Raking Member Wyden, and distinguished Members of the Senat",
       "link": "https://ustr.gov/about/policy-offices/congressional-affairs/congressional-hearings-and-testimony/2025/opening-statement-dr-julie-callahan-senate-finance-committee",
-      "time": "7天前",
+      "time": "8天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -109,23 +127,6 @@
       ]
     },
     {
-      "id": "cccd6bec7bde",
-      "category": "imo",
-      "priority": "high",
-      "source": "Splash247 航运新闻",
-      "title": "Why the ship recycling debate needs a reality check",
-      "summary": "Dr Anand Hiremath, the CEO of the Sustainable Ship and Offshore Recycling Program, on demo capacity, compliance and credibility. The ship recycling debate is entering a critical phase. With a major wa",
-      "link": "https://splash247.com/why-the-ship-recycling-debate-needs-a-reality-check/",
-      "time": "1小时前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-imo",
-      "catClass": "cat-imo-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
       "id": "0b07657d30bb",
       "category": "us",
       "priority": "high",
@@ -133,24 +134,7 @@
       "title": "Exclusive: Central Freight Lines to shut down after 96 years",
       "summary": "A source familiar with the 96-year-old company said he is unsure whether CFL will file Chapter 7 or “liquidate outside of bankruptcy,” but that the LTL carrier has no plans to reorganize.\nThe post Exc",
       "link": "https://www.freightwaves.com/news/exclusive-central-freight-lines-to-shut-down-after-96-years",
-      "time": "1591天前",
-      "region": "america",
-      "icon": "📊",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "5f8f15977201",
-      "category": "us",
-      "priority": "high",
-      "source": "FreightWaves",
-      "title": "Tesla says mass production of electric Semi to begin this year",
-      "summary": "Tesla says its long-delayed Semi will begin production this year, signaling a slow but critical ramp into the freight market.\nThe post Tesla says mass production of electric Semi to begin this year ap",
-      "link": "https://www.freightwaves.com/news/tesla-says-mass-production-of-electric-semi-to-begin-this-year",
-      "time": "8小时前",
+      "time": "1592天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -167,7 +151,7 @@
       "title": "United States Seeks Mexico’s Review of Alleged Denial of Workers’ Rights at Latex Occidental, S.A. de C.V.",
       "summary": "United States Seeks Mexico’s Review of Alleged Denial of Workers’ Rights at Latex Occidental, S.A. de C.V.\nmyarbrough\nThu, 04/16/2026 - 16:47\n\n\n            WASHINGTON – The Office of the United States",
       "link": "https://ustr.gov/node/14307",
-      "time": "6天前",
+      "time": "7天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -177,22 +161,20 @@
       ]
     },
     {
-      "id": "9e2a12f81b46",
-      "category": "us",
+      "id": "2d56a5ad59ac",
+      "category": "imo",
       "priority": "medium",
-      "source": "美国贸易代表署",
-      "title": "Op-Ed by Ambassador Jamieson Greer: Another Fish Story From the WTO",
-      "summary": "Op-Ed by Ambassador Jamieson Greer: Another Fish Story From the WTO\nmyarbrough\nWed, 04/08/2026 - 11:13\n\n\n            WASHINGTON – After returning from the World Trade Organization’s 14th Ministerial C",
-      "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/april/op-ed-ambassador-jamieson-greer-another-fish-story-wto",
-      "time": "14天前",
-      "region": "america",
-      "icon": "🇺🇸",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
+      "source": "Splash247 航运新闻",
+      "title": "Helix–Hornbeck merger creates deepwater services heavyweight",
+      "summary": "Houston-based offshore energy services company Helix Energy Solutions has entered into a definitive agreement to merge with compatriot offshore vessel owner Hornbeck Offshore Services in an all-stock ",
+      "link": "https://splash247.com/helix-hornbeck-merger-creates-deepwater-services-heavyweight/",
+      "time": "4小时前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
       "tags": [
-        "港口",
-        "关税",
-        "供应链"
+        "物流政策"
       ]
     },
     {
@@ -203,7 +185,7 @@
       "title": "Weekly Trade Focus: APEC",
       "summary": "Weekly Trade Focus: APEC\n\n            Every week, the USTR website will explore a new trade topic, with background information and current trade data. On July 21 and 22, U.S. Trade Representative Ron ",
       "link": "https://ustr.gov/about-us/policy-offices/press-office/blog/weekly-trade-focus-apec",
-      "time": "6120天前",
+      "time": "6121天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -220,7 +202,7 @@
       "title": "Ambassador Greer Meets with Blue-Collar Workers and Industry Leaders While Touring Manufacturing Plants Across Michigan and Ohio",
       "summary": "Ambassador Greer Meets with Blue-Collar Workers and Industry Leaders While Touring Manufacturing Plants Across Michigan and Ohio\nmyarbrough\nMon, 04/13/2026 - 13:54\n\n\n            WASHINGTON – Last week",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/april/ambassador-greer-meets-blue-collar-workers-and-industry-leaders-while-touring-manufacturing-plants",
-      "time": "9天前",
+      "time": "10天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -231,32 +213,14 @@
       ]
     },
     {
-      "id": "984fbd6a09be",
+      "id": "6c8a9ce1ab58",
       "category": "imo",
       "priority": "low",
       "source": "Splash247 航运新闻",
-      "title": "Hormuz becomes frontline in ‘weaponisation of trade’",
-      "summary": "The head of the International Maritime Organization (IMO) has issued a warning over the deteriorating security situation in the Strait of Hormuz, after Iran&#8217;s Revolutionary Guard Corps fired on ",
-      "link": "https://splash247.com/hormuz-becomes-frontline-in-weaponisation-of-trade/",
+      "title": "Can the Net Zero Framework be saved? Splash’s MEPC curtain-raiser",
+      "summary": "One of shipping&#8217;s most consequential regulatory gatherings gets underway in London on Monday, with the future of the world&#8217;s first global carbon pricing mechanism on any industry hanging i",
+      "link": "https://splash247.com/can-the-net-zero-framework-be-saved-splashs-mepc-curtain-raiser/",
       "time": "刚刚",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-imo",
-      "catClass": "cat-imo-bg",
-      "tags": [
-        "集装箱",
-        "IMO"
-      ]
-    },
-    {
-      "id": "41dde2e9fcd7",
-      "category": "imo",
-      "priority": "low",
-      "source": "Splash247 航运新闻",
-      "title": "Ammonia gains momentum across East Asia",
-      "summary": "The race to solidify ammonia as the maritime industry&#8217;s premier zero-carbon fuel has shifted into high gear this week, with major breakthroughs announced in both Japan and South Korea. At the Se",
-      "link": "https://splash247.com/ammonia-gains-momentum-across-east-asia/",
-      "time": "1小时前",
       "region": "global",
       "icon": "📰",
       "srcClass": "src-imo",
@@ -267,13 +231,82 @@
       ]
     },
     {
-      "id": "4b9ad0b3a8e0",
+      "id": "5a8192baf5c4",
       "category": "imo",
       "priority": "low",
       "source": "Splash247 航运新闻",
-      "title": "Bourbon adds 13 vessels in $180m fleet push",
-      "summary": "France’s Bourbon has moved quickly to expand its offshore fleet, adding 13 vessels since the start of the year in a push worth more than $180m. The offshore vessel owner said the expansion has been dr",
-      "link": "https://splash247.com/bourbon-adds-13-vessels-in-180m-fleet-push/",
+      "title": "dship Carriers and NSB launch MPP management platform",
+      "summary": "German MPP specialist dship Carriers and shipmanager NSB Group have teamed up to launch a dedicated joint venture aimed at managing a new series of multipurpose vessels, as owners continue to sharpen ",
+      "link": "https://splash247.com/dship-carriers-and-nsb-launch-mpp-management-platform/",
+      "time": "刚刚",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "e04eafa36054",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Mumbai owner’s MR splurge keeps brokers busy",
+      "summary": "Mumbai-based Seven Islands Shipping’s appetite for MR tankers continues to turn heads, with fresh deals underlining an aggressive expansion drive amid India’s rising energy demand. The company has eme",
+      "link": "https://splash247.com/mumbai-owners-mr-splurge-keeps-brokers-busy/",
+      "time": "刚刚",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "d36d5809532f",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Panama Canal prices take flight on Iran butterfly effect",
+      "summary": "The Panama Canal has recorded a significant rise in vessel transits and tonnage in the first half of its 2026 fiscal year, with demand for its reservation system climbing sharply amid heightened globa",
+      "link": "https://splash247.com/panama-canal-prices-take-flight-on-iran-butterfly-effect/",
+      "time": "刚刚",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "3e549631af11",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Greek bulker player M/Maritime crosses into boxship sector with Korean newbuilds",
+      "summary": "Greek owner M/Maritime is branching into container shipping, placing its first feeder boxship order while continuing to build out its dry bulk base. The company has signed for two 2,800 teu newbuildin",
+      "link": "https://splash247.com/greek-bulker-player-m-maritime-crosses-into-boxship-sector-with-korean-newbuilds/",
+      "time": "刚刚",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "集装箱",
+        "绿色航运"
+      ]
+    },
+    {
+      "id": "69eab7ceabf2",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Geneva Dry Dialogues: Devbulk",
+      "summary": "Hakki Deval has spent more than two decades in dry bulk shipping, from his student days at Solent University to leading Istanbul-based Devbulk as managing director and CEO. A former Turkish Navy lieut",
+      "link": "https://splash247.com/geneva-dry-dialogues-devbulk/",
       "time": "4小时前",
       "region": "global",
       "icon": "📰",
@@ -284,55 +317,38 @@
       ]
     },
     {
-      "id": "bd2716b748b3",
+      "id": "984fbd6a09be",
       "category": "imo",
       "priority": "low",
       "source": "Splash247 航运新闻",
-      "title": "Iran seizes two boxships after fresh attacks in Strait of Hormuz",
-      "summary": "Fresh tensions in the Strait of Hormuz spilled over into direct action on Wednesday after Iran’s Islamic Revolutionary Guard Corps (IRGC) targeted three containerships, firing on them and detaining tw",
-      "link": "https://splash247.com/iran-seizes-two-boxships-after-fresh-attacks-in-strait-of-hormuz/",
-      "time": "18小时前",
+      "title": "Hormuz becomes frontline in ‘weaponisation of trade’",
+      "summary": "The head of the International Maritime Organization (IMO) has issued a warning over the deteriorating security situation in the Strait of Hormuz, after Iran&#8217;s Revolutionary Guard Corps fired on ",
+      "link": "https://splash247.com/hormuz-becomes-frontline-in-weaponisation-of-trade/",
+      "time": "22小时前",
       "region": "global",
       "icon": "📰",
       "srcClass": "src-imo",
       "catClass": "cat-imo-bg",
       "tags": [
-        "港口",
+        "集装箱",
+        "IMO"
+      ]
+    },
+    {
+      "id": "fc2cd197659d",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Vessel tracker MariTrace sold",
+      "summary": "The consolidation of vessel tracking firms continues apace with news today that the UK’s MariTrace has been acquired by French ocean data intelligence firm SINAY. No price for the acquisition was reve",
+      "link": "https://splash247.com/vessel-tracker-maritrace-sold/",
+      "time": "23小时前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
         "集装箱"
-      ]
-    },
-    {
-      "id": "59c43a99a2ee",
-      "category": "imo",
-      "priority": "low",
-      "source": "Splash247 航运新闻",
-      "title": "Vietnam Ocean Shipping expands product tanker fleet with South Korea newbuilds",
-      "summary": "Vietnam Ocean Shipping (VOSCO) has moved further into the tanker segment, lining up a pair of MR product tanker newbuildings in South Korea as part of its ongoing fleet renewal push. Shipbuilding sour",
-      "link": "https://splash247.com/vietnam-ocean-shipping-expands-product-tanker-fleet-with-south-korea-newbuilds/",
-      "time": "20小时前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-imo",
-      "catClass": "cat-imo-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "d3d430c671cf",
-      "category": "imo",
-      "priority": "low",
-      "source": "Splash247 航运新闻",
-      "title": "DeepOcean lands Taiwan wind cable job",
-      "summary": "DeepOcean has picked up a cable installation support contract on Taiwan’s TPC offshore wind farm phase two, marking another step in its expansion into the Asia-Pacific renewables market. The ocean ser",
-      "link": "https://splash247.com/deepocean-lands-taiwan-wind-cable-job/",
-      "time": "21小时前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-imo",
-      "catClass": "cat-imo-bg",
-      "tags": [
-        "港口"
       ]
     },
     {
@@ -343,7 +359,7 @@
       "title": "The ‘ingenious strategy’ behind most truckers’ least favorite week of the year: International Roadcheck",
       "summary": "Inspection blitzes frustrate truck drivers. But economists found that the International Roadcheck Week boosts overall road safety.\nThe post The &#8216;ingenious strategy&#8217; behind most truckers&#8",
       "link": "https://www.freightwaves.com/news/the-ingenious-strategy-behind-most-truck-drivers-least-favorite-week-of-the-year",
-      "time": "1436天前",
+      "time": "1437天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -360,7 +376,7 @@
       "title": "Why the Northeast is quietly running out of diesel",
       "summary": "Diesel inventories on the East Coast are at record lows. Truckers are spooked by the vanishing stocks and soaring rates.\nThe post Why the Northeast is quietly running out of diesel appeared first on F",
       "link": "https://www.freightwaves.com/news/why-the-northeast-is-quietly-running-out-of-diesel",
-      "time": "1441天前",
+      "time": "1442天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -377,7 +393,7 @@
       "title": "Warehouse cramming is about to begin — Freightonomics",
       "summary": "On this episode of Freightonomics, Zach Strickland and Anthony Smith talk about the need to cram for warehouse space with Zac Rogers from Colorado State University. \nThe post Warehouse cramming is abo",
       "link": "https://www.freightwaves.com/news/warehouse-cramming-is-about-to-begin-freightonomics",
-      "time": "1714天前",
+      "time": "1715天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -394,7 +410,7 @@
       "title": "Seasonality pushing rejections and rates higher ahead of the Fourth",
       "summary": "This week’s DHL Supply Chain Pricing Power Index: 75 (Carriers) Last week’s DHL Supply Chain Pricing Power Index: 70 (Carriers)&#160; Three-month DHL Supply Chain Pricing Power Index Outlook: 70 (Carr",
       "link": "https://www.freightwaves.com/news/seasonality-pushing-rejections-and-rates-higher-ahead-of-the-fourth",
-      "time": "1760天前",
+      "time": "1761天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -411,7 +427,7 @@
       "title": "Project44 acquires ClearMetal to strengthen predictive tools",
       "summary": "“Their team construct is fundamentally different. When you look at their data science, machine learning and computer science background, they are best in class.”\nThe post Project44 acquires ClearMetal",
       "link": "https://www.freightwaves.com/news/project44-acquires-clearmetal-to-strengthen-predictive-tools",
-      "time": "1791天前",
+      "time": "1792天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -421,14 +437,14 @@
       ]
     },
     {
-      "id": "2f5e888525b5",
+      "id": "d49f04bc6d77",
       "category": "us",
       "priority": "low",
       "source": "FreightWaves",
-      "title": "CSX sees stronger first-quarter earnings as costs fall, volume rises",
-      "summary": "First-quarter earnings surged at CSX on higher revenue and lower operating costs.\nThe post CSX sees stronger first-quarter earnings as costs fall, volume rises appeared first on FreightWaves.",
-      "link": "https://www.freightwaves.com/news/csx-sees-stronger-first-quarter-earnings-as-costs-fall-volume-rises",
-      "time": "3小时前",
+      "title": "Signs of a Marten turnaround, but trucker’s numbers mostly lower",
+      "summary": "Marten’s first quarter earnings still showed a company dealing with a weak freight market.\nThe post Signs of a Marten turnaround, but trucker&#8217;s numbers mostly lower appeared first on FreightWave",
+      "link": "https://www.freightwaves.com/news/signs-of-a-marten-turnaround-but-truckers-numbers-mostly-lower",
+      "time": "6小时前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -438,14 +454,14 @@
       ]
     },
     {
-      "id": "801ea5e7947a",
+      "id": "209b7789ab61",
       "category": "us",
       "priority": "low",
       "source": "FreightWaves",
-      "title": "Intermodal rebounds in latest rail data",
-      "summary": "Intermodal freight rebounded in the latest weekly rail data to narrow the gap with year-ago volumes.\nThe post Intermodal rebounds in latest rail data appeared first on FreightWaves.",
-      "link": "https://www.freightwaves.com/news/intermodal-rebounds-in-latest-rail-data",
-      "time": "4小时前",
+      "title": "First look: Covenant flags March rebound after soft Q1 earnings",
+      "summary": "Covenant Logistics Group Truckload sees momentum building after weather and fuel headwinds weigh on first quarter results.\nThe post First look: Covenant flags March rebound after soft Q1 earnings appe",
+      "link": "https://www.freightwaves.com/news/first-look-covenant-flags-march-rebound-after-soft-q1",
+      "time": "9小时前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -455,14 +471,31 @@
       ]
     },
     {
-      "id": "3ae1d9329454",
+      "id": "bb5e0272325d",
       "category": "us",
       "priority": "low",
       "source": "FreightWaves",
-      "title": "Improved forecast for Manhattan Associates in 2026 helps lift battered stock price",
-      "summary": "Manhattan Associates’ stock price got a boost from its first quarter earnings.\nThe post Improved forecast for Manhattan Associates in 2026 helps lift battered stock price appeared first on FreightWave",
-      "link": "https://www.freightwaves.com/news/improved-forecast-for-manhattan-associates-in-2026-helps-lift-battered-stock-price",
-      "time": "4小时前",
+      "title": "Sam’s Club rolls out 1-hour express delivery option",
+      "summary": "Sam’s Club members can now pay for one-hour delivery from a neighborhood store, part of Walmart’s strategy to compete with Amazon for online sales. \nThe post Sam’s Club rolls out 1-hour express delive",
+      "link": "https://www.freightwaves.com/news/sams-club-rolls-out-1-hour-express-delivery-option",
+      "time": "12小时前",
+      "region": "america",
+      "icon": "📊",
+      "srcClass": "src-us",
+      "catClass": "cat-us-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "1c661a20802c",
+      "category": "us",
+      "priority": "low",
+      "source": "FreightWaves",
+      "title": "Why truckers should care about DOL’s latest proposal on joint employers",
+      "summary": "The Department of Labor rule on joint employers will need to be watched by trucking companies.\nThe post Why truckers should care about DOL’s latest proposal on joint employers appeared first on Freigh",
+      "link": "https://www.freightwaves.com/news/why-truckers-should-care-about-dols-latest-proposal-on-joint-employers",
+      "time": "12小时前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
