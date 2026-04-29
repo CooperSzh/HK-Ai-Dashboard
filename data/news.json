@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-28T09:37:51.815076+00:00",
+  "generated_at": "2026-04-29T09:23:54.357810+00:00",
   "stats": {
-    "total": 26,
-    "high_risk": 8,
+    "total": 28,
+    "high_risk": 7,
     "by_category": {
       "port": 0,
-      "imo": 7,
+      "imo": 9,
       "china": 0,
       "us": 19
     },
@@ -13,7 +13,7 @@
       "asia": 0,
       "europe": 0,
       "america": 19,
-      "global": 7
+      "global": 9
     },
     "sources_count": 12
   },
@@ -26,7 +26,7 @@
       "title": "Ambassador Jamieson Greer Announces United States-European Union Action Plan for Critical Minerals Supply Chain Resilience",
       "summary": "Ambassador Jamieson Greer Announces United States-European Union Action Plan for Critical Minerals Supply Chain Resilience\nmyarbrough\nFri, 04/24/2026 - 10:26\n\n\n            WASHINGTON – Today, Ambassad",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/april/ambassador-jamieson-greer-announces-united-states-european-union-action-plan-critical-minerals",
-      "time": "3天前",
+      "time": "4天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -43,7 +43,7 @@
       "title": "President Trump’s Trade Policy is Delivering for the American People",
       "summary": "President Trump’s Trade Policy is Delivering for the American People\nmyarbrough\nThu, 04/23/2026 - 18:01\n\n\n            WASHINGTON – This week, Ambassador Greer testified before the House Ways and Means",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/april/president-trumps-trade-policy-delivering-american-people",
-      "time": "4天前",
+      "time": "5天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -61,7 +61,7 @@
       "title": "Opening Statement by Ambassador Jamieson Greer Before the House Ways and Means Committee",
       "summary": "Opening Statement by Ambassador Jamieson Greer Before the House Ways and Means Committee\nmyarbrough\nWed, 04/22/2026 - 17:19\n\n\n            Thank you Chairman Smith and Ranking Member Neil. It is good t",
       "link": "https://ustr.gov/about/policy-offices/congressional-affairs/congressional-hearings-and-testimony/2026/opening-statement-ambassador-jamieson-greer-house-ways-and-means-committee",
-      "time": "5天前",
+      "time": "6天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -80,7 +80,7 @@
       "title": "Joint Statement from Ambassador Jamieson Greer and Mexican Secretary of Economy Marcelo Ebrard",
       "summary": "Joint Statement from Ambassador Jamieson Greer and Mexican Secretary of Economy Marcelo Ebrard\nmyarbrough\nMon, 04/20/2026 - 18:03\n\n\n            MEXICO CITY — Ambassador Jamieson Greer met today with M",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/april/joint-statement-ambassador-jamieson-greer-and-mexican-secretary-economy-marcelo-ebrard",
-      "time": "7天前",
+      "time": "8天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -97,7 +97,7 @@
       "title": "Opening Statement of Ambassador Jamieson Greer Before the House Appropriations Committee",
       "summary": "Opening Statement of Ambassador Jamieson Greer Before the House Appropriations Committee\njgaertner\nFri, 04/17/2026 - 11:30\n\n\n            Thank you Chairman Rogers and Ranking Member Meng for having me",
       "link": "https://ustr.gov/about/policy-offices/congressional-affairs/congressional-hearings-and-testimony/2026/opening-statement-ambassador-jamieson-greer-house-appropriations-committee",
-      "time": "10天前",
+      "time": "11天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -109,20 +109,20 @@
       ]
     },
     {
-      "id": "bd8abf61c02c",
-      "category": "us",
+      "id": "b59e5182e9bf",
+      "category": "imo",
       "priority": "high",
-      "source": "美国贸易代表署",
-      "title": "Opening Statement of Jeffrey Goettman Before the Senate Finance Committee",
-      "summary": "Opening Statement of Jeffrey Goettman Before the Senate Finance Committee\nmyarbrough\nWed, 04/15/2026 - 12:03\n\n\n            Chairman Crapo, Ranking Member Wyden, and Members of this Committee, I am hon",
-      "link": "https://ustr.gov/about/policy-offices/congressional-affairs/congressional-hearings-and-testimony/2025/opening-statement-jeffrey-goettman-senate-finance-committee",
-      "time": "12天前",
-      "region": "america",
-      "icon": "🇺🇸",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
+      "source": "Splash247 航运新闻",
+      "title": "Delay tactics cast shadow over MEPC",
+      "summary": "Familiar patterns of procedural delay are emerging at this week&#8217;s critical UN shipping summit in London, with sources close to the negotiations warning that the most contentious decisions are be",
+      "link": "https://splash247.com/delay-tactics-cast-shadow-over-mepc/",
+      "time": "3小时前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
       "tags": [
-        "港口"
+        "物流政策"
       ]
     },
     {
@@ -133,30 +133,13 @@
       "title": "Exclusive: Central Freight Lines to shut down after 96 years",
       "summary": "A source familiar with the 96-year-old company said he is unsure whether CFL will file Chapter 7 or “liquidate outside of bankruptcy,” but that the LTL carrier has no plans to reorganize.\nThe post Exc",
       "link": "https://www.freightwaves.com/news/exclusive-central-freight-lines-to-shut-down-after-96-years",
-      "time": "1596天前",
+      "time": "1597天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
       "catClass": "cat-us-bg",
       "tags": [
         "物流政策"
-      ]
-    },
-    {
-      "id": "29e7990d0033",
-      "category": "us",
-      "priority": "high",
-      "source": "FreightWaves",
-      "title": "Australia Post inaugurates large air parcel hub at Brisbane Airport",
-      "summary": "Australia Post is investing heavily in parcel infrastructure, including a new express hub at Brisbane Airport. \nThe post Australia Post inaugurates large air parcel hub at Brisbane Airport appeared fi",
-      "link": "https://www.freightwaves.com/news/australia-post-inaugurates-large-air-parcel-hub-at-brisbane-airport",
-      "time": "13小时前",
-      "region": "america",
-      "icon": "📊",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
-      "tags": [
-        "港口"
       ]
     },
     {
@@ -167,7 +150,7 @@
       "title": "United States Seeks Mexico’s Review of Alleged Denial of Workers’ Rights at Latex Occidental, S.A. de C.V.",
       "summary": "United States Seeks Mexico’s Review of Alleged Denial of Workers’ Rights at Latex Occidental, S.A. de C.V.\nmyarbrough\nThu, 04/16/2026 - 16:47\n\n\n            WASHINGTON – The Office of the United States",
       "link": "https://ustr.gov/node/14307",
-      "time": "11天前",
+      "time": "12天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -184,13 +167,30 @@
       "title": "Weekly Trade Focus: APEC",
       "summary": "Weekly Trade Focus: APEC\n\n            Every week, the USTR website will explore a new trade topic, with background information and current trade data. On July 21 and 22, U.S. Trade Representative Ron ",
       "link": "https://ustr.gov/about-us/policy-offices/press-office/blog/weekly-trade-focus-apec",
-      "time": "6125天前",
+      "time": "6126天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
       "catClass": "cat-us-bg",
       "tags": [
         "物流政策"
+      ]
+    },
+    {
+      "id": "8e6cc1e349e5",
+      "category": "us",
+      "priority": "low",
+      "source": "美国贸易代表署",
+      "title": "USTR Seeks Public Comment on the Modernization of the African Growth and Opportunity Act",
+      "summary": "USTR Seeks Public Comment on the Modernization of the African Growth and Opportunity Act\nmyarbrough\nTue, 04/28/2026 - 16:43\n\n\n            WASHINGTON – The Office of the United States Trade Representat",
+      "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/april/ustr-seeks-public-comment-modernization-african-growth-and-opportunity-act",
+      "time": "12小时前",
+      "region": "america",
+      "icon": "🇺🇸",
+      "srcClass": "src-us",
+      "catClass": "cat-us-bg",
+      "tags": [
+        "港口"
       ]
     },
     {
@@ -201,7 +201,7 @@
       "title": "Public Hearings Regarding Section 301 Investigations Relating to Failures to Take Action on Forced Labor",
       "summary": "Public Hearings Regarding Section 301 Investigations Relating to Failures to Take Action on Forced Labor\nmyarbrough\nFri, 04/24/2026 - 14:59\n\n\n            WASHINGTON – The Office of the United States T",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/april/public-hearings-regarding-section-301-investigations-relating-failures-take-action-forced-labor",
-      "time": "3天前",
+      "time": "4天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -211,30 +211,13 @@
       ]
     },
     {
-      "id": "5f8f791f6f23",
+      "id": "cecd9d698109",
       "category": "imo",
       "priority": "low",
       "source": "Splash247 航运新闻",
-      "title": "Tanker markets tip into oversupply with ballast surge",
-      "summary": "An extraordinary simultaneous build-up of ballast vessels across every major crude tanker segment has moved geopolitically driven disruption into a fundamental demand-side crisis. With the Strait of H",
-      "link": "https://splash247.com/tanker-markets-tip-into-oversupply-with-ballast-surge/",
-      "time": "2小时前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-imo",
-      "catClass": "cat-imo-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "f8e5acd1fcd2",
-      "category": "imo",
-      "priority": "low",
-      "source": "Splash247 航运新闻",
-      "title": "Yangzijiang Maritime expands orderbook with 10-ship newbuild deal",
-      "summary": "Singapore-listed Yangzijiang Maritime Development has moved to deepen its forward fleet with an order for 10 newbuildings spanning tankers and bulk carriers. The group said it has signed contracts wit",
-      "link": "https://splash247.com/yangzijiang-maritime-expands-orderbook-with-10-ship-newbuild-deal/",
+      "title": "Geneva Dry hits its stride as deals flow and debate crackles on opening day",
+      "summary": "The third edition of Geneva Dry, the world&#8217;s premier commodities shipping conference, has opened in style, with a packed first day of dealmaking, debate and networking that underlined the Swiss ",
+      "link": "https://splash247.com/geneva-dry-hits-its-stride-as-deals-flow-and-debate-crackles-on-opening-day/",
       "time": "3小时前",
       "region": "global",
       "icon": "📰",
@@ -245,30 +228,64 @@
       ]
     },
     {
-      "id": "763bc06792af",
+      "id": "6431bf911bbb",
       "category": "imo",
       "priority": "low",
       "source": "Splash247 航运新闻",
-      "title": "CMT returns to Qingdao Beihai for newcastlemax brace",
-      "summary": "Taiwan’s Chinese Maritime Transport (CMT) has returned to China State Shipbuilding Corporation’s Qingdao Beihai yard with an order for two more newcastlemax bulk carriers. The Taipei-listed owner conf",
-      "link": "https://splash247.com/cmt-returns-to-qingdao-beihai-for-newcastlemax-brace/",
+      "title": "Smart Ship Hub: Digitalisation now a necessity, not a choice",
+      "summary": "The maritime sector has spent years talking about digitalisation, but progress remains uneven. For Smart Ship Hub, the pitch is straightforward: bring everything into one place and make the data usabl",
+      "link": "https://splash247.com/smart-ship-hub-digitalisation-now-a-necessity-not-a-choice/",
       "time": "3小时前",
       "region": "global",
       "icon": "📰",
       "srcClass": "src-imo",
       "catClass": "cat-imo-bg",
       "tags": [
-        "港口"
+        "物流政策"
       ]
     },
     {
-      "id": "c3e8ce6a434c",
+      "id": "cfe67a352d7a",
       "category": "imo",
       "priority": "low",
       "source": "Splash247 航运新闻",
-      "title": "Fujian Highton ramps up MPP push with fresh newbuilds",
-      "summary": "Chinese owner Fujian Highton Development is stepping up its move into the multipurpose and heavylift segment, placing fresh orders for four vessels as it works towards building a 100-ship fleet. The S",
-      "link": "https://splash247.com/fujian-highton-ramps-up-mpp-push-with-fresh-newbuilds/",
+      "title": "Dee4 doubles down on ultramax play",
+      "summary": "Dee4 Capital Partners Fund II has snapped up a second ultramax, continuing its well-timed push into high-quality Japanese-built tonnage. The fund has acquired the 60,500 dwt Only You, a 2017-built uni",
+      "link": "https://splash247.com/dee4-doubles-down-on-ultramax-play/",
+      "time": "3小时前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "2176a590736e",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "South Korea binds shipbuilding and shipping in new national industrial strategy",
+      "summary": "South Korea has formally launched a sweeping initiative to align its world-class shipbuilding and shipping industries under a single national strategy, acknowledging years of criticism that the two se",
+      "link": "https://splash247.com/south-korea-binds-shipbuilding-and-shipping-in-new-national-industrial-strategy/",
+      "time": "3小时前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "936303cd11c8",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Mission to Seafarers launches shore-based wellbeing index",
+      "summary": "The Mission to Seafarers is extending its welfare measurement work beyond the ship&#8217;s rail, launching a new Shorebased Happiness Index to capture the wellbeing of maritime professionals working o",
+      "link": "https://splash247.com/mission-to-seafarers-launches-shore-based-wellbeing-index/",
       "time": "4小时前",
       "region": "global",
       "icon": "📰",
@@ -279,14 +296,14 @@
       ]
     },
     {
-      "id": "7f56665a8838",
+      "id": "981ffa4a9753",
       "category": "imo",
       "priority": "low",
       "source": "Splash247 航运新闻",
-      "title": "COSCO-linked Shanghai Time orders trio of bulkers at Nantong Xiangyu",
-      "summary": "Shanghai Time Shipping has stepped into the newbuilding market with an order for three bulk carriers, marking its first collaboration with Nantong Xiangyu Shipbuilding &#38; Offshore Engineering. The ",
-      "link": "https://splash247.com/cosco-linked-shanghai-time-orders-trio-of-bulkers-at-nantong-xiangyu/",
-      "time": "5小时前",
+      "title": "Mercuria steps up fleet push with four bulker newbuilds",
+      "summary": "Swiss commodities trader Mercuria is continuing its move deeper into shipownership with an order for four kamsarmax bulk carriers at Wuhu Shipyard. The 82,000 dwt newbuildings will be tied into Mercur",
+      "link": "https://splash247.com/mercuria-steps-up-fleet-push-with-four-bulker-newbuilds/",
+      "time": "4小时前",
       "region": "global",
       "icon": "📰",
       "srcClass": "src-imo",
@@ -296,13 +313,30 @@
       ]
     },
     {
-      "id": "2898d5fec5de",
+      "id": "29022efa7868",
       "category": "imo",
       "priority": "low",
       "source": "Splash247 航运新闻",
-      "title": "The maritime industry risks forgetting the people who keep it safe",
-      "summary": "Arun Sharma, the executive chairman of the Indian Register of Shipping, writes for Splash today. The maritime industry’s greatest asset is not its fuel technology, its digital platforms or its regulat",
-      "link": "https://splash247.com/the-maritime-industry-risks-forgetting-the-people-who-keep-it-safe/",
+      "title": "CULines books four newbuilds at Huangpu Wenchong",
+      "summary": "China United Lines (CULines) has re-entered the newbuilding market with an order for four 6,400 teu containerships. The Shanghai-based intra-Asian carrier has contracted CSSC Huangpu Wenchong Shipbuil",
+      "link": "https://splash247.com/culines-books-four-newbuilds-at-huangpu-wenchong/",
+      "time": "4小时前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "集装箱"
+      ]
+    },
+    {
+      "id": "db3cb67e2fc7",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Cyan Renewables secures long-term AHTS contract in New Zealand",
+      "summary": "Singapore-based offshore wind vessel player Cyan Renewables has signed a contract with OMV to keep one of its anchor handling tug supply (AHTS) vessels operating in New Zealand waters. OMV New Zealand",
+      "link": "https://splash247.com/cyan-renewables-secures-long-term-ahts-contract-in-new-zealand/",
       "time": "6小时前",
       "region": "global",
       "icon": "📰",
@@ -310,23 +344,6 @@
       "catClass": "cat-imo-bg",
       "tags": [
         "物流政策"
-      ]
-    },
-    {
-      "id": "2eab7ce5c888",
-      "category": "imo",
-      "priority": "low",
-      "source": "Splash247 航运新闻",
-      "title": "Noble racks up $565m in fresh rig deals as backlog hits $7.5bn",
-      "summary": "Offshore drilling giant Noble Corporation has announced several new rig deals in its latest fleet status report. One of the rigs that was reportedly considered for sale by the company due to it having",
-      "link": "https://splash247.com/noble-racks-up-565m-in-fresh-rig-deals-as-backlog-hits-7-5bn/",
-      "time": "6小时前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-imo",
-      "catClass": "cat-imo-bg",
-      "tags": [
-        "港口"
       ]
     },
     {
@@ -337,7 +354,7 @@
       "title": "The ‘ingenious strategy’ behind most truckers’ least favorite week of the year: International Roadcheck",
       "summary": "Inspection blitzes frustrate truck drivers. But economists found that the International Roadcheck Week boosts overall road safety.\nThe post The &#8216;ingenious strategy&#8217; behind most truckers&#8",
       "link": "https://www.freightwaves.com/news/the-ingenious-strategy-behind-most-truck-drivers-least-favorite-week-of-the-year",
-      "time": "1441天前",
+      "time": "1442天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -354,7 +371,7 @@
       "title": "Why the Northeast is quietly running out of diesel",
       "summary": "Diesel inventories on the East Coast are at record lows. Truckers are spooked by the vanishing stocks and soaring rates.\nThe post Why the Northeast is quietly running out of diesel appeared first on F",
       "link": "https://www.freightwaves.com/news/why-the-northeast-is-quietly-running-out-of-diesel",
-      "time": "1446天前",
+      "time": "1447天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -371,7 +388,7 @@
       "title": "Warehouse cramming is about to begin — Freightonomics",
       "summary": "On this episode of Freightonomics, Zach Strickland and Anthony Smith talk about the need to cram for warehouse space with Zac Rogers from Colorado State University. \nThe post Warehouse cramming is abo",
       "link": "https://www.freightwaves.com/news/warehouse-cramming-is-about-to-begin-freightonomics",
-      "time": "1719天前",
+      "time": "1720天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -388,7 +405,7 @@
       "title": "Seasonality pushing rejections and rates higher ahead of the Fourth",
       "summary": "This week’s DHL Supply Chain Pricing Power Index: 75 (Carriers) Last week’s DHL Supply Chain Pricing Power Index: 70 (Carriers)&#160; Three-month DHL Supply Chain Pricing Power Index Outlook: 70 (Carr",
       "link": "https://www.freightwaves.com/news/seasonality-pushing-rejections-and-rates-higher-ahead-of-the-fourth",
-      "time": "1765天前",
+      "time": "1766天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -405,7 +422,7 @@
       "title": "Project44 acquires ClearMetal to strengthen predictive tools",
       "summary": "“Their team construct is fundamentally different. When you look at their data science, machine learning and computer science background, they are best in class.”\nThe post Project44 acquires ClearMetal",
       "link": "https://www.freightwaves.com/news/project44-acquires-clearmetal-to-strengthen-predictive-tools",
-      "time": "1796天前",
+      "time": "1797天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -415,31 +432,14 @@
       ]
     },
     {
-      "id": "66f2f3657a9a",
+      "id": "1c78db6e9484",
       "category": "us",
       "priority": "low",
       "source": "FreightWaves",
-      "title": "Wabtec posts higher quarterly sales and earnings",
-      "summary": "Wabtec reported a rise in first-quarter earnings, fueled by robust sales growth in both its freight and transit divisions compared to the previous year.\nThe post Wabtec posts higher quarterly sales an",
-      "link": "https://www.freightwaves.com/news/wabtec-posts-higher-quarterly-sales-and-earnings",
-      "time": "6小时前",
-      "region": "america",
-      "icon": "📊",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
-      "tags": [
-        "港口"
-      ]
-    },
-    {
-      "id": "b59b34ca2a3b",
-      "category": "us",
-      "priority": "low",
-      "source": "FreightWaves",
-      "title": "First look: TFI’s LTL group struggled, Truckload shows improvement",
-      "summary": "This is a first look at the earnings of TFI International.\nThe post First look: TFI’s LTL group struggled, Truckload shows improvement appeared first on FreightWaves.",
-      "link": "https://www.freightwaves.com/news/first-look-tfis-ltl-group-struggled-truckload-shows-improvement",
-      "time": "12小时前",
+      "title": "Landstar says April yields ‘significantly’ outpacing seasonality",
+      "summary": "Broker Landstar System said Tuesday that the truckload market is in the early stages of an upcycle, noting revenue per load is trending well ahead of normal seasonal patterns. \nThe post Landstar says ",
+      "link": "https://www.freightwaves.com/news/landstar-says-april-yield-trends-significantly-outpacing-seasonality",
+      "time": "9小时前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -449,20 +449,54 @@
       ]
     },
     {
-      "id": "8e286d9f82fd",
+      "id": "65ffbf3ed10a",
       "category": "us",
       "priority": "low",
       "source": "FreightWaves",
-      "title": "St. Christopher Truckers Relief Fund raises over $10k at MATS 2026",
-      "summary": "The St. Christopher Truckers Relief Fund raised over $10,000 to support over-the-road drivers during the 2026 Mid-America Trucking Show.\nThe post St. Christopher Truckers Relief Fund raises over $10k ",
-      "link": "https://www.freightwaves.com/news/st-christopher-truckers-relief-fund-raises-over-10k-at-mats-2026",
-      "time": "12小时前",
+      "title": "Werner swings toward profit as dedicated fuels Q1 uptrend",
+      "summary": "Werner’s Q1 results highlight early signs of a freight recovery, with rising rates and shrinking capacity setting up stronger earnings in the second half.\nThe post Werner swings toward profit as dedic",
+      "link": "https://www.freightwaves.com/news/werner-swings-toward-profit-as-dedicated-fuels-q1-uptrend",
+      "time": "10小时前",
+      "region": "america",
+      "icon": "📊",
+      "srcClass": "src-us",
+      "catClass": "cat-us-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "65a8a321b19a",
+      "category": "us",
+      "priority": "low",
+      "source": "FreightWaves",
+      "title": "Port Houston March rebound pushes Q1 volumes past 1M TEUs",
+      "summary": "Port Houston’s March throughput climbed on grains and energy cargo, even as steel imports declined.\nThe post Port Houston March rebound pushes Q1 volumes past 1M TEUs appeared first on FreightWaves.",
+      "link": "https://www.freightwaves.com/news/port-houston-march-rebound-pushes-q1-volumes",
+      "time": "13小时前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
       "catClass": "cat-us-bg",
       "tags": [
         "港口"
+      ]
+    },
+    {
+      "id": "3acf78803920",
+      "category": "us",
+      "priority": "low",
+      "source": "FreightWaves",
+      "title": "Third straight decline in benchmark diesel as futures trend higher",
+      "summary": "The benchmark price of retail diesel fell for the third straight week.\nThe post Third straight decline in benchmark diesel as futures trend higher appeared first on FreightWaves.",
+      "link": "https://www.freightwaves.com/news/third-straight-decline-in-benchmark-diesel-as-futures-trend-higher",
+      "time": "16小时前",
+      "region": "america",
+      "icon": "📊",
+      "srcClass": "src-us",
+      "catClass": "cat-us-bg",
+      "tags": [
+        "物流政策"
       ]
     }
   ]
