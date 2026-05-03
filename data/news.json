@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-02T07:15:20.078713+00:00",
+  "generated_at": "2026-05-03T08:18:15.140210+00:00",
   "stats": {
-    "total": 19,
+    "total": 27,
     "high_risk": 4,
     "by_category": {
       "port": 0,
-      "imo": 0,
+      "imo": 8,
       "china": 0,
       "us": 19
     },
@@ -13,7 +13,7 @@
       "asia": 0,
       "europe": 0,
       "america": 19,
-      "global": 0
+      "global": 8
     },
     "sources_count": 12
   },
@@ -26,7 +26,7 @@
       "title": "Jeff Goettman",
       "summary": "Jeff Goettman\njgaertner\nWed, 04/29/2026 - 18:35\n\n\n  \n    Leadership Title\n              Deputy United States Trade Representative\n          \n\n  \n    Leadership Bio\n              Ambassador Jeffrey Goe",
       "link": "https://ustr.gov/node/14316",
-      "time": "2天前",
+      "time": "3天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -43,7 +43,7 @@
       "title": "Jamieson Greer",
       "summary": "Jamieson Greer\njgaertner\nWed, 04/29/2026 - 18:25\n\n\n  \n    Leadership Title\n              United States Trade Representative\n          \n\n  \n    Leadership Bio\n              Ambassador Jamieson Greer wa",
       "link": "https://ustr.gov/node/14315",
-      "time": "2天前",
+      "time": "3天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -60,7 +60,7 @@
       "title": "Exclusive: Central Freight Lines to shut down after 96 years",
       "summary": "A source familiar with the 96-year-old company said he is unsure whether CFL will file Chapter 7 or “liquidate outside of bankruptcy,” but that the LTL carrier has no plans to reorganize.\nThe post Exc",
       "link": "https://www.freightwaves.com/news/exclusive-central-freight-lines-to-shut-down-after-96-years",
-      "time": "1600天前",
+      "time": "1601天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -77,7 +77,7 @@
       "title": "Kentucky congressman urges FAA to permanently shut down MD-11 aircraft",
       "summary": "Rep. Morgan McGarvey of Kentucky has asked the Federal Aviation Administration to ban MD-11s from flying again following the November crash of a UPS jet in Louisville last year.\nThe post Kentucky cong",
       "link": "https://www.freightwaves.com/news/kentucky-congressman-urges-faa-to-permanently-shut-down-md-11-aircraft",
-      "time": "17小时前",
+      "time": "1天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -94,7 +94,7 @@
       "title": "Ambassador Greer at the Silverado Policy Accelerator Summit",
       "summary": "Ambassador Greer at the Silverado Policy Accelerator Summit\nmyarbrough\nFri, 05/01/2026 - 17:39\n\n\n            WASHINGTON – Yesterday, Ambassador Jamieson Greer participated in a fireside chat at the Si",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/may/ambassador-greer-silverado-policy-accelerator-summit",
-      "time": "9小时前",
+      "time": "1天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -112,7 +112,7 @@
       "title": "USTR Releases 2026 Special 301 Report on Intellectual Property Protection and Enforcement",
       "summary": "USTR Releases 2026 Special 301 Report on Intellectual Property Protection and Enforcement\nmyarbrough\nThu, 04/30/2026 - 14:26\n\n\n            WASHINGTON&nbsp;—&nbsp;Today, the Office of the United States",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/april/ustr-releases-2026-special-301-report-intellectual-property-protection-and-enforcement",
-      "time": "1天前",
+      "time": "2天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -130,7 +130,7 @@
       "title": "Julie Callahan",
       "summary": "Julie Callahan\njgaertner\nWed, 04/29/2026 - 18:47\n\n\n  \n    Leadership Title\n              Deputy United States Trade Representative\n          \n\n  \n    Leadership Bio\n              Ambassador Julie Call",
       "link": "https://ustr.gov/node/14320",
-      "time": "2天前",
+      "time": "3天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -148,7 +148,7 @@
       "title": "Rick Switzer",
       "summary": "Rick Switzer\njgaertner\nWed, 04/29/2026 - 18:46\n\n\n  \n    Leadership Title\n              Deputy United States Trade Representative\n          \n\n  \n    Leadership Bio\n              Ambassador Rick Switzer",
       "link": "https://ustr.gov/node/14319",
-      "time": "2天前",
+      "time": "3天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -165,13 +165,30 @@
       "title": "Jennifer Thornton",
       "summary": "Jennifer Thornton\njgaertner\nWed, 04/29/2026 - 18:41\n\n\n  \n    Leadership Title\n              General Counsel\n          \n\n  \n    Leadership Bio\n              General Counsel Jennifer Thornton advises Am",
       "link": "https://ustr.gov/node/14317",
-      "time": "2天前",
+      "time": "3天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
       "catClass": "cat-us-bg",
       "tags": [
         "物流政策"
+      ]
+    },
+    {
+      "id": "de34391624dd",
+      "category": "imo",
+      "priority": "medium",
+      "source": "Splash247 航运新闻",
+      "title": "Splash Wrap: Regulators, raiders and deals in Geneva shape shipping this week",
+      "summary": "The 84th session of the Marine Environment Protection Committee (MEPC 84) closes today. Delegates are advancing on areas of broad agreement while systematically pushing the hardest questions – notably",
+      "link": "https://splash247.com/splash-wrap-regulators-raiders-and-deals-in-geneva-shape-shipping-this-week/",
+      "time": "2天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "绿色航运"
       ]
     },
     {
@@ -182,7 +199,7 @@
       "title": "Weekly Trade Focus: APEC",
       "summary": "Weekly Trade Focus: APEC\n\n            Every week, the USTR website will explore a new trade topic, with background information and current trade data. On July 21 and 22, U.S. Trade Representative Ron ",
       "link": "https://ustr.gov/about-us/policy-offices/press-office/blog/weekly-trade-focus-apec",
-      "time": "6129天前",
+      "time": "6130天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -199,13 +216,132 @@
       "title": "Joseph Barloon",
       "summary": "Joseph Barloon\njgaertner\nWed, 04/29/2026 - 18:44\n\n\n  \n    Leadership Title\n              Deputy United States Trade Representative\n          \n\n  \n    Leadership Bio\n              Ambassador Joseph Bar",
       "link": "https://ustr.gov/node/14318",
-      "time": "2天前",
+      "time": "3天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
       "catClass": "cat-us-bg",
       "tags": [
         "WTO"
+      ]
+    },
+    {
+      "id": "cb7b64a87e42",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Complexity, two-tier fleets and bunker fears dominate scene-setting opening panel at Geneva Dry",
+      "summary": "The third edition of Geneva Dry opened in characteristically candid style, with the commodities shipping outlook panel setting the scene for two days of debate by tackling the markets, the two-tier fl",
+      "link": "https://splash247.com/complexity-two-tier-fleets-and-bunker-fears-dominate-scene-setting-opening-panel-at-geneva-dry/",
+      "time": "2天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "绿色航运"
+      ]
+    },
+    {
+      "id": "0d68b774e4a2",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Report highlights Denmark’s maritime innovation weaknesses",
+      "summary": "Denmark’s maritime sector is widely respected for its technical strength, talent and early-stage support, but a new report from Studio 30 50, developed in partnership with Danish Entrepreneurs, argues",
+      "link": "https://splash247.com/report-highlights-denmarks-maritime-innovation-weaknesses/",
+      "time": "2天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "港口"
+      ]
+    },
+    {
+      "id": "4bb99d9846f4",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Clarksons builds Americas footprint with Serpac deal",
+      "summary": "UK-based shipbroking house Clarksons is expanding its presence along South America’s Pacific coast with the acquisition of the broking business of Serpac International. The deal gives the London-liste",
+      "link": "https://splash247.com/clarksons-builds-americas-footprint-with-serpac-deal/",
+      "time": "2天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "港口"
+      ]
+    },
+    {
+      "id": "cf8cb5dc6492",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "BIMCO rolls out first CO2 shipping charter party",
+      "summary": "BIMCO has introduced a new standard contract aimed at the fast-developing market for shipping liquefied carbon dioxide, as carbon capture projects begin to move from concept to execution. The world’s ",
+      "link": "https://splash247.com/bimco-rolls-out-first-co2-shipping-charter-party/",
+      "time": "2天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "碳减排"
+      ]
+    },
+    {
+      "id": "4152815caf6c",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Goodwill Maritime exits the capesize segment with Genco deal",
+      "summary": "Seven days ago, New York-listed dry bulk owner Genco Shipping &#38; Trading revealed it was adding a modern capesize to its fleet. The company has agreed to acquire a 2019 Imabari-built, 182,000 dwt s",
+      "link": "https://splash247.com/goodwill-maritime-exits-the-capesize-segment-with-genco-deal/",
+      "time": "2天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "d83b731204c8",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Why fire safety training at sea must go further",
+      "summary": "Marinos Kokkinis, CEO of OneLearn Global, writes for Splash today.  In an industry where crews operate hundreds of miles from shore, often with limited external support, safety cannot be built on mini",
+      "link": "https://splash247.com/why-fire-safety-training-at-sea-must-go-further/",
+      "time": "2天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "港口"
+      ]
+    },
+    {
+      "id": "5cf6d70027bd",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Kids give their take on ships of the future",
+      "summary": "The European School Competition, which invited children across Europe to imagine the ship of the future, culminated this week in a special award ceremony during the informal meeting of EU maritime aff",
+      "link": "https://splash247.com/kids-give-their-take-on-ships-of-the-future/",
+      "time": "2天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "物流政策"
       ]
     },
     {
@@ -216,7 +352,7 @@
       "title": "The ‘ingenious strategy’ behind most truckers’ least favorite week of the year: International Roadcheck",
       "summary": "Inspection blitzes frustrate truck drivers. But economists found that the International Roadcheck Week boosts overall road safety.\nThe post The &#8216;ingenious strategy&#8217; behind most truckers&#8",
       "link": "https://www.freightwaves.com/news/the-ingenious-strategy-behind-most-truck-drivers-least-favorite-week-of-the-year",
-      "time": "1445天前",
+      "time": "1446天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -233,7 +369,7 @@
       "title": "Why the Northeast is quietly running out of diesel",
       "summary": "Diesel inventories on the East Coast are at record lows. Truckers are spooked by the vanishing stocks and soaring rates.\nThe post Why the Northeast is quietly running out of diesel appeared first on F",
       "link": "https://www.freightwaves.com/news/why-the-northeast-is-quietly-running-out-of-diesel",
-      "time": "1450天前",
+      "time": "1451天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -250,7 +386,7 @@
       "title": "Warehouse cramming is about to begin — Freightonomics",
       "summary": "On this episode of Freightonomics, Zach Strickland and Anthony Smith talk about the need to cram for warehouse space with Zac Rogers from Colorado State University. \nThe post Warehouse cramming is abo",
       "link": "https://www.freightwaves.com/news/warehouse-cramming-is-about-to-begin-freightonomics",
-      "time": "1723天前",
+      "time": "1724天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -267,7 +403,7 @@
       "title": "Seasonality pushing rejections and rates higher ahead of the Fourth",
       "summary": "This week’s DHL Supply Chain Pricing Power Index: 75 (Carriers) Last week’s DHL Supply Chain Pricing Power Index: 70 (Carriers)&#160; Three-month DHL Supply Chain Pricing Power Index Outlook: 70 (Carr",
       "link": "https://www.freightwaves.com/news/seasonality-pushing-rejections-and-rates-higher-ahead-of-the-fourth",
-      "time": "1769天前",
+      "time": "1770天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -284,7 +420,24 @@
       "title": "Project44 acquires ClearMetal to strengthen predictive tools",
       "summary": "“Their team construct is fundamentally different. When you look at their data science, machine learning and computer science background, they are best in class.”\nThe post Project44 acquires ClearMetal",
       "link": "https://www.freightwaves.com/news/project44-acquires-clearmetal-to-strengthen-predictive-tools",
-      "time": "1800天前",
+      "time": "1801天前",
+      "region": "america",
+      "icon": "📊",
+      "srcClass": "src-us",
+      "catClass": "cat-us-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "1ce82dbbd182",
+      "category": "us",
+      "priority": "low",
+      "source": "FreightWaves",
+      "title": "Less-than-truckload rates have sharp response to broader market turn",
+      "summary": "LTL rates are experiencing their strongest upward move since the Yellow exit in 2023.\nThe post Less-than-truckload rates have sharp response to broader market turn appeared first on FreightWaves.",
+      "link": "https://www.freightwaves.com/news/less-than-truckload-rates-have-sharp-response-to-broader-market-turn",
+      "time": "7小时前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -301,7 +454,7 @@
       "title": "Schneider targeting significant rate recovery in bid season",
       "summary": "Schneider National said price renewals are currently at the highest levels since 2021 and that it expects to capture mid- to high-single-digit increases on one-way contracts this year.\nThe post Schnei",
       "link": "https://www.freightwaves.com/news/schneider-targeting-significant-rate-recovery-in-bid-season",
-      "time": "16小时前",
+      "time": "1天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -318,7 +471,7 @@
       "title": "Port Houston lands $48M federal grant for Bayport expansion",
       "summary": "Port Houston secured a $48 million grant to expand Bayport Container Terminal to boost capacity and truck flow.\nThe post Port Houston lands $48M federal grant for Bayport expansion  appeared first on ",
       "link": "https://www.freightwaves.com/news/port-houston-lands-48m-federal-grant-for-bayport-expansion",
-      "time": "16小时前",
+      "time": "1天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -326,23 +479,6 @@
       "tags": [
         "港口",
         "集装箱"
-      ]
-    },
-    {
-      "id": "cd7343520eed",
-      "category": "us",
-      "priority": "low",
-      "source": "FreightWaves",
-      "title": "Traffix expects double-digit rate increases to hold through 2026",
-      "summary": "Broker warns shippers not to expect a return to 2025 conditions.\nThe post Traffix expects double-digit rate increases to hold through 2026 appeared first on FreightWaves.",
-      "link": "https://www.freightwaves.com/news/traffix-expects-double-digit-rate-increases-to-hold-through-2026",
-      "time": "18小时前",
-      "region": "america",
-      "icon": "📊",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
-      "tags": [
-        "物流政策"
       ]
     }
   ]
