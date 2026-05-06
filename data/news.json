@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-05T08:37:07.010558+00:00",
+  "generated_at": "2026-05-06T09:38:36.954014+00:00",
   "stats": {
-    "total": 26,
-    "high_risk": 1,
+    "total": 28,
+    "high_risk": 3,
     "by_category": {
       "port": 0,
-      "imo": 7,
+      "imo": 9,
       "china": 0,
       "us": 19
     },
@@ -13,11 +13,45 @@
       "asia": 0,
       "europe": 0,
       "america": 19,
-      "global": 7
+      "global": 9
     },
     "sources_count": 12
   },
   "items": [
+    {
+      "id": "468c95d52440",
+      "category": "imo",
+      "priority": "high",
+      "source": "Splash247 航运新闻",
+      "title": "Rheinmetall confirms it is working with MSC to take over Romania’s largest shipyard",
+      "summary": "German automotive and arms manufacturer Rheinmetall has revealed it is working with Mediterranean Shipping Co (MSC) to take over the bankrupt Romanian shipyard Mangalia. The two companies are looking ",
+      "link": "https://splash247.com/rheinmetall-confirms-it-is-working-with-msc-to-take-over-romanias-largest-shipyard/",
+      "time": "2小时前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "d24e1af0af21",
+      "category": "imo",
+      "priority": "high",
+      "source": "Splash247 航运新闻",
+      "title": "Bunker supplier TFG Marine links financing to digital delivery records",
+      "summary": "TFG Marine, Trafigura’s bunker fuel supply business with John Fredriksen’s Frontline and Alex Saverys-led CMB.TECH has secured a working capital facility of up to $300m from DBS Bank, boosting liquidi",
+      "link": "https://splash247.com/bunker-supplier-tfg-marine-links-financing-to-digital-delivery-records/",
+      "time": "4小时前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "港口"
+      ]
+    },
     {
       "id": "0b07657d30bb",
       "category": "us",
@@ -26,7 +60,7 @@
       "title": "Exclusive: Central Freight Lines to shut down after 96 years",
       "summary": "A source familiar with the 96-year-old company said he is unsure whether CFL will file Chapter 7 or “liquidate outside of bankruptcy,” but that the LTL carrier has no plans to reorganize.\nThe post Exc",
       "link": "https://www.freightwaves.com/news/exclusive-central-freight-lines-to-shut-down-after-96-years",
-      "time": "1603天前",
+      "time": "1604天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -43,7 +77,7 @@
       "title": "Definitive Countervailing Duties on New Battery Electric Vehicles from China",
       "summary": "Definitive Countervailing Duties on New Battery Electric Vehicles from China\n\n            On November 4, 2024, China requested consultations with the European Union with respect to the definitive coun",
       "link": "https://ustr.gov/node/14325",
-      "time": "11小时前",
+      "time": "1天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -60,7 +94,7 @@
       "title": "Ambassador Greer at the Silverado Policy Accelerator Summit",
       "summary": "Ambassador Greer at the Silverado Policy Accelerator Summit\nmyarbrough\nFri, 05/01/2026 - 17:39\n\n\n            WASHINGTON – Yesterday, Ambassador Jamieson Greer participated in a fireside chat at the Si",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/may/ambassador-greer-silverado-policy-accelerator-summit",
-      "time": "3天前",
+      "time": "4天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -78,7 +112,7 @@
       "title": "USTR Releases 2026 Special 301 Report on Intellectual Property Protection and Enforcement",
       "summary": "USTR Releases 2026 Special 301 Report on Intellectual Property Protection and Enforcement\nmyarbrough\nThu, 04/30/2026 - 14:26\n\n\n            WASHINGTON&nbsp;—&nbsp;Today, the Office of the United States",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/april/ustr-releases-2026-special-301-report-intellectual-property-protection-and-enforcement",
-      "time": "4天前",
+      "time": "5天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -96,7 +130,7 @@
       "title": "Julie Callahan",
       "summary": "Julie Callahan\njgaertner\nWed, 04/29/2026 - 18:47\n\n\n  \n    Leadership Title\n              Deputy United States Trade Representative\n          \n\n  \n    Leadership Bio\n              Ambassador Julie Call",
       "link": "https://ustr.gov/node/14320",
-      "time": "5天前",
+      "time": "6天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -114,7 +148,7 @@
       "title": "Rick Switzer",
       "summary": "Rick Switzer\njgaertner\nWed, 04/29/2026 - 18:46\n\n\n  \n    Leadership Title\n              Deputy United States Trade Representative\n          \n\n  \n    Leadership Bio\n              Ambassador Rick Switzer",
       "link": "https://ustr.gov/node/14319",
-      "time": "5天前",
+      "time": "6天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -131,7 +165,7 @@
       "title": "Jennifer Thornton",
       "summary": "Jennifer Thornton\njgaertner\nWed, 04/29/2026 - 18:41\n\n\n  \n    Leadership Title\n              General Counsel\n          \n\n  \n    Leadership Bio\n              General Counsel Jennifer Thornton advises Am",
       "link": "https://ustr.gov/node/14317",
-      "time": "5天前",
+      "time": "6天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -148,7 +182,7 @@
       "title": "Weekly Trade Focus: APEC",
       "summary": "Weekly Trade Focus: APEC\n\n            Every week, the USTR website will explore a new trade topic, with background information and current trade data. On July 21 and 22, U.S. Trade Representative Ron ",
       "link": "https://ustr.gov/about-us/policy-offices/press-office/blog/weekly-trade-focus-apec",
-      "time": "6132天前",
+      "time": "6133天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -165,7 +199,7 @@
       "title": "Public Hearings Regarding Section 301 Investigations Relating to Structural Excess Capacity",
       "summary": "Public Hearings Regarding Section 301 Investigations Relating to Structural Excess Capacity\nmyarbrough\nMon, 05/04/2026 - 09:54\n\n\n            WASHINGTON – The Office of the United States Trade Represen",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/may/public-hearings-regarding-section-301-investigations-relating-structural-excess-capacity",
-      "time": "18小时前",
+      "time": "1天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -182,7 +216,7 @@
       "title": "Joseph Barloon",
       "summary": "Joseph Barloon\njgaertner\nWed, 04/29/2026 - 18:44\n\n\n  \n    Leadership Title\n              Deputy United States Trade Representative\n          \n\n  \n    Leadership Bio\n              Ambassador Joseph Bar",
       "link": "https://ustr.gov/node/14318",
-      "time": "5天前",
+      "time": "6天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -192,47 +226,30 @@
       ]
     },
     {
-      "id": "6ac6db34485d",
+      "id": "3667e6858b87",
       "category": "imo",
       "priority": "low",
       "source": "Splash247 航运新闻",
-      "title": "US protection plan fails to calm Hormuz nerves",
-      "summary": "Twenty-four hours into the Trump administration&#8217;s Project Freedom operation to guide stranded vessels out of the Persian Gulf, shipowners remain deeply cautious &#8211; and Iran&#8217;s actions ",
-      "link": "https://splash247.com/us-protection-plan-fails-to-calm-hormuz-nerves/",
-      "time": "刚刚",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-imo",
-      "catClass": "cat-imo-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "f7ce57d5c641",
-      "category": "imo",
-      "priority": "low",
-      "source": "Splash247 航运新闻",
-      "title": "‘Incessant’ fight for market share pushes box sector towards overcapacity with record 13m teu on order",
-      "summary": "The containership orderbook has reached a record high of 13m teu, according to consultancy Linerlytica which is warning of looming overcapacity. Ships on order are now greater than the combined extant",
-      "link": "https://splash247.com/incessant-fight-for-market-share-pushes-box-sector-towards-overcapacity-with-record-13m-teu-on-order/",
+      "title": "Hormuz toll authority goes live",
+      "summary": "The Trump administration&#8217;s Project Freedom operation to guide stranded vessels out of the Persian Gulf through the Strait of Hormuz has been suspended after just two days, as Iran pressed ahead ",
+      "link": "https://splash247.com/hormuz-toll-authority-goes-live/",
       "time": "1小时前",
       "region": "global",
       "icon": "📰",
       "srcClass": "src-imo",
       "catClass": "cat-imo-bg",
       "tags": [
-        "集装箱"
+        "物流政策"
       ]
     },
     {
-      "id": "47ebad6f1cd9",
+      "id": "4279996e7e3d",
       "category": "imo",
       "priority": "low",
       "source": "Splash247 航运新闻",
-      "title": "Posidonia opens as Greek shipping embarks on historic fleet renewal",
-      "summary": "With Posidonia’s conference programme starting tomorrow &#8211; more than three weeks before the exhibition gets underway &#8211; the world’s top shipyards are getting ready to market their newbuild o",
-      "link": "https://splash247.com/posidonia-opens-as-greek-shipping-embarks-on-historic-fleet-renewal/",
+      "title": "Prokopiou family-linked Beacon Tankers emerges with suezmax newbuild play at Hengli",
+      "summary": "The Prokopiou family is stepping further into the tanker market with the launch of a new company that has wasted little time securing its first newbuilding slots in China. New entrant Beacon Tankers M",
+      "link": "https://splash247.com/prokopiou-family-linked-beacon-tankers-emerges-with-suezmax-newbuild-play-at-hengli/",
       "time": "2小时前",
       "region": "global",
       "icon": "📰",
@@ -243,30 +260,13 @@
       ]
     },
     {
-      "id": "ee5baf45ff87",
+      "id": "e1a132ff5907",
       "category": "imo",
       "priority": "low",
       "source": "Splash247 航运新闻",
-      "title": "Diana takes hostile route in push for Genco",
-      "summary": "Diana Shipping has taken its takeover fight for Genco Shipping &#38; Trading straight to shareholders, launching a tender offer to acquire the US-listed bulker owner for $23.50 per share in cash after",
-      "link": "https://splash247.com/diana-takes-hostile-route-in-push-for-genco/",
-      "time": "2小时前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-imo",
-      "catClass": "cat-imo-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "5b70b5d5feff",
-      "category": "imo",
-      "priority": "low",
-      "source": "Splash247 航运新闻",
-      "title": "Grounded MSC boxship to be cut up and hauled ashore in Newfoundland salvage plan",
-      "summary": "Authorities in Newfoundland and Labrador have agreed on a final plan to remove the wreck of the MSC Baltic III, with contractors set to dismantle the vessel in sections and haul it ashore for recyclin",
-      "link": "https://splash247.com/grounded-msc-boxship-to-be-cut-up-and-hauled-ashore-in-newfoundland-salvage-plan/",
+      "title": "OOCL challenges FMC court system after $45m ruling",
+      "summary": "Orient Overseas Container Line (OOCL) has launched a legal challenge against the Federal Maritime Commission, arguing the regulator&#8217;s in-house adjudication process is unconstitutional following ",
+      "link": "https://splash247.com/oocl-challenges-fmc-court-system-after-45m-ruling/",
       "time": "3小时前",
       "region": "global",
       "icon": "📰",
@@ -277,37 +277,71 @@
       ]
     },
     {
-      "id": "a69cef646066",
+      "id": "6ba03ddbc175",
       "category": "imo",
       "priority": "low",
       "source": "Splash247 航运新闻",
-      "title": "KSS Line books trio of VLGCs at HD Hyundai",
-      "summary": "South Korea’s KSS Line has moved to expand its LPG carrier fleet, placing an order for three very large gas carriers (VLGCs) in a deal worth around $342m. The owner has contracted HD Korea Shipbuildin",
-      "link": "https://splash247.com/kss-line-books-trio-of-vlgcs-at-hd-hyundai/",
+      "title": "CMA CGM looks inland with UAE logistics push alongside AD Ports",
+      "summary": "France’s CMA CGM Group is pushing further inland in the Gulf, signing a cooperation deal with AD Ports Group to extend its reach beyond the quay at Khalifa port. The liner major, alongside CMA Termina",
+      "link": "https://splash247.com/cma-cgm-looks-inland-with-uae-logistics-push-alongside-ad-ports/",
       "time": "3小时前",
       "region": "global",
       "icon": "📰",
       "srcClass": "src-imo",
       "catClass": "cat-imo-bg",
       "tags": [
-        "物流政策"
+        "港口"
       ]
     },
     {
-      "id": "5356f5a300eb",
+      "id": "1405181f8da0",
       "category": "imo",
       "priority": "low",
       "source": "Splash247 航运新闻",
-      "title": "Shipping’s rare moment in the spotlight is slipping",
-      "summary": "The Maritime Attention Index shows that public interest in the shipping industry is fading from the highs early in the US-Israel war on Iran, writes Dustin Eno, a crisis communications consultant. US ",
-      "link": "https://splash247.com/shippings-rare-moment-in-the-spotlight-is-slipping/",
+      "title": "Japanese owners cash in as aframax prices hit record highs",
+      "summary": "Nissen Kaiun is capitalising on surging tanker asset values, offloading modern eco aframaxes at levels rarely seen before. The most talked-about sale in this weekend’s broker reports has been the 2018",
+      "link": "https://splash247.com/japanese-owners-cash-in-as-aframax-prices-hit-record-highs/",
       "time": "4小时前",
       "region": "global",
       "icon": "📰",
       "srcClass": "src-imo",
       "catClass": "cat-imo-bg",
       "tags": [
-        "物流政策"
+        "港口"
+      ]
+    },
+    {
+      "id": "e250264abb62",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "DOF locks in $2bn Petrobras deal for four newbuild vessels",
+      "summary": "Norwegian offshore vessel owner DOF has secured a major long-term win in Brazil, landing 12-year charter and services contracts for four newbuild ROV support vessels tied to deepwater work for Petrobr",
+      "link": "https://splash247.com/dof-locks-in-2bn-petrobras-deal-for-four-newbuild-vessels/",
+      "time": "6小时前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "港口"
+      ]
+    },
+    {
+      "id": "997ea7abdabd",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "GMS breaks into Africa and Latin America with twin contract wins",
+      "summary": "UAE-based offshore support vessel owner Gulf Marine Services has secured two contracts that take it into Africa and Latin America for the first time, while also opening up a new line of business in th",
+      "link": "https://splash247.com/gms-breaks-into-africa-and-latin-america-with-twin-contract-wins/",
+      "time": "7小时前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "港口"
       ]
     },
     {
@@ -318,7 +352,7 @@
       "title": "The ‘ingenious strategy’ behind most truckers’ least favorite week of the year: International Roadcheck",
       "summary": "Inspection blitzes frustrate truck drivers. But economists found that the International Roadcheck Week boosts overall road safety.\nThe post The &#8216;ingenious strategy&#8217; behind most truckers&#8",
       "link": "https://www.freightwaves.com/news/the-ingenious-strategy-behind-most-truck-drivers-least-favorite-week-of-the-year",
-      "time": "1448天前",
+      "time": "1449天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -335,7 +369,7 @@
       "title": "Why the Northeast is quietly running out of diesel",
       "summary": "Diesel inventories on the East Coast are at record lows. Truckers are spooked by the vanishing stocks and soaring rates.\nThe post Why the Northeast is quietly running out of diesel appeared first on F",
       "link": "https://www.freightwaves.com/news/why-the-northeast-is-quietly-running-out-of-diesel",
-      "time": "1453天前",
+      "time": "1454天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -352,7 +386,7 @@
       "title": "Warehouse cramming is about to begin — Freightonomics",
       "summary": "On this episode of Freightonomics, Zach Strickland and Anthony Smith talk about the need to cram for warehouse space with Zac Rogers from Colorado State University. \nThe post Warehouse cramming is abo",
       "link": "https://www.freightwaves.com/news/warehouse-cramming-is-about-to-begin-freightonomics",
-      "time": "1726天前",
+      "time": "1727天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -369,7 +403,7 @@
       "title": "Seasonality pushing rejections and rates higher ahead of the Fourth",
       "summary": "This week’s DHL Supply Chain Pricing Power Index: 75 (Carriers) Last week’s DHL Supply Chain Pricing Power Index: 70 (Carriers)&#160; Three-month DHL Supply Chain Pricing Power Index Outlook: 70 (Carr",
       "link": "https://www.freightwaves.com/news/seasonality-pushing-rejections-and-rates-higher-ahead-of-the-fourth",
-      "time": "1772天前",
+      "time": "1773天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -386,7 +420,7 @@
       "title": "Project44 acquires ClearMetal to strengthen predictive tools",
       "summary": "“Their team construct is fundamentally different. When you look at their data science, machine learning and computer science background, they are best in class.”\nThe post Project44 acquires ClearMetal",
       "link": "https://www.freightwaves.com/news/project44-acquires-clearmetal-to-strengthen-predictive-tools",
-      "time": "1803天前",
+      "time": "1804天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -396,14 +430,31 @@
       ]
     },
     {
-      "id": "bef676e92925",
+      "id": "3b5b39fcc4ab",
       "category": "us",
       "priority": "low",
       "source": "FreightWaves",
-      "title": "Maersk ro-ro first U.S.-flag ship to safely clear Strait of Hormuz",
-      "summary": "A Maersk vessel under U.S. military contract made a safe exit from the Strait of Hormuz Monday, escorted by American warships.  \nThe post Maersk ro-ro first U.S.-flag ship to safely clear Strait of Ho",
-      "link": "https://www.freightwaves.com/news/maersk-ro-ro-first-u-s-flag-ship-to-safely-clear-strait-of-hormuz",
-      "time": "4小时前",
+      "title": "First look: GXO Logistics posts Q1 double-digit revenue growth",
+      "summary": "GXO Logistics reported first quarter revenue of $3.3 billion, up 10.8% year over year.\nThe post First look: GXO Logistics posts Q1 double-digit revenue growth appeared first on FreightWaves.",
+      "link": "https://www.freightwaves.com/news/first-look-gxo-logistics-posts-q1-double-digit-revenue-growth",
+      "time": "12小时前",
+      "region": "america",
+      "icon": "📊",
+      "srcClass": "src-us",
+      "catClass": "cat-us-bg",
+      "tags": [
+        "港口"
+      ]
+    },
+    {
+      "id": "3712c03c4aa3",
+      "category": "us",
+      "priority": "low",
+      "source": "FreightWaves",
+      "title": "$4 million cargo theft recovery shows what enforcement can do",
+      "summary": "Nearly $4 million in stolen cargo was recovered in a Los Angeles County case tied to multiple companies, with one arrest made following a search warrant in Vernon.\nThe post $4 million cargo theft reco",
+      "link": "https://www.freightwaves.com/news/4-million-cargo-theft-recovery-shows-what-enforcement-can-do",
+      "time": "12小时前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -413,55 +464,37 @@
       ]
     },
     {
-      "id": "c4425dea7968",
+      "id": "6c3436dd783c",
       "category": "us",
       "priority": "low",
       "source": "FreightWaves",
-      "title": "Card provider WEX reaches deal with activist investor; CEO Smith to stay",
-      "summary": "WEX and an activist investor ended their proxy battle with Impactive to get three board seats.\nThe post Card provider WEX reaches deal with activist investor; CEO Smith to stay appeared first on Freig",
-      "link": "https://www.freightwaves.com/news/card-provider-wex-reaches-deal-with-activist-investor-ceo-smith-to-stay",
-      "time": "10小时前",
-      "region": "america",
-      "icon": "📊",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "f57c1c80a5a5",
-      "category": "us",
-      "priority": "low",
-      "source": "FreightWaves",
-      "title": "Motus steps up: what carriers need to know about new FMCSA system",
-      "summary": "Both FMCSA and outside companies are spurring carriers to get ready for the next phase of Motus.\nThe post Motus steps up: what carriers need to know about new FMCSA system appeared first on FreightWav",
-      "link": "https://www.freightwaves.com/news/motus-steps-up-what-carriers-need-to-know-about-new-fmcsa-system",
-      "time": "14小时前",
-      "region": "america",
-      "icon": "📊",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "131be17194cf",
-      "category": "us",
-      "priority": "low",
-      "source": "FreightWaves",
-      "title": "Amazon rebrands third-party logistics arms as unified supply chain service",
-      "summary": "Amazon announced it has stitched together logistics services into a unified supply chain product for manufacturers and retailers to move and distribute heavy freight and parcels, which poses a potenti",
-      "link": "https://www.freightwaves.com/news/amazon-rebrands-third-party-logistics-arms-as-unified-supply-chain-service",
+      "title": "Super Dispatch: Diesel price volatility strains auto transport margins",
+      "summary": "Super Dispatch has released new data from its Fuel and Transport Cost Tracker detailing the impact of rising diesel prices on carriers, brokers and shippers.\nThe post Super Dispatch: Diesel price vola",
+      "link": "https://www.freightwaves.com/news/super-dispatch-diesel-price-volatility-strains-auto-transport-margins",
       "time": "15小时前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
       "catClass": "cat-us-bg",
       "tags": [
-        "港口",
-        "供应链"
+        "港口"
+      ]
+    },
+    {
+      "id": "a324b790b1ab",
+      "category": "us",
+      "priority": "low",
+      "source": "FreightWaves",
+      "title": "Strength in the air and weakness in ocean mark Expeditors’ strong 1Q",
+      "summary": "Air and ocean freight moved in different directions at Expeditors in the first quarter.\nThe post Strength in the air and weakness in ocean mark Expeditors’ strong 1Q appeared first on FreightWaves.",
+      "link": "https://www.freightwaves.com/news/strength-in-the-air-and-weakness-in-ocean-mark-expeditors-strong-1q",
+      "time": "15小时前",
+      "region": "america",
+      "icon": "📊",
+      "srcClass": "src-us",
+      "catClass": "cat-us-bg",
+      "tags": [
+        "物流政策"
       ]
     }
   ]
