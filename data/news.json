@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-08T07:08:27.275673+00:00",
+  "generated_at": "2026-05-09T07:27:31.759605+00:00",
   "stats": {
-    "total": 19,
+    "total": 29,
     "high_risk": 1,
     "by_category": {
       "port": 0,
-      "imo": 0,
+      "imo": 10,
       "china": 0,
       "us": 19
     },
@@ -13,7 +13,7 @@
       "asia": 0,
       "europe": 0,
       "america": 19,
-      "global": 0
+      "global": 10
     },
     "sources_count": 12
   },
@@ -26,7 +26,7 @@
       "title": "Exclusive: Central Freight Lines to shut down after 96 years",
       "summary": "A source familiar with the 96-year-old company said he is unsure whether CFL will file Chapter 7 or “liquidate outside of bankruptcy,” but that the LTL carrier has no plans to reorganize.\nThe post Exc",
       "link": "https://www.freightwaves.com/news/exclusive-central-freight-lines-to-shut-down-after-96-years",
-      "time": "1606天前",
+      "time": "1607天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -43,7 +43,7 @@
       "title": "Definitive Countervailing Duties on New Battery Electric Vehicles from China",
       "summary": "Definitive Countervailing Duties on New Battery Electric Vehicles from China\n\n            On November 4, 2024, China requested consultations with the European Union with respect to the definitive coun",
       "link": "https://ustr.gov/node/14325",
-      "time": "3天前",
+      "time": "4天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -60,7 +60,7 @@
       "title": "Ambassador Greer at the Silverado Policy Accelerator Summit",
       "summary": "Ambassador Greer at the Silverado Policy Accelerator Summit\nmyarbrough\nFri, 05/01/2026 - 17:39\n\n\n            WASHINGTON – Yesterday, Ambassador Jamieson Greer participated in a fireside chat at the Si",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/may/ambassador-greer-silverado-policy-accelerator-summit",
-      "time": "6天前",
+      "time": "7天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -78,7 +78,7 @@
       "title": "USTR Releases 2026 Special 301 Report on Intellectual Property Protection and Enforcement",
       "summary": "USTR Releases 2026 Special 301 Report on Intellectual Property Protection and Enforcement\nmyarbrough\nThu, 04/30/2026 - 14:26\n\n\n            WASHINGTON&nbsp;—&nbsp;Today, the Office of the United States",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/april/ustr-releases-2026-special-301-report-intellectual-property-protection-and-enforcement",
-      "time": "7天前",
+      "time": "8天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -96,7 +96,7 @@
       "title": "Julie Callahan",
       "summary": "Julie Callahan\njgaertner\nWed, 04/29/2026 - 18:47\n\n\n  \n    Leadership Title\n              Deputy United States Trade Representative\n          \n\n  \n    Leadership Bio\n              Ambassador Julie Call",
       "link": "https://ustr.gov/node/14320",
-      "time": "8天前",
+      "time": "9天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -114,7 +114,7 @@
       "title": "Rick Switzer",
       "summary": "Rick Switzer\njgaertner\nWed, 04/29/2026 - 18:46\n\n\n  \n    Leadership Title\n              Deputy United States Trade Representative\n          \n\n  \n    Leadership Bio\n              Ambassador Rick Switzer",
       "link": "https://ustr.gov/node/14319",
-      "time": "8天前",
+      "time": "9天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -131,7 +131,7 @@
       "title": "Jennifer Thornton",
       "summary": "Jennifer Thornton\njgaertner\nWed, 04/29/2026 - 18:41\n\n\n  \n    Leadership Title\n              General Counsel\n          \n\n  \n    Leadership Bio\n              General Counsel Jennifer Thornton advises Am",
       "link": "https://ustr.gov/node/14317",
-      "time": "8天前",
+      "time": "9天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -148,7 +148,7 @@
       "title": "Weekly Trade Focus: APEC",
       "summary": "Weekly Trade Focus: APEC\n\n            Every week, the USTR website will explore a new trade topic, with background information and current trade data. On July 21 and 22, U.S. Trade Representative Ron ",
       "link": "https://ustr.gov/about-us/policy-offices/press-office/blog/weekly-trade-focus-apec",
-      "time": "6135天前",
+      "time": "6136天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -165,7 +165,7 @@
       "title": "Public Hearings Regarding Section 301 Investigations Relating to Structural Excess Capacity",
       "summary": "Public Hearings Regarding Section 301 Investigations Relating to Structural Excess Capacity\nmyarbrough\nMon, 05/04/2026 - 09:54\n\n\n            WASHINGTON – The Office of the United States Trade Represen",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/may/public-hearings-regarding-section-301-investigations-relating-structural-excess-capacity",
-      "time": "3天前",
+      "time": "4天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -182,13 +182,185 @@
       "title": "Joseph Barloon",
       "summary": "Joseph Barloon\njgaertner\nWed, 04/29/2026 - 18:44\n\n\n  \n    Leadership Title\n              Deputy United States Trade Representative\n          \n\n  \n    Leadership Bio\n              Ambassador Joseph Bar",
       "link": "https://ustr.gov/node/14318",
-      "time": "8天前",
+      "time": "9天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
       "catClass": "cat-us-bg",
       "tags": [
         "WTO"
+      ]
+    },
+    {
+      "id": "7beda336e50b",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Splash Wrap: Trump’s Hormuz escort mission lasted less than a Netflix free trial",
+      "summary": "Monday saw the Trump administration launch the short-lived Project Freedom, an operation to get stranded vessels out of Hormuz. It was ditched the following day with the security situation in the Midd",
+      "link": "https://splash247.com/splash-wrap-trumps-hormuz-escort-mission-lasted-less-than-a-netflix-free-trial/",
+      "time": "1天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "a39837f587d1",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "DP World moves into shipping war risk insurance",
+      "summary": "With the Hormuz crisis into its third month, terminal operator DP World has launched a first-of-its-kind cargo war risk insurance solution to help businesses navigate disruption across Middle East tra",
+      "link": "https://splash247.com/dp-world-moves-into-shipping-war-risk-insurance/",
+      "time": "1天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "港口",
+        "供应链"
+      ]
+    },
+    {
+      "id": "f70507a2e31d",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Small inefficiencies still costing dry bulk millions: Geneva Dry",
+      "summary": "Technology, trust and the limits of automation dominated debate at the opening session of day two at last week’s Geneva Dry 2026, where owners, charterers, traders and technology providers gathered to",
+      "link": "https://splash247.com/small-inefficiencies-still-costing-dry-bulk-millions-geneva-dry/",
+      "time": "1天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "自动化",
+        "供应链"
+      ]
+    },
+    {
+      "id": "625886b3e1fc",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Genco and Diana dig in ahead of crunch shareholder showdown",
+      "summary": "New York-listed dry bulk rivals Genco Shipping &#38; Trading and Diana Shipping have stepped up their increasingly bitter takeover battle, with both companies launching fresh attacks ahead of Genco’s ",
+      "link": "https://splash247.com/genco-steps-up-fight-against-diana-takeover-push/",
+      "time": "1天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "35ca2f0e5980",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Zodiac targets ammonia shipping with Hanwha deal",
+      "summary": "London-based Zodiac Maritime is making a major move into the gas carrier sector, ordering a series of very large ammonia carriers in South Korea as the company expands beyond its recent tanker and con",
+      "link": "https://splash247.com/zodiac-targets-ammonia-shipping-with-hanwha-deal/",
+      "time": "1天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "集装箱"
+      ]
+    },
+    {
+      "id": "86eb1523666c",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Trump administration launches nuclear-powered shipping initiative",
+      "summary": "The Trump administration has launched a formal initiative to develop small modular reactors (SMRs) for commercial shipping, instructing the Maritime Administration to canvass industry and innovators o",
+      "link": "https://splash247.com/trump-administration-launches-nuclear-powered-shipping-initiative/",
+      "time": "1天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "港口"
+      ]
+    },
+    {
+      "id": "0d58a7b0cd28",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Crew welfare data map launched",
+      "summary": "The Sustainable Shipping Initiative (SSI) has released the first integrated, industry-wide mapping of crew welfare, wellbeing and safety data in shipping, funded by the Lloyd&#8217;s Register Foundati",
+      "link": "https://splash247.com/crew-welfare-data-map-launched/",
+      "time": "1天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "2583fed32122",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Decisions by many, responsibility by one",
+      "summary": "Why authority and accountability no longer align in modern shipping. By Sunil Kapoor. A 20-year-old ship is often judged by her age. In reality, age matters far less than how a vessel has been maintai",
+      "link": "https://splash247.com/decisions-by-many-responsibility-by-one/",
+      "time": "1天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "7e91a8c81af6",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Maersk Supply Services brand disappears in Brazil as Navvik launches",
+      "summary": "A new offshore vessel operator has emerged in Brazil following the sale and rebranding of the former Maersk Supply Service business in the country. The operation, previously known as Maersk Supply Ser",
+      "link": "https://splash247.com/maersk-supply-services-brand-disappears-in-brazil-as-navvik-launches/",
+      "time": "1天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "449c10a275ae",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "BW Offshore secures firmer timeline for UK North Sea FPSO",
+      "summary": "Floater specialist BW Offshore has revised the contract structure for the FPSO BW Catcher in the UK North Sea, securing firmer cash flow visibility through the end of the decade while opening the door",
+      "link": "https://splash247.com/bw-offshore-secures-firmer-timeline-for-uk-north-sea-fpso/",
+      "time": "1天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "港口"
       ]
     },
     {
@@ -199,7 +371,7 @@
       "title": "The ‘ingenious strategy’ behind most truckers’ least favorite week of the year: International Roadcheck",
       "summary": "Inspection blitzes frustrate truck drivers. But economists found that the International Roadcheck Week boosts overall road safety.\nThe post The &#8216;ingenious strategy&#8217; behind most truckers&#8",
       "link": "https://www.freightwaves.com/news/the-ingenious-strategy-behind-most-truck-drivers-least-favorite-week-of-the-year",
-      "time": "1451天前",
+      "time": "1452天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -216,7 +388,7 @@
       "title": "Why the Northeast is quietly running out of diesel",
       "summary": "Diesel inventories on the East Coast are at record lows. Truckers are spooked by the vanishing stocks and soaring rates.\nThe post Why the Northeast is quietly running out of diesel appeared first on F",
       "link": "https://www.freightwaves.com/news/why-the-northeast-is-quietly-running-out-of-diesel",
-      "time": "1456天前",
+      "time": "1457天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -233,7 +405,7 @@
       "title": "Warehouse cramming is about to begin — Freightonomics",
       "summary": "On this episode of Freightonomics, Zach Strickland and Anthony Smith talk about the need to cram for warehouse space with Zac Rogers from Colorado State University. \nThe post Warehouse cramming is abo",
       "link": "https://www.freightwaves.com/news/warehouse-cramming-is-about-to-begin-freightonomics",
-      "time": "1729天前",
+      "time": "1730天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -250,7 +422,7 @@
       "title": "Seasonality pushing rejections and rates higher ahead of the Fourth",
       "summary": "This week’s DHL Supply Chain Pricing Power Index: 75 (Carriers) Last week’s DHL Supply Chain Pricing Power Index: 70 (Carriers)&#160; Three-month DHL Supply Chain Pricing Power Index Outlook: 70 (Carr",
       "link": "https://www.freightwaves.com/news/seasonality-pushing-rejections-and-rates-higher-ahead-of-the-fourth",
-      "time": "1775天前",
+      "time": "1776天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -267,7 +439,7 @@
       "title": "Project44 acquires ClearMetal to strengthen predictive tools",
       "summary": "“Their team construct is fundamentally different. When you look at their data science, machine learning and computer science background, they are best in class.”\nThe post Project44 acquires ClearMetal",
       "link": "https://www.freightwaves.com/news/project44-acquires-clearmetal-to-strengthen-predictive-tools",
-      "time": "1806天前",
+      "time": "1807天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -277,14 +449,14 @@
       ]
     },
     {
-      "id": "7101f80a329c",
+      "id": "c54134eb5824",
       "category": "us",
       "priority": "low",
       "source": "FreightWaves",
-      "title": "Truck Parking Club appoints Victor Westerlund as CFO",
-      "summary": "Truck Parking Club appoints Victor Westerlund as CFO. The Stax Payments veteran joins as the company surpasses 5,000 truck parking locations and targets 10,000 by 2026.\nThe post Truck Parking Club app",
-      "link": "https://www.freightwaves.com/news/truck-parking-club-victor-westerlund-cfo",
-      "time": "8小时前",
+      "title": "US Postal Service reduces operating loss to $642M",
+      "summary": "The U.S. Postal Service made strides in the second quarter reducing heavy losses, but has a long way to go to become profitable. \nThe post US Postal Service reduces operating loss to $642M appeared fi",
+      "link": "https://www.freightwaves.com/news/us-postal-service-reduces-operating-loss-to-642m",
+      "time": "9小时前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -294,14 +466,14 @@
       ]
     },
     {
-      "id": "a79cbafe64f9",
+      "id": "6967fedbd8a6",
       "category": "us",
       "priority": "low",
       "source": "FreightWaves",
-      "title": "67 ELDs revoked since January. 2 more just made the list.",
-      "summary": "FMCSA revoked two more electronic logging devices today, bringing the total to 67 noncompliant devices removed since January 2025. Carriers using Safe ELD or MYLOGS ELD have until July 7, 2026, to rep",
-      "link": "https://www.freightwaves.com/news/67-elds-revoked-since-january-2-more-just-made-the-list",
-      "time": "11小时前",
+      "title": "SONAR Sitrep: Fleet safety behind the curb post-freight recession",
+      "summary": "As the freight cycle recovers and utilization rises, the industry is confronting a massive accumulation of deferred maintenance from the prolonged freight recession of 2022–2026.\nThe post SONAR Sitrep",
+      "link": "https://www.freightwaves.com/news/sonar-sitrep-fleet-maintenance-behind-the-curb-post-freight-recession",
+      "time": "14小时前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -311,38 +483,38 @@
       ]
     },
     {
-      "id": "f54bfba61943",
+      "id": "a3dc7040810f",
       "category": "us",
       "priority": "low",
       "source": "FreightWaves",
-      "title": "RXO’s tech turnaround: why investors are watching",
-      "summary": "Investors liked what they saw and heard in RXO’s first quarter earnings.\nThe post RXO&#8217;s tech turnaround: why investors are watching  appeared first on FreightWaves.",
-      "link": "https://www.freightwaves.com/news/rxos-tech-turnaround-why-investors-are-watching",
-      "time": "12小时前",
-      "region": "america",
-      "icon": "📊",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "43c36a1bd7d5",
-      "category": "us",
-      "priority": "low",
-      "source": "FreightWaves",
-      "title": "Solutions that Save: How Amazon’s Supply Chain Services Give Back Time, Money, and Peace of Mind",
-      "summary": "Managing a supply chain shouldn’t mean choosing between cost, speed, and peace of mind — but for many businesses, it does. Amazon Supply Chain Services (ASCS) offers flexible, resilient logistics supp",
-      "link": "https://www.freightwaves.com/news/solutions-that-save-how-amazons-supply-chain-services-give-back-time-money-and-peace-of-mind",
-      "time": "13小时前",
+      "title": "Tariff uncertainty deepens for shippers after new court ruling against Trump",
+      "summary": "The Trump administration’s trade agenda is facing mounting legal and political pressure from importers, the European Union and automakers.\nThe post Tariff uncertainty deepens for shippers after new co",
+      "link": "https://www.freightwaves.com/news/tariff-uncertainty-deepens-for-shippers-after-new-court-ruling-against-trump",
+      "time": "16小时前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
       "catClass": "cat-us-bg",
       "tags": [
         "港口",
-        "供应链"
+        "关税"
+      ]
+    },
+    {
+      "id": "e56a66410713",
+      "category": "us",
+      "priority": "low",
+      "source": "FreightWaves",
+      "title": "April trucking jobs report shows a big increase in hiring",
+      "summary": "The latest jobs report shows a healthy hiring level for truck transportation jobs.\nThe post April trucking jobs report shows a big increase in hiring appeared first on FreightWaves.",
+      "link": "https://www.freightwaves.com/news/april-trucking-jobs-report-shows-a-big-increase-in-hiring",
+      "time": "17小时前",
+      "region": "america",
+      "icon": "📊",
+      "srcClass": "src-us",
+      "catClass": "cat-us-bg",
+      "tags": [
+        "港口"
       ]
     }
   ]
