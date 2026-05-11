@@ -1,192 +1,180 @@
-- name: AI-Dashboard
- import json
- import hashlib
- import os
- import re
- from datetime import datetime, timezone
- from pathlib import Path
- 
- # --- 依赖检查 ---
- try:
-     import feedparser
- except ImportError:
-     import subprocess, sys
-     subprocess.check_call([sys.executable, "-m", "pip", "install", "feedparser"])
-     import feedparser
- 
- try:
-     import requests
- except ImportError:
-     import subprocess, sys
-     subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
-     import requests
- try:
-     from deep_translator import GoogleTranslator
- except ImportError:
-     import subprocess, sys
-     subprocess.check_call([sys.executable, "-m", "pip", "install", "deep-translator"])
-     from deep_translator import GoogleTranslator
+#!/usr/bin/env python3
+"""
+LogPulse RSS Fetcher
+全球物流政策情报 RSS 抓取脚本
+自动抓取 IMO / WTO / 中国海关 / 美欧贸易 / 主要港口 政策新闻
+"""
 
- # ===================== RSS 源配置 =====================
- RSS_SOURCES = [
-     # --- 国际组织 ---
-     {
-         "id": "wto",
-         "name": "WTO 世界贸易组织",
-         "url": "https://www.wto.org/library/rss/latest_news_e.xml",
-         "category": "imo",
-         "region": "global",
-         "icon": "🌐",
-         "src_class": "src-imo",
-         "cat_class": "cat-imo-bg",
-     },
-     # --- 中国政策 ---
-     # "name": "中国海关总署"
-     # "name": "中国商务部",
-     # --- 美欧贸易 ---
-     {
-         "id": "ustr",
-         "name": "美国贸易代表署",
-         "url": "https://ustr.gov/rss.xml",
-         "category": "us",
-         "region": "america",
-         "icon": "🇺🇸",
-         "src_class": "src-us",
- RSS_SOURCES = [
-         "url": "https://www.freightwaves.com/news/feed",
-         "category": "us",
-         "region": "america",
-         "icon": "📊",
-         "src_class": "src-us",
-         "cat_class": "cat-us-bg",
-     },
- ]
- 
- #物流/航运关键词过滤（提高精准度）
- KEYWORDS = [
-     "shipping", "logistics", "port", "customs", "tariff", "trade",
-     "maritime", "freight", "container", "vessel", "cargo", "supply chain",
-     "航运", "物流", "港口", "海关", "关税", "贸易", "集装箱", "供应链",
-     "IMO", "WTO", "RCEP", "sanctions", "制裁", "emission", "排放",
-     "policy", "regulation", "政策", "法规"
- ]
- 
- PRIORITY_KEYWORDS = {
-     "high": ["sanction", "制裁", "tariff war", "关税战", "ban", "禁令",
-              "emergency", "紧急", "critical", "重大"],
-     "medium": ["policy", "政策", "regulation", "法规", "update", "更新",
-                "new rule", "新规", "agreement", "协议"],
- }
- 
- _TRANSLATION_CACHE = {}
- _ZH_TW_TRANSLATOR = GoogleTranslator(source="auto", target="zh-TW")
+import json
+import hashlib
+import re
+from datetime import datetime, timezone
+from pathlib import Path
 
- 
- def clean_html(text: str) -> str:
-     """Remove HTML tags from text."""
-     return re.sub(r'<[^>]+>', '', text or '').strip()
- 
- 
- def translate_to_zh_tw(text: str) -> str:
-     """Translate text to Traditional Chinese (zh-TW)."""
-     if not text:
-         return text
-     if text in _TRANSLATION_CACHE:
-         return _TRANSLATION_CACHE[text]
-     try:
-         translated = _ZH_TW_TRANSLATOR.translate(text)
-         result = translated.strip() if translated else text
-     except Exception:
-         result = text
-     _TRANSLATION_CACHE[text] = result
-     return result
- 
+# --- 依赖检查 ---
+try:
+    import feedparser
+except ImportError:
+    import subprocess, sys
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "feedparser"])
+    import feedparser
 
- def assess_priority(title: str, summary: str) -> str:
-     """Assess news priority based on keywords."""
-     content = (title + " " + summary).lower()
-     for kw in PRIORITY_KEYWORDS["high"]:
-         if kw.lower() in content:
-             return "high"
-     for kw in PRIORITY_KEYWORDS["medium"]:
-         if kw.lower() in content:
-             return "medium"
-     return "low"
- 
- 
- def is_relevant(title: str, summary: str) -> bool:
-     """Check if the article is relevant to logistics/shipping."""
-     content = (title + " " + summary).lower()
-     return any(kw.lower() in content for kw in KEYWORDS)
- 
- 
- def format_time(entry) -> str:
-     """Format RSS entry published time."""
-     try:
-         if hasattr(entry, 'published_parsed') and entry.published_parsed:
-             dt = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
-             delta = datetime.now(timezone.utc) - dt
-             hours = int(delta.total_seconds() // 3600)
-             if hours < 1:
-                 return "刚刚"
-             elif hours < 24:
-                 return f"{hours}小时前"
-             else:
-                 return f"{delta.days}天前"
-     except Exception:
-         pass
-     return "近期"
- 
- 
- def fetch_source(source: dict) -> list:
-     """Fetch and parse a single RSS source."""
-     items = []
-     try:
-         print(f"  → 抓取: {source['name']} ...")
-         feed = feedparser.parse(
-             source["url"],
-             request_headers={"User-Agent": "LogPulse/1.0 RSS Reader"},
-         )
-         for entry in feed.entries[:10]:  # Max 10 per source
-             original_title = clean_html(getattr(entry, 'title', ''))
-             original_summary = clean_html(getattr(entry, 'summary', getattr(entry, 'description', '')))
-             link = getattr(entry, 'link', '#')
- 
-             if not original_title:
-                 continue
-             if not is_relevant(original_title, original_summary):
-                 continue
- 
-             title = translate_to_zh_tw(original_title)
-             summary = translate_to_zh_tw(original_summary)
+try:
+    import requests
+except ImportError:
+    import subprocess, sys
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
+    import requests
 
-             item_id = hashlib.md5((source["id"] + original_title).encode()).hexdigest()[:12]
-             items.append({
-                 "id": item_id,
-                 "category": source["category"],
-                 "priority": assess_priority(original_title, original_summary),
-                 "source": source["name"],
-                 "title": title,
-                 "summary": summary[:200] if summary else title,
-                 "link": link,
-                 "time": format_time(entry),
-                 "region": source["region"],
-                 "icon": source["icon"],
-                 "srcClass": source["src_class"],
-                 "catClass": source["cat_class"],
-                 "tags": extract_tags(title, summary),
-             })
- 
-         print(f"     ✓ 获取 {len(items)} 条相关动态")
-     except Exception as e:
-         print(f"     ✗ 失败: {e}")
-     return items
+# 可选翻译依赖（缺失时不影响主流程）
+try:
+    from deep_translator import GoogleTranslator
+except ImportError:
+    GoogleTranslator = None
 
-     
- def extract_tags(title: str, summary: str) -> list:
-     """Extract relevant tags from content."""
-     content = title + " " + summary
-     tag_map = {
+# ===================== RSS 源配置 =====================
+RSS_SOURCES = [
+    # --- 国际组织 ---
+    {
+        "id": "wto",
+        "name": "WTO 世界贸易组织",
+        "url": "https://www.wto.org/library/rss/latest_news_e.xml",
+        "category": "imo",
+        "region": "global",
+        "icon": "🌐",
+        "src_class": "src-imo",
+        "cat_class": "cat-imo-bg",
+    },
+    # --- 美欧贸易 ---
+    {
+        "id": "ustr",
+        "name": "美国贸易代表署",
+        "url": "https://ustr.gov/rss.xml",
+        "category": "us",
+        "region": "america",
+        "icon": "🇺🇸",
+        "src_class": "src-us",
+        "cat_class": "cat-us-bg",
+    },
+    # --- 行业媒体 ---
+    {
+        "id": "lloyds",
+        "name": "Lloyd's List",
+        "url": "https://feeds.feedblitz.com/lloyds-list",
+        "category": "port",
+        "region": "global",
+        "icon": "📰",
+        "src_class": "src-port",
+        "cat_class": "cat-port-bg",
+    },
+    {
+        "id": "splash247",
+        "name": "Splash247 航运新闻",
+        "url": "https://splash247.com/feed/",
+        "category": "imo",
+        "region": "global",
+        "icon": "📰",
+        "src_class": "src-imo",
+        "cat_class": "cat-imo-bg",
+    },
+    {
+        "id": "freightwaves",
+        "name": "FreightWaves",
+        "url": "https://www.freightwaves.com/news/feed",
+        "category": "us",
+        "region": "america",
+        "icon": "📊",
+        "src_class": "src-us",
+        "cat_class": "cat-us-bg",
+    },
+]
+
+# 物流/航运关键词过滤（提高精准度）
+KEYWORDS = [
+    "shipping", "logistics", "port", "customs", "tariff", "trade",
+    "maritime", "freight", "container", "vessel", "cargo", "supply chain",
+    "航运", "物流", "港口", "海关", "关税", "贸易", "集装箱", "供应链",
+    "IMO", "WTO", "RCEP", "sanctions", "制裁", "emission", "排放",
+    "policy", "regulation", "政策", "法规"
+]
+
+PRIORITY_KEYWORDS = {
+    "high": [
+        "sanction", "制裁", "tariff war", "关税战", "ban", "禁令",
+        "emergency", "紧急", "critical", "重大"
+    ],
+    "medium": [
+        "policy", "政策", "regulation", "法规", "update", "更新",
+        "new rule", "新规", "agreement", "协议"
+    ],
+}
+
+_TRANSLATION_CACHE = {}
+_ZH_TW_TRANSLATOR = GoogleTranslator(source="auto", target="zh-TW") if GoogleTranslator else None
+
+
+def clean_html(text: str) -> str:
+    """Remove HTML tags from text."""
+    return re.sub(r"<[^>]+>", "", text or "").strip()
+
+
+def translate_to_zh_tw(text: str) -> str:
+    """Translate text to Traditional Chinese (zh-TW)."""
+    if not text:
+        return text
+    if _ZH_TW_TRANSLATOR is None:
+        return text
+    if text in _TRANSLATION_CACHE:
+        return _TRANSLATION_CACHE[text]
+    try:
+        translated = _ZH_TW_TRANSLATOR.translate(text)
+        result = translated.strip() if translated else text
+    except Exception:
+        result = text
+    _TRANSLATION_CACHE[text] = result
+    return result
+
+
+def assess_priority(title: str, summary: str) -> str:
+    """Assess news priority based on keywords."""
+    content = (title + " " + summary).lower()
+    for kw in PRIORITY_KEYWORDS["high"]:
+        if kw.lower() in content:
+            return "high"
+    for kw in PRIORITY_KEYWORDS["medium"]:
+        if kw.lower() in content:
+            return "medium"
+    return "low"
+
+
+def is_relevant(title: str, summary: str) -> bool:
+    """Check if the article is relevant to logistics/shipping."""
+    content = (title + " " + summary).lower()
+    return any(kw.lower() in content for kw in KEYWORDS)
+
+
+def format_time(entry) -> str:
+    """Format RSS entry published time."""
+    try:
+        if hasattr(entry, "published_parsed") and entry.published_parsed:
+            dt = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
+            delta = datetime.now(timezone.utc) - dt
+            hours = int(delta.total_seconds() // 3600)
+            if hours < 1:
+                return "刚刚"
+            elif hours < 24:
+                return f"{hours}小时前"
+            else:
+                return f"{delta.days}天前"
+    except Exception:
+        pass
+    return "近期"
+
+
+def extract_tags(title: str, summary: str) -> list:
+    """Extract relevant tags from content."""
+    content = title + " " + summary
+    tag_map = {
         "港口": "港口", "port": "港口",
         "关税": "关税", "tariff": "关税",
         "排放": "减排", "emission": "减排", "carbon": "碳减排",
@@ -204,6 +192,51 @@
         if len(tags) >= 3:
             break
     return tags if tags else ["物流政策"]
+
+
+def fetch_source(source: dict) -> list:
+    """Fetch and parse a single RSS source."""
+    items = []
+    try:
+        print(f"  → 抓取: {source['name']} ...")
+        feed = feedparser.parse(
+            source["url"],
+            request_headers={"User-Agent": "LogPulse/1.0 RSS Reader"},
+        )
+        for entry in feed.entries[:10]:  # Max 10 per source
+            original_title = clean_html(getattr(entry, "title", ""))
+            original_summary = clean_html(getattr(entry, "summary", getattr(entry, "description", "")))
+            link = getattr(entry, "link", "#")
+
+            if not original_title:
+                continue
+            if not is_relevant(original_title, original_summary):
+                continue
+
+            title = translate_to_zh_tw(original_title)
+            summary = translate_to_zh_tw(original_summary)
+
+            item_id = hashlib.md5((source["id"] + original_title).encode()).hexdigest()[:12]
+            items.append({
+                "id": item_id,
+                "category": source["category"],
+                "priority": assess_priority(original_title, original_summary),
+                "source": source["name"],
+                "title": title,
+                "summary": summary[:200] if summary else title,
+                "link": link,
+                "time": format_time(entry),
+                "region": source["region"],
+                "icon": source["icon"],
+                "srcClass": source["src_class"],
+                "catClass": source["cat_class"],
+                "tags": extract_tags(title, summary),
+            })
+
+        print(f"     ✓ 获取 {len(items)} 条相关动态")
+    except Exception as e:
+        print(f"     ✗ 失败: {e}")
+    return items
 
 
 def generate_stats(items: list) -> dict:
@@ -232,6 +265,7 @@ def main():
     print("🚢 LogPulse RSS 抓取器启动")
     print(f"   时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"   信息源: {len(RSS_SOURCES)} 个")
+    print(f"   翻译: {'已启用 (zh-TW)' if _ZH_TW_TRANSLATOR else '未启用 (缺少 deep-translator)'}")
     print("=" * 50)
 
     all_items = []
@@ -247,7 +281,7 @@ def main():
             seen.add(item["id"])
             unique_items.append(item)
 
-    # Sort: high priority first, then by time
+    # Sort: high priority first
     priority_order = {"high": 0, "medium": 1, "low": 2}
     unique_items.sort(key=lambda x: priority_order.get(x["priority"], 2))
 
@@ -273,6 +307,7 @@ def main():
     print(f"   高风险: {output['stats']['high_risk']} 条")
     print(f"   输出: {out_file}")
     print("=" * 50)
+
 
 if __name__ == "__main__":
     main()
