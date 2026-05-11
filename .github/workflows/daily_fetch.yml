@@ -14,26 +14,30 @@ on:
         default: 'false'
 
 permissions:
-  contents: write   # 允许推送 JSON 数据到仓库
-  pages: write      # 允许部署 GitHub Pages
+  contents: write
+  pages: write
   id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   fetch-and-deploy:
-    name: 抓取 RSS 并部署看板
+    name: 抓取 RSS 并生成看板
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
     steps:
       # 1. Checkout
       - name: 📥 检出代码
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 1
 
       # 2. Python 环境
       - name: 🐍 设置 Python 3.11
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
           cache: 'pip'
@@ -42,71 +46,106 @@ jobs:
       - name: 📦 安装依赖
         run: |
           python -m pip install --upgrade pip
-          pip install feedparser requests
 
-      # 4. 运行抓取脚本
+          # 推荐使用 requirements.txt
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          else
+            pip install feedparser==6.0.11 requests==2.32.3
+          fi
+
+      # 4. 抓取 RSS
       - name: 🔍 抓取全球物流政策 RSS
         run: |
           python scripts/fetch_rss.py
         env:
           PYTHONIOENCODING: utf-8
 
-      # 5. 调试输出（可选）
+      # 5. 调试输出
       - name: 📊 查看抓取结果摘要
         if: always()
         run: |
           echo "=== 数据文件大小 ==="
           ls -lh data/news.json || echo "文件不存在"
+
           echo ""
           echo "=== 抓取统计 ==="
-          python -c "
-          import json
-          with open('data/news.json') as f:
-              d = json.load(f)
-          s = d['stats']
-          print(f'总动态: {s[\"total\"]} 条')
-          print(f'高风险: {s[\"high_risk\"]} 条')
-          print(f'港口政策: {s[\"by_category\"][\"port\"]} 条')
-          print(f'IMO/WTO: {s[\"by_category\"][\"imo\"]} 条')
-          print(f'中国: {s[\"by_category\"][\"china\"]} 条')
-          print(f'美欧: {s[\"by_category\"][\"us\"]} 条')
-          print(f'更新时间: {d[\"generated_at\"]}')
-          " || echo "解析失败"
 
-      # 6. 提交数据变更
+          python - <<EOF
+          import json
+
+          with open('data/news.json', encoding='utf-8') as f:
+              d = json.load(f)
+
+          s = d.get('stats', {})
+
+          print(f"总动态: {s.get('total', 0)} 条")
+          print(f"高风险: {s.get('high_risk', 0)} 条")
+          print(f"港口政策: {s.get('by_category', {}).get('port', 0)} 条")
+          print(f"IMO/WTO: {s.get('by_category', {}).get('imo', 0)} 条")
+          print(f"中国: {s.get('by_category', {}).get('china', 0)} 条")
+          print(f"美欧: {s.get('by_category', {}).get('us', 0)} 条")
+          print(f"更新时间: {d.get('generated_at', 'unknown')}")
+          EOF
+
+      # 6. 提交 JSON 数据
       - name: 💾 提交 JSON 数据到仓库
         run: |
           git config user.name "LogPulse Bot"
           git config user.email "logpulse-bot@github-actions"
+
           git add data/news.json
+
           git diff --staged --quiet || git commit -m "🚢 自动更新: $(date +'%Y-%m-%d %H:%M') UTC 物流情报数据"
+
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 7. 部署 GitHub Pages
-      - name: 🌐 部署到 GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      # 7. 上传 GitHub Pages Artifact
+      - name: 📤 上传 Pages Artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          exclude_assets: '.github,scripts,README.md,*.py'
-          commit_message: '🚀 自动部署看板: ${{ github.run_number }}'
+          path: .
+
+  deploy:
+    name: 🌐 部署 GitHub Pages
+    needs: fetch-and-deploy
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: 🚀 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
   notify-on-failure:
     name: 失败通知
     runs-on: ubuntu-latest
-    needs: fetch-and-deploy
+
+    needs:
+      - fetch-and-deploy
+      - deploy
+
     if: failure()
+
     steps:
       - name: ❌ 创建 Issue 记录失败
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: `🚨 LogPulse 抓取失败 - ${new Date().toISOString().slice(0,10)}`,
-              body: `自动抓取任务失败。\n\n**运行链接**: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}\n\n请检查 RSS 源配置或网络连接。`,
+              body: `自动抓取任务失败。
+
+            运行链接：
+            ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}
+
+            请检查 RSS 源配置、网络连接或 GitHub Pages 部署状态。`,
               labels: ['bug', 'automation']
             })
