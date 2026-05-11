@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-10T08:27:17.463232+00:00",
+  "generated_at": "2026-05-11T04:28:45.895254+00:00",
   "stats": {
-    "total": 29,
-    "high_risk": 1,
+    "total": 45,
+    "high_risk": 3,
     "by_category": {
-      "port": 0,
-      "imo": 10,
+      "port": 6,
+      "imo": 20,
       "china": 0,
       "us": 19
     },
@@ -13,11 +13,46 @@
       "asia": 0,
       "europe": 0,
       "america": 19,
-      "global": 10
+      "global": 26
     },
-    "sources_count": 12
+    "sources_count": 5
   },
   "items": [
+    {
+      "id": "ad7e20a3a160",
+      "category": "imo",
+      "priority": "high",
+      "source": "WTO 世界贸易组织",
+      "title": "Transparency on subsidies remains central focus of SCM Committee",
+      "summary": "At regular and special meetings of the Committee on Subsidies and Countervailing Measures (SCM) on 30 April 2026, improving transparency through the timely and complete submission of subsidy notificat",
+      "link": "https://www.wto.org/english/news_e/news26_e/scm_30apr26_383_e.htm",
+      "time": "11天前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "港口"
+      ]
+    },
+    {
+      "id": "21877ed9551c",
+      "category": "port",
+      "priority": "high",
+      "source": "Lloyd's List",
+      "title": "DP World gets Laem Chabang extension",
+      "summary": "Thailand’s largest deepwater container port continues to play a more important role as inter-Asian trade increases\n&#160;&#160;&#160;&#160;&nbsp;Related StoriesDaily Briefing 11 May 2026US disables tw",
+      "link": "https://www.lloydslist.com/LL1157116/DP%20World%20gets%20Laem%20Chabang%20extension?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
+      "time": "2天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-port",
+      "catClass": "cat-port-bg",
+      "tags": [
+        "港口",
+        "集装箱"
+      ]
+    },
     {
       "id": "0b07657d30bb",
       "category": "us",
@@ -26,13 +61,66 @@
       "title": "Exclusive: Central Freight Lines to shut down after 96 years",
       "summary": "A source familiar with the 96-year-old company said he is unsure whether CFL will file Chapter 7 or “liquidate outside of bankruptcy,” but that the LTL carrier has no plans to reorganize.\nThe post Exc",
       "link": "https://www.freightwaves.com/news/exclusive-central-freight-lines-to-shut-down-after-96-years",
-      "time": "1608天前",
+      "time": "1609天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
       "catClass": "cat-us-bg",
       "tags": [
         "物流政策"
+      ]
+    },
+    {
+      "id": "2e3d92989fd7",
+      "category": "imo",
+      "priority": "medium",
+      "source": "WTO 世界贸易组织",
+      "title": "Trade Policy Review: Belize",
+      "summary": "The fourth review of the trade policies and practices of Belize takes place on 4 and 6 May 2026. The basis for the review is a report by the WTO Secretariat and a report by the Government of Belize.",
+      "link": "https://www.wto.org/english/tratop_e/tpr_e/tpr_blz_04may26_e.htm",
+      "time": "7天前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "港口",
+        "WTO"
+      ]
+    },
+    {
+      "id": "5d63d3d04705",
+      "category": "imo",
+      "priority": "medium",
+      "source": "WTO 世界贸易组织",
+      "title": "Members adopt rules of procedure at first Fisheries Subsidies Committee meeting",
+      "summary": "WTO members held the first regular meeting of the Committee on Fisheries Subsidies on 1 May 2026, marking a milestone in the implementation of the Agreement on Fisheries Subsidies. They approved vario",
+      "link": "https://www.wto.org/english/news_e/news26_e/fish_01may26_382_e.htm",
+      "time": "10天前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "WTO"
+      ]
+    },
+    {
+      "id": "b25248967f94",
+      "category": "imo",
+      "priority": "medium",
+      "source": "WTO 世界贸易组织",
+      "title": "Members review notifications, anti-dumping actions at regular spring meeting of Committee",
+      "summary": "The WTO’s Committee on Anti-Dumping Practices met on 28 April 2026 to review members’ latest notifications of new, amended or previously reviewed anti-dumping laws and regulations as well as reports o",
+      "link": "https://www.wto.org/english/news_e/news26_e/anti_28apr26_381_e.htm",
+      "time": "13天前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "港口",
+        "WTO"
       ]
     },
     {
@@ -43,7 +131,7 @@
       "title": "Definitive Countervailing Duties on New Battery Electric Vehicles from China",
       "summary": "Definitive Countervailing Duties on New Battery Electric Vehicles from China\n\n            On November 4, 2024, China requested consultations with the European Union with respect to the definitive coun",
       "link": "https://ustr.gov/node/14325",
-      "time": "5天前",
+      "time": "6天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -60,7 +148,7 @@
       "title": "Ambassador Greer at the Silverado Policy Accelerator Summit",
       "summary": "Ambassador Greer at the Silverado Policy Accelerator Summit\nmyarbrough\nFri, 05/01/2026 - 17:39\n\n\n            WASHINGTON – Yesterday, Ambassador Jamieson Greer participated in a fireside chat at the Si",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/may/ambassador-greer-silverado-policy-accelerator-summit",
-      "time": "8天前",
+      "time": "9天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -78,7 +166,7 @@
       "title": "USTR Releases 2026 Special 301 Report on Intellectual Property Protection and Enforcement",
       "summary": "USTR Releases 2026 Special 301 Report on Intellectual Property Protection and Enforcement\nmyarbrough\nThu, 04/30/2026 - 14:26\n\n\n            WASHINGTON&nbsp;—&nbsp;Today, the Office of the United States",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/april/ustr-releases-2026-special-301-report-intellectual-property-protection-and-enforcement",
-      "time": "9天前",
+      "time": "10天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -96,7 +184,7 @@
       "title": "Julie Callahan",
       "summary": "Julie Callahan\njgaertner\nWed, 04/29/2026 - 18:47\n\n\n  \n    Leadership Title\n              Deputy United States Trade Representative\n          \n\n  \n    Leadership Bio\n              Ambassador Julie Call",
       "link": "https://ustr.gov/node/14320",
-      "time": "10天前",
+      "time": "11天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -114,7 +202,7 @@
       "title": "Rick Switzer",
       "summary": "Rick Switzer\njgaertner\nWed, 04/29/2026 - 18:46\n\n\n  \n    Leadership Title\n              Deputy United States Trade Representative\n          \n\n  \n    Leadership Bio\n              Ambassador Rick Switzer",
       "link": "https://ustr.gov/node/14319",
-      "time": "10天前",
+      "time": "11天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -131,13 +219,133 @@
       "title": "Jennifer Thornton",
       "summary": "Jennifer Thornton\njgaertner\nWed, 04/29/2026 - 18:41\n\n\n  \n    Leadership Title\n              General Counsel\n          \n\n  \n    Leadership Bio\n              General Counsel Jennifer Thornton advises Am",
       "link": "https://ustr.gov/node/14317",
-      "time": "10天前",
+      "time": "11天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
       "catClass": "cat-us-bg",
       "tags": [
         "物流政策"
+      ]
+    },
+    {
+      "id": "19c35adadee7",
+      "category": "port",
+      "priority": "medium",
+      "source": "Lloyd's List",
+      "title": "Middle East port update: Friday, May 8",
+      "summary": "Qatar, Kuwait, Oman, Saudi Arabia and Bahrain report all ports fully operational\n&#160;&#160;&#160;&#160;&nbsp;Related StoriesDaily Briefing 11 May 2026US disables two Iranian tankers violating blocka",
+      "link": "https://www.lloydslist.com/LL1157118/Middle%20East%20port%20update%20Friday%20May%208?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
+      "time": "2天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-port",
+      "catClass": "cat-port-bg",
+      "tags": [
+        "港口"
+      ]
+    },
+    {
+      "id": "2a0c53210f79",
+      "category": "imo",
+      "priority": "low",
+      "source": "WTO 世界贸易组织",
+      "title": "General Council chair outlines next steps to build on momentum from MC14 negotiations",
+      "summary": "At the first meeting of the General Council since the 14th Ministerial Conference (MC14), the newly elected Chairperson, Ambassador Clare Kelly (New Zealand), reported on her consultations with member",
+      "link": "https://www.wto.org/english/news_e/news26_e/gc_06may26_386_e.htm",
+      "time": "5天前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "港口"
+      ]
+    },
+    {
+      "id": "44c71b4f75ed",
+      "category": "imo",
+      "priority": "low",
+      "source": "WTO 世界贸易组织",
+      "title": "United States notifies import surcharges, ready for WTO consultations",
+      "summary": "At a meeting of the Committee on Balance-of-Payments Restrictions held on 5 May, WTO members discussed the United States’ new notification regarding the imposition of import surcharges to address the ",
+      "link": "https://www.wto.org/english/news_e/news26_e/bop_05may26_385_e.htm",
+      "time": "6天前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "港口",
+        "WTO"
+      ]
+    },
+    {
+      "id": "ff1ba7aded87",
+      "category": "imo",
+      "priority": "low",
+      "source": "WTO 世界贸易组织",
+      "title": "WTO members discuss action plan for cotton sector after MC14, World Cotton Day 2026",
+      "summary": "WTO members reviewed global cotton market trends and the path ahead for the cotton sector at meetings in Geneva on 4 May. The meetings follow the high-level cotton event at the 14th WTO Ministerial Co",
+      "link": "https://www.wto.org/english/news_e/news26_e/cott_04may26_384_e.htm",
+      "time": "7天前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "WTO"
+      ]
+    },
+    {
+      "id": "faecf3c849d4",
+      "category": "imo",
+      "priority": "low",
+      "source": "WTO 世界贸易组织",
+      "title": "WTO opens online registration for 2026 Public Forum, launches call for proposals",
+      "summary": "The WTO has opened online registration for this year’s Public Forum, titled Powering the Future, which will take place at the WTO premises in Geneva from 15 to 17 September. It has also launched a cal",
+      "link": "https://www.wto.org/english/news_e/news26_e/pfor_30apr26_370_e.htm",
+      "time": "11天前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "WTO"
+      ]
+    },
+    {
+      "id": "12a684ba33d9",
+      "category": "imo",
+      "priority": "low",
+      "source": "WTO 世界贸易组织",
+      "title": "Canada commits CAD 500,000 to strengthen food safety and plant and animal health capacity",
+      "summary": "Canada is providing CAD 500,000 (approximately CHF 286,000) to the Standards and Trade Development Facility (STDF) to strengthen sanitary and phytosanitary (SPS) capacity of public and private sector ",
+      "link": "https://www.wto.org/english/news_e/news26_e/sps_28apr26_378_e.htm",
+      "time": "13天前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "港口"
+      ]
+    },
+    {
+      "id": "4cee2f6a9f99",
+      "category": "imo",
+      "priority": "low",
+      "source": "WTO 世界贸易组织",
+      "title": "WTO members review safeguard actions, exchange views on measures affecting steel products",
+      "summary": "At a meeting on 27 April, the WTO Committee on Safeguards reviewed safeguard actions covering 38 products, 12 of which were steel/metal products. These actions were notified by members since the Commi",
+      "link": "https://www.wto.org/english/news_e/news26_e/safe_27apr26_380_e.htm",
+      "time": "14天前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "WTO"
       ]
     },
     {
@@ -148,7 +356,7 @@
       "title": "Weekly Trade Focus: APEC",
       "summary": "Weekly Trade Focus: APEC\n\n            Every week, the USTR website will explore a new trade topic, with background information and current trade data. On July 21 and 22, U.S. Trade Representative Ron ",
       "link": "https://ustr.gov/about-us/policy-offices/press-office/blog/weekly-trade-focus-apec",
-      "time": "6137天前",
+      "time": "6138天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -165,7 +373,7 @@
       "title": "Public Hearings Regarding Section 301 Investigations Relating to Structural Excess Capacity",
       "summary": "Public Hearings Regarding Section 301 Investigations Relating to Structural Excess Capacity\nmyarbrough\nMon, 05/04/2026 - 09:54\n\n\n            WASHINGTON – The Office of the United States Trade Represen",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/may/public-hearings-regarding-section-301-investigations-relating-structural-excess-capacity",
-      "time": "5天前",
+      "time": "6天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -182,13 +390,98 @@
       "title": "Joseph Barloon",
       "summary": "Joseph Barloon\njgaertner\nWed, 04/29/2026 - 18:44\n\n\n  \n    Leadership Title\n              Deputy United States Trade Representative\n          \n\n  \n    Leadership Bio\n              Ambassador Joseph Bar",
       "link": "https://ustr.gov/node/14318",
-      "time": "10天前",
+      "time": "11天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
       "catClass": "cat-us-bg",
       "tags": [
         "WTO"
+      ]
+    },
+    {
+      "id": "8702f25753f6",
+      "category": "port",
+      "priority": "low",
+      "source": "Lloyd's List",
+      "title": "Crisis-driven tanker demand propels Panama Canal to multiyear high",
+      "summary": "The Panama Canal has emerged as one of the biggest beneficiaries of the Strait of Hormuz crisis. The canal’s numbers...\n&#160;&#160;&#160;&#160;&nbsp;Related StoriesThe BDI has crossed the 3,000-point",
+      "link": "https://www.lloydslist.com/LL1157125/Crisis-driven%20tanker%20demand%20propels%20Panama%20Canal%20to%20multiyear%20high?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
+      "time": "2天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-port",
+      "catClass": "cat-port-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "2c995707e2c1",
+      "category": "port",
+      "priority": "low",
+      "source": "Lloyd's List",
+      "title": "The BDI has crossed the 3,000-point threshold — and owners are bullish for more",
+      "summary": "Dry bulk has flown under the radar amid huge tanker rallies, but the sector is putting together a successful start...\n&#160;&#160;&#160;&#160;&nbsp;Related StoriesCrisis-driven tanker demand propels P",
+      "link": "https://www.lloydslist.com/LL1157120/The%20BDI%20has%20crossed%20the%203000point%20threshold%20%20and%20owners%20are%20bullish%20for%20more?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
+      "time": "2天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-port",
+      "catClass": "cat-port-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "4408a42395df",
+      "category": "port",
+      "priority": "low",
+      "source": "Lloyd's List",
+      "title": "Beijing confirms Chinese crew on vessel attacked near Strait of Hormuz",
+      "summary": "Chinese foreign ministry expresses ‘deep concern’ over stranded vessels as it confirms Chinese crew on attacked tanker\n&#160;&#160;&#160;&#160;&nbsp;Related StoriesDaily Briefing 11 May 2026US disable",
+      "link": "https://www.lloydslist.com/LL1157117/Beijing%20confirms%20Chinese%20crew%20on%20vessel%20attacked%20near%20Strait%20of%20Hormuz?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
+      "time": "2天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-port",
+      "catClass": "cat-port-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "ebdc4c2b5274",
+      "category": "port",
+      "priority": "low",
+      "source": "Lloyd's List",
+      "title": "Strong demand for modern bulk carriers pushes up secondhand prices across most segments",
+      "summary": "Constraints on bulk carrier shipbuilding capacity have shifted buyer interest toward the secondhand market\n&#160;&#160;&#160;&#160;&nbsp;Related StoriesCrisis-driven tanker demand propels Panama Canal",
+      "link": "https://www.lloydslist.com/LL1157097/Strong%20demand%20for%20modern%20bulk%20carriers%20pushes%20up%20secondhand%20prices%20across%20most%20segments?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
+      "time": "2天前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-port",
+      "catClass": "cat-port-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "7d9bffcb68aa",
+      "category": "imo",
+      "priority": "low",
+      "source": "Splash247 航运新闻",
+      "title": "Carbon costs, fuel choices and uncertainty shape Geneva Dry debate",
+      "summary": "The dry bulk sector’s decarbonisation debate has moved decisively beyond whether shipping will reach net zero and is now centred on how the industry can make the transition work commercially in an inc",
+      "link": "https://splash247.com/carbon-costs-fuel-choices-and-uncertainty-shape-geneva-dry-debate/",
+      "time": "刚刚",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-imo",
+      "catClass": "cat-imo-bg",
+      "tags": [
+        "碳减排"
       ]
     },
     {
@@ -303,7 +596,7 @@
       "title": "Crew welfare data map launched",
       "summary": "The Sustainable Shipping Initiative (SSI) has released the first integrated, industry-wide mapping of crew welfare, wellbeing and safety data in shipping, funded by the Lloyd&#8217;s Register Foundati",
       "link": "https://splash247.com/crew-welfare-data-map-launched/",
-      "time": "2天前",
+      "time": "3天前",
       "region": "global",
       "icon": "📰",
       "srcClass": "src-imo",
@@ -320,7 +613,7 @@
       "title": "Decisions by many, responsibility by one",
       "summary": "Why authority and accountability no longer align in modern shipping. By Sunil Kapoor. A 20-year-old ship is often judged by her age. In reality, age matters far less than how a vessel has been maintai",
       "link": "https://splash247.com/decisions-by-many-responsibility-by-one/",
-      "time": "2天前",
+      "time": "3天前",
       "region": "global",
       "icon": "📰",
       "srcClass": "src-imo",
@@ -337,30 +630,13 @@
       "title": "Maersk Supply Services brand disappears in Brazil as Navvik launches",
       "summary": "A new offshore vessel operator has emerged in Brazil following the sale and rebranding of the former Maersk Supply Service business in the country. The operation, previously known as Maersk Supply Ser",
       "link": "https://splash247.com/maersk-supply-services-brand-disappears-in-brazil-as-navvik-launches/",
-      "time": "2天前",
+      "time": "3天前",
       "region": "global",
       "icon": "📰",
       "srcClass": "src-imo",
       "catClass": "cat-imo-bg",
       "tags": [
         "物流政策"
-      ]
-    },
-    {
-      "id": "449c10a275ae",
-      "category": "imo",
-      "priority": "low",
-      "source": "Splash247 航运新闻",
-      "title": "BW Offshore secures firmer timeline for UK North Sea FPSO",
-      "summary": "Floater specialist BW Offshore has revised the contract structure for the FPSO BW Catcher in the UK North Sea, securing firmer cash flow visibility through the end of the decade while opening the door",
-      "link": "https://splash247.com/bw-offshore-secures-firmer-timeline-for-uk-north-sea-fpso/",
-      "time": "2天前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-imo",
-      "catClass": "cat-imo-bg",
-      "tags": [
-        "港口"
       ]
     },
     {
@@ -371,7 +647,7 @@
       "title": "The ‘ingenious strategy’ behind most truckers’ least favorite week of the year: International Roadcheck",
       "summary": "Inspection blitzes frustrate truck drivers. But economists found that the International Roadcheck Week boosts overall road safety.\nThe post The &#8216;ingenious strategy&#8217; behind most truckers&#8",
       "link": "https://www.freightwaves.com/news/the-ingenious-strategy-behind-most-truck-drivers-least-favorite-week-of-the-year",
-      "time": "1453天前",
+      "time": "1454天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -388,7 +664,7 @@
       "title": "Why the Northeast is quietly running out of diesel",
       "summary": "Diesel inventories on the East Coast are at record lows. Truckers are spooked by the vanishing stocks and soaring rates.\nThe post Why the Northeast is quietly running out of diesel appeared first on F",
       "link": "https://www.freightwaves.com/news/why-the-northeast-is-quietly-running-out-of-diesel",
-      "time": "1458天前",
+      "time": "1459天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -405,7 +681,7 @@
       "title": "Warehouse cramming is about to begin — Freightonomics",
       "summary": "On this episode of Freightonomics, Zach Strickland and Anthony Smith talk about the need to cram for warehouse space with Zac Rogers from Colorado State University. \nThe post Warehouse cramming is abo",
       "link": "https://www.freightwaves.com/news/warehouse-cramming-is-about-to-begin-freightonomics",
-      "time": "1731天前",
+      "time": "1732天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -422,7 +698,7 @@
       "title": "Seasonality pushing rejections and rates higher ahead of the Fourth",
       "summary": "This week’s DHL Supply Chain Pricing Power Index: 75 (Carriers) Last week’s DHL Supply Chain Pricing Power Index: 70 (Carriers)&#160; Three-month DHL Supply Chain Pricing Power Index Outlook: 70 (Carr",
       "link": "https://www.freightwaves.com/news/seasonality-pushing-rejections-and-rates-higher-ahead-of-the-fourth",
-      "time": "1777天前",
+      "time": "1778天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -439,13 +715,30 @@
       "title": "Project44 acquires ClearMetal to strengthen predictive tools",
       "summary": "“Their team construct is fundamentally different. When you look at their data science, machine learning and computer science background, they are best in class.”\nThe post Project44 acquires ClearMetal",
       "link": "https://www.freightwaves.com/news/project44-acquires-clearmetal-to-strengthen-predictive-tools",
-      "time": "1808天前",
+      "time": "1809天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
       "catClass": "cat-us-bg",
       "tags": [
         "物流政策"
+      ]
+    },
+    {
+      "id": "c85eba27689b",
+      "category": "us",
+      "priority": "low",
+      "source": "FreightWaves",
+      "title": "Borderlands Mexico: Trade, trucking dominate Port of Eagle Pass annual summit",
+      "summary": "This week in Borderlands Mexico: Trade, trucking dominate Port of Eagle Pass annual summit; Avant Technology receives Texas grant for Pharr factory expansion; and SEG Solar to build 4 GW solar module ",
+      "link": "https://www.freightwaves.com/news/borderlands-mexico-trade-trucking-dominate-port-of-eagle-pass-annual-summit",
+      "time": "17小时前",
+      "region": "america",
+      "icon": "📊",
+      "srcClass": "src-us",
+      "catClass": "cat-us-bg",
+      "tags": [
+        "港口"
       ]
     },
     {
@@ -456,7 +749,7 @@
       "title": "What Roadcheck week means for the freight market",
       "summary": "Trucking is about to encounter its next biggest seasonal disruptor of the year in the form of increased inspection rates. What does that mean for the already tight market?\nThe post What Roadcheck week",
       "link": "https://www.freightwaves.com/news/what-roadcheck-week-means-for-freight-market",
-      "time": "7小时前",
+      "time": "1天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -473,7 +766,7 @@
       "title": "US Postal Service reduces operating loss to $642M",
       "summary": "The U.S. Postal Service made strides in the second quarter reducing heavy losses, but has a long way to go to become profitable. \nThe post US Postal Service reduces operating loss to $642M appeared fi",
       "link": "https://www.freightwaves.com/news/us-postal-service-reduces-operating-loss-to-642m",
-      "time": "1天前",
+      "time": "2天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
@@ -490,31 +783,13 @@
       "title": "SONAR Sitrep: Fleet safety behind the curb post-freight recession",
       "summary": "As the freight cycle recovers and utilization rises, the industry is confronting a massive accumulation of deferred maintenance from the prolonged freight recession of 2022–2026.\nThe post SONAR Sitrep",
       "link": "https://www.freightwaves.com/news/sonar-sitrep-fleet-maintenance-behind-the-curb-post-freight-recession",
-      "time": "1天前",
+      "time": "2天前",
       "region": "america",
       "icon": "📊",
       "srcClass": "src-us",
       "catClass": "cat-us-bg",
       "tags": [
         "物流政策"
-      ]
-    },
-    {
-      "id": "a3dc7040810f",
-      "category": "us",
-      "priority": "low",
-      "source": "FreightWaves",
-      "title": "Tariff uncertainty deepens for shippers after new court ruling against Trump",
-      "summary": "The Trump administration’s trade agenda is facing mounting legal and political pressure from importers, the European Union and automakers.\nThe post Tariff uncertainty deepens for shippers after new co",
-      "link": "https://www.freightwaves.com/news/tariff-uncertainty-deepens-for-shippers-after-new-court-ruling-against-trump",
-      "time": "1天前",
-      "region": "america",
-      "icon": "📊",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
-      "tags": [
-        "港口",
-        "关税"
       ]
     }
   ]
