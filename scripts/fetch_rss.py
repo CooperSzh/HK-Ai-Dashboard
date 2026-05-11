@@ -1,9 +1,3 @@
-diff --git a/scripts/fetch_rss.py b/scripts/fetch_rss.py
-index da10408a46eb2c50813afd21ac98366530485277..5cc5b00a6526a73a5e70d6fbc888fc6bc1e45bcf 100644
---- a/scripts/fetch_rss.py
-+++ b/scripts/fetch_rss.py
-@@ -5,50 +5,57 @@ LogPulse RSS Fetcher
- 自动抓取 IMO / WTO / 中国海关 / 美欧贸易 / 主要港口 政策新闻
  """
  
  import json
@@ -27,14 +21,13 @@ index da10408a46eb2c50813afd21ac98366530485277..5cc5b00a6526a73a5e70d6fbc888fc6b
      import subprocess, sys
      subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
      import requests
- 
-+try:
-+    from deep_translator import GoogleTranslator
-+except ImportError:
-+    import subprocess, sys
-+    subprocess.check_call([sys.executable, "-m", "pip", "install", "deep-translator"])
-+    from deep_translator import GoogleTranslator
-+
+ try:
+     from deep_translator import GoogleTranslator
+ except ImportError:
+     import subprocess, sys
+     subprocess.check_call([sys.executable, "-m", "pip", "install", "deep-translator"])
+     from deep_translator import GoogleTranslator
+
  # ===================== RSS 源配置 =====================
  RSS_SOURCES = [
      # --- 国际组织 ---
@@ -50,7 +43,7 @@ index da10408a46eb2c50813afd21ac98366530485277..5cc5b00a6526a73a5e70d6fbc888fc6b
      },
      # --- 中国政策 ---
      # "name": "中国海关总署"
-     #"name": "中国商务部",
+     # "name": "中国商务部",
      # --- 美欧贸易 ---
      {
          "id": "ustr",
@@ -60,7 +53,7 @@ index da10408a46eb2c50813afd21ac98366530485277..5cc5b00a6526a73a5e70d6fbc888fc6b
          "region": "america",
          "icon": "🇺🇸",
          "src_class": "src-us",
-@@ -84,116 +91,137 @@ RSS_SOURCES = [
+ RSS_SOURCES = [
          "url": "https://www.freightwaves.com/news/feed",
          "category": "us",
          "region": "america",
@@ -70,7 +63,7 @@ index da10408a46eb2c50813afd21ac98366530485277..5cc5b00a6526a73a5e70d6fbc888fc6b
      },
  ]
  
- # 物流/航运关键词过滤（提高精准度）
+ #物流/航运关键词过滤（提高精准度）
  KEYWORDS = [
      "shipping", "logistics", "port", "customs", "tariff", "trade",
      "maritime", "freight", "container", "vessel", "cargo", "supply chain",
@@ -86,30 +79,30 @@ index da10408a46eb2c50813afd21ac98366530485277..5cc5b00a6526a73a5e70d6fbc888fc6b
                 "new rule", "新规", "agreement", "协议"],
  }
  
-+_TRANSLATION_CACHE = {}
-+_ZH_TW_TRANSLATOR = GoogleTranslator(source="auto", target="zh-TW")
-+
+ _TRANSLATION_CACHE = {}
+ _ZH_TW_TRANSLATOR = GoogleTranslator(source="auto", target="zh-TW")
+
  
  def clean_html(text: str) -> str:
      """Remove HTML tags from text."""
      return re.sub(r'<[^>]+>', '', text or '').strip()
  
  
-+def translate_to_zh_tw(text: str) -> str:
-+    """Translate text to Traditional Chinese (zh-TW)."""
-+    if not text:
-+        return text
-+    if text in _TRANSLATION_CACHE:
-+        return _TRANSLATION_CACHE[text]
-+    try:
-+        translated = _ZH_TW_TRANSLATOR.translate(text)
-+        result = translated.strip() if translated else text
-+    except Exception:
-+        result = text
-+    _TRANSLATION_CACHE[text] = result
-+    return result
-+
-+
+ def translate_to_zh_tw(text: str) -> str:
+     """Translate text to Traditional Chinese (zh-TW)."""
+     if not text:
+         return text
+     if text in _TRANSLATION_CACHE:
+         return _TRANSLATION_CACHE[text]
+     try:
+         translated = _ZH_TW_TRANSLATOR.translate(text)
+         result = translated.strip() if translated else text
+     except Exception:
+         result = text
+     _TRANSLATION_CACHE[text] = result
+     return result
+ 
+
  def assess_priority(title: str, summary: str) -> str:
      """Assess news priority based on keywords."""
      content = (title + " " + summary).lower()
@@ -156,29 +149,23 @@ index da10408a46eb2c50813afd21ac98366530485277..5cc5b00a6526a73a5e70d6fbc888fc6b
              request_headers={"User-Agent": "LogPulse/1.0 RSS Reader"},
          )
          for entry in feed.entries[:10]:  # Max 10 per source
--            title = clean_html(getattr(entry, 'title', ''))
--            summary = clean_html(getattr(entry, 'summary', getattr(entry, 'description', '')))
-+            original_title = clean_html(getattr(entry, 'title', ''))
-+            original_summary = clean_html(getattr(entry, 'summary', getattr(entry, 'description', '')))
+             original_title = clean_html(getattr(entry, 'title', ''))
+             original_summary = clean_html(getattr(entry, 'summary', getattr(entry, 'description', '')))
              link = getattr(entry, 'link', '#')
  
--            if not title:
-+            if not original_title:
+             if not original_title:
                  continue
--            if not is_relevant(title, summary):
-+            if not is_relevant(original_title, original_summary):
+             if not is_relevant(original_title, original_summary):
                  continue
  
--            item_id = hashlib.md5((source["id"] + title).encode()).hexdigest()[:12]
-+            title = translate_to_zh_tw(original_title)
-+            summary = translate_to_zh_tw(original_summary)
-+
-+            item_id = hashlib.md5((source["id"] + original_title).encode()).hexdigest()[:12]
+             title = translate_to_zh_tw(original_title)
+             summary = translate_to_zh_tw(original_summary)
+
+             item_id = hashlib.md5((source["id"] + original_title).encode()).hexdigest()[:12]
              items.append({
                  "id": item_id,
                  "category": source["category"],
--                "priority": assess_priority(title, summary),
-+                "priority": assess_priority(original_title, original_summary),
+                 "priority": assess_priority(original_title, original_summary),
                  "source": source["name"],
                  "title": title,
                  "summary": summary[:200] if summary else title,
@@ -287,7 +274,6 @@ def main():
     print(f"   高风险: {output['stats']['high_risk']} 条")
     print(f"   输出: {out_file}")
     print("=" * 50)
-
 
 if __name__ == "__main__":
     main()
