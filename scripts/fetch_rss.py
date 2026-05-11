@@ -1,3 +1,4 @@
+- name: AI-Dashboard
  import json
  import hashlib
  import os
