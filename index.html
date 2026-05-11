@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LogPulse — 全球物流政策情报</title>
+<title>LogPulse — 香港物流政策情報洞察</title>
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -103,13 +103,13 @@ function App() {
       .then(d => { setData(d); setLoading(false); })
       .catch(e => { setError(e.toString()); setLoading(false); });
   }, []);
-  if (loading) return <div className="loading-screen"><div style={{fontSize:'48px'}}>⏳</div><div>正在加载数据...</div></div>;
-  if (error || !data) return <div className="error-screen"><div style={{fontSize:'48px'}}>⚠️</div><div style={{fontFamily:'Crimson Pro, serif',fontSize:'24px',fontWeight:700}}>数据加载失败</div><div style={{color:'var(--text-mid)',fontSize:'14px'}}>请确保 data/news.json 存在，运行 python scripts/fetch_rss.py</div><div style={{fontFamily:'JetBrains Mono, monospace',fontSize:'12px',color:'var(--text-light)',background:'var(--bg)',padding:'12px',border:'1px solid var(--border)'}}>错误: {error}</div></div>;
+  if (loading) return <div className="loading-screen"><div style={{fontSize:'48px'}}>⏳</div><div>正在加載數據...</div></div>;
+  if (error || !data) return <div className="error-screen"><div style={{fontSize:'48px'}}>⚠️</div><div style={{fontFamily:'Crimson Pro, serif',fontSize:'24px',fontWeight:700}}>數據加載失敗</div><div style={{color:'var(--text-mid)',fontSize:'14px'}}>请确保 data/news.json 存在，运行 python scripts/fetch_rss.py</div><div style={{fontFamily:'JetBrains Mono, monospace',fontSize:'12px',color:'var(--text-light)',background:'var(--bg)',padding:'12px',border:'1px solid var(--border)'}}>错误: {error}</div></div>;
   const filtered = filter === 'all' ? data.items : data.items.filter(i => i.category === filter);
   const alerts = data.items.filter(i => i.priority === 'high' || i.priority === 'medium').slice(0,4);
   const regions = [
-    {id:'asia',name:'亚太',flag:'🌏',count:data.stats.by_region.asia||0,max:40},
-    {id:'europe',name:'欧洲',flag:'🌍',count:data.stats.by_region.europe||0,max:28},
+    {id:'asia',name:'亞太',flag:'🌏',count:data.stats.by_region.asia||0,max:40},
+    {id:'europe',name:'歐洲',flag:'🌍',count:data.stats.by_region.europe||0,max:28},
     {id:'america',name:'美洲',flag:'🌎',count:data.stats.by_region.america||0,max:20},
     {id:'global',name:'全球',flag:'🗺️',count:data.stats.by_region.global||0,max:12}
   ];
@@ -117,29 +117,29 @@ function App() {
   return <>
     <div className="masthead"><div className="masthead-inner">
       <div className="logo-lockup"><h1 className="logo">LogPulse</h1><span className="edition">全球版</span></div>
-      <p className="tagline">追踪全球物流与贸易政策动态</p>
+      <p className="tagline">追蹤全球物流貿易政策動態</p>
       <div className="meta-bar">
         <span className="date">{new Date(data.generated_at).toLocaleDateString('zh-CN',{year:'numeric',month:'long',day:'numeric',hour:'2-digit',minute:'2-digit'})}</span>
-        <div className="live-indicator"><div className="pulse-dot"></div>实时更新</div>
+        <div className="live-indicator"><div className="pulse-dot"></div>實時更新</div>
       </div>
     </div></div>
     <div className="stats-deck">
-      <div className="stat-card"><div className="stat-label">今日政策动态</div><div className="stat-value">{data.stats.total}</div><div className="stat-delta">来自 {data.stats.sources_count} 个信息源</div></div>
-      <div className="stat-card critical"><div className="stat-label">高风险预警</div><div className="stat-value critical">{data.stats.high_risk}</div><div className="stat-delta">⚠ 需重点关注</div></div>
-      <div className="stat-card info"><div className="stat-label">分类统计</div><div className="stat-value info">{data.stats.by_category.port+data.stats.by_category.imo+data.stats.by_category.china+data.stats.by_category.us}</div><div className="stat-delta">港口 {data.stats.by_category.port} · IMO {data.stats.by_category.imo} · 中国 {data.stats.by_category.china} · 美欧 {data.stats.by_category.us}</div></div>
-      <div className="stat-card success"><div className="stat-label">地区覆盖</div><div className="stat-value">{regions.reduce((s,r)=>s+r.count,0)}</div><div className="stat-delta">— 全球覆盖</div></div>
+      <div className="stat-card"><div className="stat-label">今日政策動態</div><div className="stat-value">{data.stats.total}</div><div className="stat-delta">來自 {data.stats.sources_count} 個信息源</div></div>
+      <div className="stat-card critical"><div className="stat-label">高風險預警</div><div className="stat-value critical">{data.stats.high_risk}</div><div className="stat-delta">⚠ 重點關注</div></div>
+      <div className="stat-card info"><div className="stat-label">分類統計</div><div className="stat-value info">{data.stats.by_category.port+data.stats.by_category.imo+data.stats.by_category.china+data.stats.by_category.us}</div><div className="stat-delta">港口 {data.stats.by_category.port} · IMO {data.stats.by_category.imo} · 中国 {data.stats.by_category.china} · 美欧 {data.stats.by_category.us}</div></div>
+      <div className="stat-card success"><div className="stat-label">地區覆蓋</div><div className="stat-value">{regions.reduce((s,r)=>s+r.count,0)}</div><div className="stat-delta">— 全球覆蓋</div></div>
     </div>
     <div className="container"><div className="grid">
       <main>
-        <div className="section-header"><h2 className="section-title">政策动态</h2><p className="section-subtitle">来自 IMO、WTO、中国海关、美欧及全球主要港口的最新政策</p></div>
+        <div className="section-header"><h2 className="section-title">政策動態</h2><p className="section-subtitle">來自 IMO、WTO、中國海關、美歐及全球主要港口動態</p></div>
         <div className="filters">
           <button className={`filter-btn ${filter==='all'?'active':''}`} onClick={()=>setFilter('all')}>全部 ({data.items.length})</button>
           <button className={`filter-btn ${filter==='port'?'active':''}`} onClick={()=>setFilter('port')}>港口政策 ({data.stats.by_category.port})</button>
           <button className={`filter-btn ${filter==='imo'?'active':''}`} onClick={()=>setFilter('imo')}>IMO/WTO ({data.stats.by_category.imo})</button>
-          <button className={`filter-btn ${filter==='china'?'active':''}`} onClick={()=>setFilter('china')}>中国海关 ({data.stats.by_category.china})</button>
-          <button className={`filter-btn ${filter==='us'?'active':''}`} onClick={()=>setFilter('us')}>美欧贸易 ({data.stats.by_category.us})</button>
+          <button className={`filter-btn ${filter==='china'?'active':''}`} onClick={()=>setFilter('china')}>中國海關 ({data.stats.by_category.china})</button>
+          <button className={`filter-btn ${filter==='us'?'active':''}`} onClick={()=>setFilter('us')}>美歐貿易 ({data.stats.by_category.us})</button>
         </div>
-        <div>{filtered.length===0?<div style={{padding:'40px',textAlign:'center',color:'var(--text-mid)'}}>暂无该类别的动态</div>:filtered.map(i=>
+        <div>{filtered.length===0?<div style={{padding:'40px',textAlign:'center',color:'var(--text-mid)'}}>暫無該類別動態</div>:filtered.map(i=>
           <article key={i.id} className={`article ${i.priority}`} onClick={()=>i.link&&i.link!=='#'&&window.open(i.link,'_blank')}>
             <div className="article-meta"><span className={`source-badge ${badge(i.category)}`}>{i.source}</span><span className="article-time">{i.time}</span></div>
             <h3 className="article-title">{i.title}</h3>
@@ -150,21 +150,21 @@ function App() {
       </main>
       <aside className="sidebar">
         <div className="widget">
-          <div className="widget-header"><h3 className="widget-title">风险预警</h3><p className="widget-subtitle">高/中风险事件</p></div>
-          {alerts.length===0?<div style={{color:'var(--text-light)',fontSize:'13px'}}>暂无预警信息</div>:alerts.map(i=>
+          <div className="widget-header"><h3 className="widget-title">風險預警</h3><p className="widget-subtitle">高/中風險事件</p></div>
+          {alerts.length===0?<div style={{color:'var(--text-light)',fontSize:'13px'}}>暫無預警信息</div>:alerts.map(i=>
             <div key={i.id} className={`alert ${i.priority}`}>
-              <div className={`alert-label ${i.priority}`}>{i.priority==='high'?'高风险':'中风险'} · {i.source}</div>
+              <div className={`alert-label ${i.priority}`}>{i.priority==='high'?'高風險':'中風險'} · {i.source}</div>
               <div className="alert-text">{i.title.substring(0,60)}...</div>
             </div>
           )}
         </div>
         <div className="widget">
-          <div className="widget-header"><h3 className="widget-title">地区分布</h3><p className="widget-subtitle">动态覆盖情况</p></div>
+          <div className="widget-header"><h3 className="widget-title">地區分佈</h3><p className="widget-subtitle">動態覆蓋情況</p></div>
           <div className="region-grid">{regions.map(r=>
             <div key={r.id} className="region-item">
               <div className="region-flag">{r.flag}</div>
               <div className="region-name">{r.name}</div>
-              <div className="region-count">{r.count} 条动态</div>
+              <div className="region-count">{r.count} 條動態</div>
               <div className="region-bar"><div className="region-bar-fill" style={{width:`${Math.min((r.count/r.max)*100,100)}%`}}></div></div>
             </div>
           )}</div>
