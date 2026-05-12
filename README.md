@@ -1,10 +1,7 @@
-# HK-Ai-Dashboard
-HK-Ai-Dashboard# 🚢 LogPulse — 全球物流政策情报看板
+# HK-AI-Dashboard
+HK-AI-Dashboard# 🚢 LogPulse — 全球物流政策情报看板
 
 > 自动抓取全球物流、航运、贸易政策动态，每日更新，部署到 GitHub Pages
-
-[![Daily Fetch](https://github.com/YOUR_USERNAME/logpulse/actions/workflows/daily_fetch.yml/badge.svg)](https://github.com/YOUR_USERNAME/logpulse/actions/workflows/daily_fetch.yml)
-![License](https://img.shields.io/badge/license-MIT-blue)
 
 ## ✨ 功能特性
 
