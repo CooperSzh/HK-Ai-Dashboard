@@ -48,6 +48,7 @@ body { font-family: 'DM Sans', -apple-system, sans-serif; background: var(--bg);
 .filter-btn { font-family: 'JetBrains Mono', monospace; font-size: 11px; padding: 8px 16px; background: var(--surface); border: 1px solid var(--border); color: var(--text-mid); cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500; }
 .filter-btn:hover { border-color: var(--text); background: var(--bg); }
 .filter-btn.active { background: var(--text); color: var(--surface); border-color: var(--text); }
+.freshness-note { font-size: 12px; color: var(--text-mid); margin: -16px 0 20px; }
 .article { background: var(--surface); border: 1px solid var(--border); margin-bottom: 24px; padding: 32px; cursor: pointer; transition: all 0.3s; position: relative; }
 .article:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
 .article.high { border-left: 4px solid var(--critical); background: linear-gradient(90deg, rgba(183,28,28,0.03) 0%, transparent 100%); }
@@ -92,6 +93,23 @@ body { font-family: 'DM Sans', -apple-system, sans-serif; background: var(--bg);
 <div id="root"></div>
 <script type="text/babel">
 const { useState, useEffect } = React;
+const FRESH_DAYS = 30;
+
+const parseAgeDays = (timeLabel = '') => {
+  const t = String(timeLabel).trim();
+  if (!t) return Infinity;
+  if (t === '近期' || t.includes('刚刚') || t.includes('剛剛')) return 0;
+  const hour = t.match(/(\d+)\s*(小时|小時|h)/i);
+  if (hour) return Number(hour[1]) / 24;
+  const day = t.match(/(\d+)\s*天前/);
+  if (day) return Number(day[1]);
+  const week = t.match(/(\d+)\s*周前/);
+  if (week) return Number(week[1]) * 7;
+  const month = t.match(/(\d+)\s*个月前/);
+  if (month) return Number(month[1]) * 30;
+  return Infinity;
+};
+
 function App() {
   const [filter, setFilter] = useState('all');
   const [data, setData] = useState(null);
@@ -105,8 +123,11 @@ function App() {
   }, []);
   if (loading) return <div className="loading-screen"><div style={{fontSize:'48px'}}>⏳</div><div>正在加載數據...</div></div>;
   if (error || !data) return <div className="error-screen"><div style={{fontSize:'48px'}}>⚠️</div><div style={{fontFamily:'Crimson Pro, serif',fontSize:'24px',fontWeight:700}}>數據加載失敗</div><div style={{color:'var(--text-mid)',fontSize:'14px'}}>请确保 data/news.json 存在，运行 python scripts/fetch_rss.py</div><div style={{fontFamily:'JetBrains Mono, monospace',fontSize:'12px',color:'var(--text-light)',background:'var(--bg)',padding:'12px',border:'1px solid var(--border)'}}>错误: {error}</div></div>;
-  const filtered = filter === 'all' ? data.items : data.items.filter(i => i.category === filter);
-  const alerts = data.items.filter(i => i.priority === 'high' || i.priority === 'medium').slice(0,4);
+  const freshItems = data.items.filter(i => parseAgeDays(i.time) <= FRESH_DAYS);
+  const staleCount = data.items.length - freshItems.length;
+  const filtered = (filter === 'all' ? freshItems : freshItems.filter(i => i.category === filter))
+    .sort((a, b) => parseAgeDays(a.time) - parseAgeDays(b.time));
+  const alerts = freshItems.filter(i => i.priority === 'high' || i.priority === 'medium').slice(0,4);
   const regions = [
     {id:'asia',name:'亞太',flag:'🌏',count:data.stats.by_region.asia||0,max:40},
     {id:'europe',name:'歐洲',flag:'🌍',count:data.stats.by_region.europe||0,max:28},
@@ -124,7 +145,7 @@ function App() {
       </div>
     </div></div>
     <div className="stats-deck">
-      <div className="stat-card"><div className="stat-label">今日政策動態</div><div className="stat-value">{data.stats.total}</div><div className="stat-delta">來自 {data.stats.sources_count} 個信息源</div></div>
+      <div className="stat-card"><div className="stat-label">近30天政策動態</div><div className="stat-value">{freshItems.length}</div><div className="stat-delta">來自 {data.stats.sources_count} 個信息源</div></div>
       <div className="stat-card critical"><div className="stat-label">高風險預警</div><div className="stat-value critical">{data.stats.high_risk}</div><div className="stat-delta">⚠ 重點關注</div></div>
       <div className="stat-card info"><div className="stat-label">分類統計</div><div className="stat-value info">{data.stats.by_category.port+data.stats.by_category.imo+data.stats.by_category.china+data.stats.by_category.us}</div><div className="stat-delta">港口 {data.stats.by_category.port} · IMO {data.stats.by_category.imo} · 中国 {data.stats.by_category.china} · 美欧 {data.stats.by_category.us}</div></div>
       <div className="stat-card success"><div className="stat-label">地區覆蓋</div><div className="stat-value">{regions.reduce((s,r)=>s+r.count,0)}</div><div className="stat-delta">— 全球覆蓋</div></div>
@@ -133,12 +154,13 @@ function App() {
       <main>
         <div className="section-header"><h2 className="section-title">政策動態</h2><p className="section-subtitle">來自 IMO、WTO、中國海關、美歐及全球主要港口動態</p></div>
         <div className="filters">
-          <button className={`filter-btn ${filter==='all'?'active':''}`} onClick={()=>setFilter('all')}>全部 ({data.items.length})</button>
+          <button className={`filter-btn ${filter==='all'?'active':''}`} onClick={()=>setFilter('all')}>全部 ({freshItems.length})</button>
           <button className={`filter-btn ${filter==='port'?'active':''}`} onClick={()=>setFilter('port')}>港口政策 ({data.stats.by_category.port})</button>
           <button className={`filter-btn ${filter==='imo'?'active':''}`} onClick={()=>setFilter('imo')}>IMO/WTO ({data.stats.by_category.imo})</button>
           <button className={`filter-btn ${filter==='china'?'active':''}`} onClick={()=>setFilter('china')}>中國海關 ({data.stats.by_category.china})</button>
           <button className={`filter-btn ${filter==='us'?'active':''}`} onClick={()=>setFilter('us')}>美歐貿易 ({data.stats.by_category.us})</button>
         </div>
+        <p className="freshness-note">僅顯示近 {FRESH_DAYS} 天動態，已自動隱藏 {staleCount} 條超時效信息。</p>
         <div>{filtered.length===0?<div style={{padding:'40px',textAlign:'center',color:'var(--text-mid)'}}>暫無該類別動態</div>:filtered.map(i=>
           <article key={i.id} className={`article ${i.priority}`} onClick={()=>i.link&&i.link!=='#'&&window.open(i.link,'_blank')}>
             <div className="article-meta"><span className={`source-badge ${badge(i.category)}`}>{i.source}</span><span className="article-time">{i.time}</span></div>
@@ -150,15 +172,6 @@ function App() {
       </main>
       <aside className="sidebar">
         <div className="widget">
-          <div className="widget-header"><h3 className="widget-title">風險預警</h3><p className="widget-subtitle">高/中風險事件</p></div>
-          {alerts.length===0?<div style={{color:'var(--text-light)',fontSize:'13px'}}>暫無預警信息</div>:alerts.map(i=>
-            <div key={i.id} className={`alert ${i.priority}`}>
-              <div className={`alert-label ${i.priority}`}>{i.priority==='high'?'高風險':'中風險'} · {i.source}</div>
-              <div className="alert-text">{i.title.substring(0,60)}...</div>
-            </div>
-          )}
-        </div>
-        <div className="widget">
           <div className="widget-header"><h3 className="widget-title">地區分佈</h3><p className="widget-subtitle">動態覆蓋情況</p></div>
           <div className="region-grid">{regions.map(r=>
             <div key={r.id} className="region-item">
@@ -168,6 +181,15 @@ function App() {
               <div className="region-bar"><div className="region-bar-fill" style={{width:`${Math.min((r.count/r.max)*100,100)}%`}}></div></div>
             </div>
           )}</div>
+        </div>
+        <div className="widget">
+          <div className="widget-header"><h3 className="widget-title">風險預警</h3><p className="widget-subtitle">高/中風險事件</p></div>
+          {alerts.length===0?<div style={{color:'var(--text-light)',fontSize:'13px'}}>暫無預警信息</div>:alerts.map(i=>
+            <div key={i.id} className={`alert ${i.priority}`}>
+              <div className={`alert-label ${i.priority}`}>{i.priority==='high'?'高風險':'中風險'} · {i.source}</div>
+              <div className="alert-text">{i.title.substring(0,60)}...</div>
+            </div>
+          )}
         </div>
       </aside>
     </div></div>
