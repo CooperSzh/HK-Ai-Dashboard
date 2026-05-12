@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-05-11T12:31:03.397742+00:00",
+  "generated_at": "2026-05-12T03:16:00.847656+00:00",
   "stats": {
-    "total": 45,
-    "high_risk": 3,
+    "total": 50,
+    "high_risk": 11,
     "by_category": {
       "port": 8,
-      "imo": 18,
-      "china": 0,
-      "us": 19
+      "imo": 10,
+      "china": 2,
+      "us": 9
     },
     "by_region": {
       "asia": 0,
       "europe": 0,
-      "america": 19,
-      "global": 26
+      "america": 9,
+      "global": 39
     },
-    "sources_count": 5
+    "sources_count": 12
   },
   "items": [
     {
@@ -23,10 +23,10 @@
       "category": "imo",
       "priority": "high",
       "source": "WTO 世界贸易组织",
-      "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+      "title": "補貼透明度仍然是 SCM 委員會的核心關注點",
       "summary": "在2026年4月30日舉行的補貼與反補貼措施委員會（SCM）例行會議和特別會議上，透過及時、完整提交補貼通知來提高透明度再次成為委員會工作的中心主題。主席，大韓民國的 Jungsoo Hur 強調了透明度對於委員會有效運作的至關重要性，並對通知義務的遵守程度持續較低表示擔憂。他強烈鼓勵會員盡快提交未完成的通知。",
       "link": "https://www.wto.org/english/news_e/news26_e/scm_30apr26_383_e.htm",
-      "time": "11天前",
+      "time": "12天前",
       "region": "global",
       "icon": "🌐",
       "srcClass": "src-imo",
@@ -36,35 +36,171 @@
       ]
     },
     {
-      "id": "21877ed9551c",
+      "id": "0b07657d30bb",
+      "category": "freightwaves消息",
+      "priority": "high",
+      "source": "freightwaves贸易组织",
+      "title": "獨家：中央貨運線將在營運 96 年後關閉",
+      "summary": "一位熟悉這家擁有 96 年歷史的公司的消息人士表示，他不確定 CFL 是否會申請破產法第七章或“在破產之外進行清算”，但這家零擔運輸公司沒有重組計劃。\n這篇獨家文章：中央貨運公司將在 96 年後關閉，首先出現在 FreightWaves 上。",
+      "link": "https://www.freightwaves.com/news/exclusive-central-freight-lines-to-shut-down-after-96-years",
+      "time": "1610天前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "61059dd3e807",
+      "category": "maritime消息",
+      "priority": "high",
+      "source": "maritime消息",
+      "title": "美國海岸防衛隊宣布耗資 2.12 億美元用於查爾斯頓基地的改進",
+      "summary": "美國海岸防衛隊今天授予了兩份合同，將為北查爾斯的查爾斯頓基地提供重要的新營運和支援設施...",
+      "link": "https://maritime-executive.com/article/u-s-coast-guard-announces-212m-in-base-charleston-improvements",
+      "time": "近期",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "9df7f93242d8",
       "category": "port",
       "priority": "high",
       "source": "Lloyd's List",
-      "title": "杜拜環球港務集團 (DP World) 獲得林查班 (Laem Chabang) 延期",
-      "summary": "隨著亞洲間貿易的成長，泰國最大的深水貨櫃港口繼續發揮更重要的作用\n&#160;&#160;&#160;&#160;&nbsp;相關故事每日簡報 2026 年 5 月 11 日美國禁用兩艘違反封鎖的伊朗油輪；伊朗扣押影子艦隊油輪 塞福爾透露，機艙火災看起來一直居高不下。",
-      "link": "https://www.lloydslist.com/LL1157116/DP%20World%20gets%20Laem%20Chabang%20extension?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
-      "time": "3天前",
+      "title": "每日簡報 2026 年 5 月 12 日",
+      "summary": "恆力重工渡過制裁恐慌，估值達到200億美元業界越來越擔心航行自由現在......\n&#160;&#160;&#160;&#160;&nbsp;執行長表示，馬士基綠色航運中心的裁員是時代的標誌，克服了製裁恐慌，估值達到 200 億美元。",
+      "link": "https://www.lloydslist.com/LL1156802/Daily%20Briefing%2012%20May%202026?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
+      "time": "3小时前",
       "region": "global",
       "icon": "📰",
       "srcClass": "src-port",
       "catClass": "cat-port-bg",
       "tags": [
-        "港口"
+        "制裁"
       ]
     },
     {
-      "id": "0b07657d30bb",
-      "category": "us",
+      "id": "ed2dfddc64d5",
+      "category": "port",
       "priority": "high",
-      "source": "FreightWaves",
-      "title": "獨家：中央貨運線將在營運 96 年後關閉",
-      "summary": "一位熟悉這家擁有 96 年歷史的公司的消息人士表示，他不確定 CFL 是否會申請破產法第七章或“在破產之外進行清算”，但這家零擔運輸公司沒有重組計劃。\n這篇獨家文章：中央貨運公司將在 96 年後關閉，首先出現在 FreightWaves 上。",
-      "link": "https://www.freightwaves.com/news/exclusive-central-freight-lines-to-shut-down-after-96-years",
-      "time": "1609天前",
-      "region": "america",
-      "icon": "📊",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
+      "source": "Lloyd's List",
+      "title": "通過霍爾木茲海峽的交通量進一步下降",
+      "summary": "由於上週中東海灣地區的攻擊激增，交通量大幅下降，下降了約 59%\n&#160;&#160;&#160;&#160;&nbsp;相關故事每日簡報 2026 年 5 月 12 日，首席執行官恆力重工表示，馬士基綠色航運中心的裁員是時代的標誌，克服了製裁恐慌，估值達到 200 億美元。",
+      "link": "https://www.lloydslist.com/LL1157139/Traffic%20through%20the%20Strait%20of%20Hormuz%20falls%20further?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
+      "time": "9小时前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-port",
+      "catClass": "cat-port-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "b22e74658b48",
+      "category": "port",
+      "priority": "high",
+      "source": "Lloyd's List",
+      "title": "馬士基綠色航運中心執行長表示，裁員是時代的標誌",
+      "summary": "馬士基麥金尼穆勒零碳航運中心計劃削減約 30 個全職同等職位，並表示必須…\n&#160;&#160;&#160;&#160;&nbsp;相關故事每日簡報2026年5月12日恆力重工克服制裁恐慌，估值達到200億美元Vroon退出牲畜運輸，專注於核心海上和油輪部門&#160;",
+      "link": "https://www.lloydslist.com/LL1157138/Job%20cuts%20at%20Maersks%20green%20shipping%20centre%20a%20sign%20of%20the%20times%20says%20CEO?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
+      "time": "10小时前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-port",
+      "catClass": "cat-port-bg",
+      "tags": [
+        "制裁"
+      ]
+    },
+    {
+      "id": "24e87c74ad64",
+      "category": "port",
+      "priority": "high",
+      "source": "Lloyd's List",
+      "title": "恆力重工渡過制裁恐慌，估值達200億美元",
+      "summary": "全球第三大造船廠擺脫了製裁陰影，獨立的公司結構使其免受美國針對附屬煉油廠的措施的影響\n&#160;&#160;&#160;&#160;&nbsp;相關故事每日簡報 2026 年 5 月 12 日，執行長 Vroon 表示，馬士基綠色航運中心的裁員是時代的標誌，執行長 Vroon 退出牲畜運輸，專注於核心離岸和油輪部門。",
+      "link": "https://www.lloydslist.com/LL1157137/Hengli%20Heavy%20rides%20out%20sanctions%20scare%20to%20hit%20$20bn%20valuation?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
+      "time": "11小时前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-port",
+      "catClass": "cat-port-bg",
+      "tags": [
+        "制裁"
+      ]
+    },
+    {
+      "id": "46a119221989",
+      "category": "port",
+      "priority": "high",
+      "source": "Lloyd's List",
+      "title": "Vroon 退出牲畜運輸，專注於核心海上和油輪業務",
+      "summary": "Livestock Express 船隊完全由專用船舶組成，是該行業為數不多的信譽良好的運營商之一...\n&#160;&#160;&#160;&#160;&nbsp;相關故事每日簡報 2026 年 5 月 12 日，首席執行官恆力重工表示，馬士基綠色航運中心的裁員是時代的標誌，克服了製裁恐慌，估值達到 200 億美元。",
+      "link": "https://www.lloydslist.com/LL1157134/Vroon%20exits%20livestock%20shipping%20to%20focus%20on%20core%20offshore%20and%20tanker%20divisions?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
+      "time": "11小时前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-port",
+      "catClass": "cat-port-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "fc3a6290b8d4",
+      "category": "port",
+      "priority": "high",
+      "source": "Lloyd's List",
+      "title": "HD Hyundai Oilbank 透過霍爾木茲從 Dynacom 營運的油輪接收原油",
+      "summary": "据报道，由希腊 Dynacom 运营的一艘 160,000 载重吨苏伊士型油轮 Odessa 于 2 日通过霍尔木兹海峡。\n&#160;&#160;&#160;&#160;&nbsp;相關故事每日簡報 2026 年 5 月 12 日，首席執行官恆力重工表示，馬士基綠色航運中心的裁員是時代的標誌，克服了製裁恐慌，估值達到 200 億美元。",
+      "link": "https://www.lloydslist.com/LL1157132/HD%20Hyundai%20Oilbank%20takes%20crude%20from%20Dynacom-operated%20tanker%20via%20Hormuz?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
+      "time": "11小时前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-port",
+      "catClass": "cat-port-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "22f11f87e9b1",
+      "category": "port",
+      "priority": "high",
+      "source": "Lloyd's List",
+      "title": "歐盟準備對俄羅斯影子艦隊實施新一輪制裁",
+      "summary": "匈牙利大選後，歐盟官員尋求克服先前的政治障礙並做出回應，採取更嚴厲措施的勢頭有所增強。\n&#160;&#160;&#160;&#160;&nbsp;相關故事每日簡報 2026 年 5 月 12 日，首席執行官恆力重工表示，馬士基綠色航運中心的裁員是時代的標誌，克服了製裁恐慌，估值達到 200 億美元。",
+      "link": "https://www.lloydslist.com/LL1157135/EU%20lines%20up%20another%20round%20of%20Russian%20shadow%20fleet%20sanctions?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
+      "time": "12小时前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-port",
+      "catClass": "cat-port-bg",
+      "tags": [
+        "制裁"
+      ]
+    },
+    {
+      "id": "763495592278",
+      "category": "port",
+      "priority": "high",
+      "source": "Lloyd's List",
+      "title": "業界越來越擔心航行自由現在成為政治討價還價的籌碼",
+      "summary": "伊朗堅持對霍爾木茲海峽進行「管理」和主權，加劇了人們對航行自由正在受到影響的擔憂。\n&#160;&#160;&#160;&#160;&nbsp;相關故事每日簡報 2026 年 5 月 12 日，首席執行官恆力重工表示，馬士基綠色航運中心的裁員是時代的標誌，克服了製裁恐慌，估值達到 200 億美元。",
+      "link": "https://www.lloydslist.com/LL1157133/Industry%20concerns%20grow%20that%20freedom%20of%20navigation%20is%20now%20a%20political%20bargaining%20chip?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
+      "time": "12小时前",
+      "region": "global",
+      "icon": "📰",
+      "srcClass": "src-port",
+      "catClass": "cat-port-bg",
       "tags": [
         "物流政策"
       ]
@@ -77,7 +213,7 @@
       "title": "貿易政策審查：伯利茲",
       "summary": "伯利茲貿易政策和實踐的第四次審查將於 2026 年 5 月 4 日至 6 日進行。審查的基礎是世貿組織秘書處的報告和伯利茲政府的報告。",
       "link": "https://www.wto.org/english/tratop_e/tpr_e/tpr_blz_04may26_e.htm",
-      "time": "7天前",
+      "time": "8天前",
       "region": "global",
       "icon": "🌐",
       "srcClass": "src-imo",
@@ -94,7 +230,7 @@
       "title": "成員在漁業補貼委員會第一次會議上通過議事規則",
       "summary": "2026年5月1日，世貿組織成員舉行漁業補貼委員會第一次例會，標誌著《漁業補貼協定》實施過程中具有里程碑意義。他們批准了有關委員會運作的多項決定。",
       "link": "https://www.wto.org/english/news_e/news26_e/fish_01may26_382_e.htm",
-      "time": "10天前",
+      "time": "11天前",
       "region": "global",
       "icon": "🌐",
       "srcClass": "src-imo",
@@ -111,7 +247,7 @@
       "title": "成員在委員會春季例會上審查通知、反傾銷行動",
       "summary": "世貿組織反傾銷委員會於2026年4月28日舉行會議，審查成員關於新的、修訂的或先前審查的反傾銷法律法規的最新通知以及反傾銷行動的報告。",
       "link": "https://www.wto.org/english/news_e/news26_e/anti_28apr26_381_e.htm",
-      "time": "13天前",
+      "time": "14天前",
       "region": "global",
       "icon": "🌐",
       "srcClass": "src-imo",
@@ -126,15 +262,15 @@
       "priority": "medium",
       "source": "美国贸易代表署",
       "title": "對中國新型電動車徵收最終反補貼稅",
-      "summary": "對中國新型電動車徵收最終反補貼稅\n\n            2024年11月4日，中國就歐盟對中國新型純電動汽車徵收的最終反補貼稅以及導致徵收這些關稅的基礎調查向歐盟提出磋商。\n中國聲稱，受到質疑的措施似乎不符合：\n• 第1.1(a)(1)、1.1(a)(1)(i)、1.1(a)(1)(ii)、1.1(a)(1)(iii)、1.1(a)(1)(iv)、1.1(b)、1.2、2.1、2.2、2.4、",
+      "summary": "对中国新型电动汽车征收最终反补贴税\n\n            On November 4, 2024, China requested consultations with the European Union with respect to the definitive countervailing duties imposed by the European Union on new batt",
       "link": "https://ustr.gov/node/14325",
-      "time": "6天前",
+      "time": "7天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
       "catClass": "cat-us-bg",
       "tags": [
-        "物流政策"
+        "港口"
       ]
     },
     {
@@ -145,7 +281,7 @@
       "title": "格里爾大使出席西爾維拉多政策加速器峰會",
       "summary": "格里爾大使出席西爾維拉多政策加速器峰會\n邁爾伯勒\n星期五, 05/01/2026 - 17:39\n\n\n            華盛頓 — — 昨天，賈米森·格里爾大使參加了西爾維拉多政策加速器峰會的爐邊談話，主題是“確保下一個美國時代的安全”。在與索羅德政策加速器首席執行官兼執行董事莎拉·斯圖爾特進行討論時，格里爾大使強調了特朗普總統的關稅計劃如何通過重新調整我們的貿易政策以更好地服務於我們的國內",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/may/ambassador-greer-silverado-policy-accelerator-summit",
-      "time": "9天前",
+      "time": "10天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -162,7 +298,7 @@
       "title": "USTR發布2026年智慧財產權保護與執法特別301報告",
       "summary": "USTR發布2026年智慧財產權保護與執法特別301報告\n邁爾伯勒\n星期四, 04/30/2026 - 14:26\n\n\n            華盛頓—今天，美國貿易代表辦公室 (USTR) 發布了關於美國貿易夥伴保護和執行智慧財產權 (IP) 權利的充分性和有效性的 2026 年特別 301 報告。\n「使用我們擁有的所有執法工具來解決不公平貿易行為是當務之急，」傑米森·格里爾大使說。 “我們嚴格",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/april/ustr-releases-2026-special-301-report-intellectual-property-protection-and-enforcement",
-      "time": "10天前",
+      "time": "11天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -176,10 +312,10 @@
       "category": "us",
       "priority": "medium",
       "source": "美国贸易代表署",
-      "title": "朱莉卡拉漢",
+      "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
       "summary": "朱莉卡拉漢\n賈特納\n星期三，2026 年 4 月 29 日 - 18:47\n\n\n  \n    領導職務\n              美國副貿易代表\n          \n\n  \n    領導力簡介\n              朱莉·卡拉漢大使是美國首席農業談判代表。在此職位上，卡拉漢大使致力於促進美國農民、牧場主和食品製造商的利益，包括就影響美國農產品出口的關稅和非關稅壁壘進行談判、在世界貿易組織",
       "link": "https://ustr.gov/node/14320",
-      "time": "11天前",
+      "time": "12天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -194,9 +330,9 @@
       "priority": "medium",
       "source": "美国贸易代表署",
       "title": "里克·斯威策",
-      "summary": "里克·斯威策\n賈特納\n星期三，2026 年 4 月 29 日 - 18:46\n\n\n  \n    領導職務\n              美國副貿易代表\n          \n\n  \n    領導力簡介\n              Ambassador Rick Switzer is the Deputy United States Trade Representative. Prior to his",
+      "summary": "里克·斯威策\n賈特納\n星期三，2026 年 4 月 29 日 - 18:46\n\n\n  \n    領導職務\n              美國副貿易代表\n          \n\n  \n    領導力簡介\n              里克·斯威策大使是美國副貿易代表。在被任命為美國貿易代表副代表之前，他是 ProjX 技術諮詢公司的創始人和負責人。在 Rick 20 年的外交生涯中，他曾擔任國家情報大學",
       "link": "https://ustr.gov/node/14319",
-      "time": "11天前",
+      "time": "12天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -213,7 +349,7 @@
       "title": "珍妮佛桑頓",
       "summary": "珍妮佛桑頓\n賈特納\n星期三，2026 年 4 月 29 日 - 18:41\n\n\n  \n    領導職務\n              總法律顧問\n          \n\n  \n    領導力簡介\n              總法律顧問 Jennifer Thornton 就所有法律事務向格里爾大使和美國貿易代表辦公室的區域和職能辦公室提供諮詢，此外還負責監督美國貿易代表辦公室總法律顧問辦公室和跨機構",
       "link": "https://ustr.gov/node/14317",
-      "time": "11天前",
+      "time": "12天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -223,88 +359,37 @@
       ]
     },
     {
-      "id": "b372907901a8",
-      "category": "port",
+      "id": "ff92907d7fc4",
+      "category": "china",
       "priority": "medium",
-      "source": "Lloyd's List",
-      "title": "中東港口更新：5 月 11 日星期一",
-      "summary": "在阿曼，在 Mina Al Fahal 碼頭（原油）裝載設施，所有定期船舶必須確保其多普勒日誌...\n&#160;&#160;&#160;&#160;&nbsp;相關故事每日簡報 2026 年 5 月 11 日美國禁用兩艘違反封鎖的伊朗油輪；伊朗扣押影子艦隊油輪 塞福爾透露，機艙火災看起來一直居高不下。",
-      "link": "https://www.lloydslist.com/LL1157129/Middle%20East%20port%20update%20Monday%20May%2011?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
-      "time": "刚刚",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-port",
-      "catClass": "cat-port-bg",
-      "tags": [
-        "港口"
-      ]
-    },
-    {
-      "id": "3f55c576e1e9",
-      "category": "port",
-      "priority": "medium",
-      "source": "Lloyd's List",
-      "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-      "summary": "&#160; &#160;\n&#160;&#160;&#160;&#160;&nbsp;相關故事每日觀點：不要將停火誤認為供應激增不要指望航運會隨著美伊協議而恢復正常每日觀點：雙系統轉變&#160;",
-      "link": "https://www.lloydslist.com/LL1157128/The%20Daily%20View%20A%20dry%20bull%20with%20stamina?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
-      "time": "2小时前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-port",
-      "catClass": "cat-port-bg",
+      "source": "SCMP 中国新闻",
+      "title": "川普的中國之行在美國引起了穩定的跡象和實際的勝利",
+      "summary": "美國總統川普即將對中國進行的訪問受到商界領袖、政策制定者和華裔美國團體的密切關注，他們希望看到華盛頓和北京能夠穩定世界上最重要的關係之一的跡象，儘管對重大突破的預期仍然有限。\n這次訪問是在地緣政治緊張局勢加劇的背景下進行的，其中包括涉及伊朗的持續戰爭和與霍爾木茲海峽有關的混亂，以及持續的摩擦...",
+      "link": "https://www.scmp.com/news/us/article/3353195/trumps-china-visit-watched-us-signs-stability-and-tangible-wins?utm_source=rss_feed",
+      "time": "6小时前",
+      "region": "china",
+      "icon": "🇨🇳",
+      "srcClass": "src-china",
+      "catClass": "cat-china-bg",
       "tags": [
         "物流政策"
       ]
     },
     {
-      "id": "abe409bd88eb",
-      "category": "port",
+      "id": "aacf4b283660",
+      "category": "china",
       "priority": "medium",
-      "source": "Lloyd's List",
-      "title": "美國禁用兩艘違反封鎖的伊朗油輪；伊朗扣押影子艦隊油輪",
-      "summary": "美國在早些時候使另一艘懸掛伊朗國旗的油輪癱瘓後，又向兩艘違反封鎖的伊朗油輪開火併使其癱瘓。\n&#160;&#160;&#160;&#160;&nbsp;相關故事中東港口更新：5 月 11 日星期一每日簡報 2026 年 5 月 11 日 Cefor 透露，機艙火災看起來居高不下。",
-      "link": "https://www.lloydslist.com/LL1157123/US%20disables%20two%20Iranian%20tankers%20violating%20blockade%20Iran%20seizes%20shadow%20fleet%20tanker?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
-      "time": "2天前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-port",
-      "catClass": "cat-port-bg",
+      "source": "SCMP 中国新闻",
+      "title": "史塔默的選舉困境是否會迫使英中關係發生改組？",
+      "summary": "中國專家表示，上週晚些時候，執政黨工黨在英國地方和地區選舉中慘敗，損害了首相基爾·斯塔默的權威，並可能導致政策轉變。\n觀察家表示，雖然史塔默黨內的一些人可能會推動對華政策的改變，但政府不太可能改變支持接觸的策略，他們認為英國的經濟地位將使這項舉措成本過高。\n136 个英语委员会和 6 个委员会拥有 5,000 多个席位。",
+      "link": "https://www.scmp.com/news/china/diplomacy/article/3353179/will-starmers-election-woes-force-shake-uks-ties-china?utm_source=rss_feed",
+      "time": "14小时前",
+      "region": "china",
+      "icon": "🇨🇳",
+      "srcClass": "src-china",
+      "catClass": "cat-china-bg",
       "tags": [
-        "港口"
-      ]
-    },
-    {
-      "id": "0006424acc25",
-      "category": "port",
-      "priority": "medium",
-      "source": "Lloyd's List",
-      "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-      "summary": "事故不再增加，但每年仍達到 30 起或更多\n&#160;&#160;&#160;&#160;&nbsp;相關故事中東港口更新：5 月 11 日星期一每日簡報 2026 年 5 月 11 日美國禁用兩艘違反封鎖的伊朗油輪；伊朗扣押影子艦隊油輪&#160;",
-      "link": "https://www.lloydslist.com/LL1157121/Engine%20room%20fires%20look%20stubbornly%20high%20Cefor%20reveals?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
-      "time": "2天前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-port",
-      "catClass": "cat-port-bg",
-      "tags": [
-        "港口"
-      ]
-    },
-    {
-      "id": "19c35adadee7",
-      "category": "port",
-      "priority": "medium",
-      "source": "Lloyd's List",
-      "title": "中東港口更新：5 月 8 日星期五",
-      "summary": "卡達、科威特、阿曼、沙烏地阿拉伯和巴林報告所有港口已全面投入營運\n&#160;&#160;&#160;&#160;&nbsp;相關故事每日簡報 2026 年 5 月 11 日美國禁用兩艘違反封鎖的伊朗油輪；伊朗扣押影子艦隊油輪 塞福爾透露，機艙火災看起來一直居高不下。",
-      "link": "https://www.lloydslist.com/LL1157118/Middle%20East%20port%20update%20Friday%20May%208?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
-      "time": "2天前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-port",
-      "catClass": "cat-port-bg",
-      "tags": [
-        "港口"
+        "物流政策"
       ]
     },
     {
@@ -312,10 +397,10 @@
       "category": "imo",
       "priority": "low",
       "source": "WTO 世界贸易组织",
-      "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-      "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+      "title": "總理事會主席概述了利用 MC14 談判勢頭的後續步驟",
+      "summary": "在第十四屆部長級會議（MC14）以來的第一次總理事會會議上，新當選的主席克萊爾·凱利大使（新西蘭）報告了她與成員就如何繼續在日內瓦進行討論以鞏固在喀麥隆雅溫得舉行的 MC14 若干工作領域的高水平共識的磋商情況。成員們還注意到土耳其宣布將加入延長電子商務暫停令的日益一致的行列，許多成員對縮小討論分歧方面取得的進一步進展表示歡迎。",
       "link": "https://www.wto.org/english/news_e/news26_e/gc_06may26_386_e.htm",
-      "time": "5天前",
+      "time": "6天前",
       "region": "global",
       "icon": "🌐",
       "srcClass": "src-imo",
@@ -332,7 +417,7 @@
       "title": "美國通報徵收進口附加稅 準備世貿組織磋商",
       "summary": "在5月5日舉行的國際收支限制委員會會議上，世貿組織成員討論了美國關於徵收進口附加稅以解決該國嚴重國際收支赤字的新通知。美國表示，附加費於2026年2月24日生效，並將於2026年7月24日到期，除非國會法案延長期限。成員們對美國的透明度及其願意按照世貿組織規則進行磋商表示歡迎。",
       "link": "https://www.wto.org/english/news_e/news26_e/bop_05may26_385_e.htm",
-      "time": "6天前",
+      "time": "7天前",
       "region": "global",
       "icon": "🌐",
       "srcClass": "src-imo",
@@ -349,7 +434,7 @@
       "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
       "summary": "5 月 4 日，世貿組織成員在日內瓦舉行的會議上回顧了全球棉花市場趨勢以及棉花產業的未來發展方向。這些會議是繼 3 月在喀麥隆舉行的第 14 屆世貿組織部長級會議 (MC14) 舉行的高級別棉花活動之後舉行的。各代表團注意到第十四屆部長級會議宣布的投資非洲國家向棉花價值鏈高端邁進的承諾，並強調棉花對國際貿易的重要貢獻及其促進永續發展的潛力。",
       "link": "https://www.wto.org/english/news_e/news26_e/cott_04may26_384_e.htm",
-      "time": "7天前",
+      "time": "8天前",
       "region": "global",
       "icon": "🌐",
       "srcClass": "src-imo",
@@ -366,7 +451,7 @@
       "title": "世貿組織開放2026年公共論壇線上註冊並啟動提案徵集",
       "summary": "世貿組織已開放今年題為「為未來提供動力」的公共論壇的線上註冊，該論壇將於 9 月 15 日至 17 日在日內瓦世貿組織辦公大樓舉行。它還發起了針對該活動的提案徵集，今年的活動將重點放在服務貿易上。",
       "link": "https://www.wto.org/english/news_e/news26_e/pfor_30apr26_370_e.htm",
-      "time": "11天前",
+      "time": "12天前",
       "region": "global",
       "icon": "🌐",
       "srcClass": "src-imo",
@@ -380,10 +465,10 @@
       "category": "imo",
       "priority": "low",
       "source": "WTO 世界贸易组织",
-      "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+      "title": "加拿大承諾投入 50 萬加幣加強食品安全和動植物衛生能力",
       "summary": "加拿大向標準與貿易發展基金 (STDF) 提供 50 萬加元（約 286,000 瑞士法郎），以加強發展中國家和最不發達國家公共和私營部門利益相關者的衛生和植物檢疫 (SPS) 能力。這筆捐款將支持 STDF 的活動，根據 2025-2030 年 STDF 戰略，幫助各國滿足國際食品安​​全和動植物健康標準並促進安全貿易。",
       "link": "https://www.wto.org/english/news_e/news26_e/sps_28apr26_378_e.htm",
-      "time": "13天前",
+      "time": "14天前",
       "region": "global",
       "icon": "🌐",
       "srcClass": "src-imo",
@@ -400,11 +485,334 @@
       "title": "世貿組織成員審議保障措施，就影響鋼鐵產品的措施交換意見",
       "summary": "在4月27日的會議上，世貿組織保障措施委員會審議了涉及38種產品的保障措施，其中12種是鋼鐵/金屬產品。自委員會於2025年10月舉行上次會議以來，成員們已通報了這些行動。一些成員表達了對歐盟和英國有關鋼鐵產品的行動的看法。歐盟對取向電工鋼的調查和對鐵合金元素的措施也引起了一些成員國的干預。即將離任的主席米拉格羅斯·米蘭達·羅哈斯女士（秘魯）感謝成員們對委員會的參與。",
       "link": "https://www.wto.org/english/news_e/news26_e/safe_27apr26_380_e.htm",
-      "time": "14天前",
+      "time": "15天前",
       "region": "global",
       "icon": "🌐",
       "srcClass": "src-imo",
       "catClass": "cat-imo-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "089fb4ed3a90",
+      "category": "freightwaves消息",
+      "priority": "low",
+      "source": "freightwaves贸易组织",
+      "title": "大多數卡車司機一年中最不喜歡的一周背後的「巧妙策略」：國際路檢",
+      "summary": "突擊檢查讓卡車司機感到沮喪。但經濟學家發現，國際道路檢查週提高了整體道路安全。\n貼文「巧妙的策略」落後於大多數卡車司機的一年中最不受歡迎的一周：International Roadcheck 首先出現在 FreightWaves 上。",
+      "link": "https://www.freightwaves.com/news/the-ingenious-strategy-behind-most-truck-drivers-least-favorite-week-of-the-year",
+      "time": "1455天前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "84ecc5dcf3c4",
+      "category": "freightwaves消息",
+      "priority": "low",
+      "source": "freightwaves贸易组织",
+      "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+      "summary": "東海岸的柴油庫存創歷史新低。卡車司機對庫存的減少和運費的飆升感到震驚。\n為什麼東北地區柴油悄悄耗盡的貼文首先出現在 FreightWaves 上。",
+      "link": "https://www.freightwaves.com/news/why-the-northeast-is-quietly-running-out-of-diesel",
+      "time": "1460天前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "0e2003421e96",
+      "category": "freightwaves消息",
+      "priority": "low",
+      "source": "freightwaves贸易组织",
+      "title": "倉庫擁擠即將開始 — Freightonomics",
+      "summary": "在貨運經濟學的這一集中，扎克·斯特里克蘭 (Zach Strickland) 和安東尼·史密斯 (Anthony Smith) 與科羅拉多州立大學的紮克·羅傑斯 (Zac Rogers) 討論了擠佔倉庫空間的必要性。 \n倉儲補習即將開始——Freightonomics 首先出現在 FreightWaves 上。",
+      "link": "https://www.freightwaves.com/news/warehouse-cramming-is-about-to-begin-freightonomics",
+      "time": "1733天前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "9a909bca6c84",
+      "category": "freightwaves消息",
+      "priority": "low",
+      "source": "freightwaves贸易组织",
+      "title": "季節性因素導致第四個節日之前的拒絕率和比率更高",
+      "summary": "本週 DHL 供應鏈定價能力指數：75（承運商） 上週 DHL 供應鏈定價能力指數：70（承運商）&#160;三個月 DHL 供應鏈定價能力指數展望：70（承運商）DHL 供應鏈定價能力指數使用 FreightWaves SONAR 中的分析和數據來分析並估計談判&#8230;#8230;#8230;\n後季節性因素在第四節之前推高了拒收率和費率，首先出現在 FreightWaves 上。",
+      "link": "https://www.freightwaves.com/news/seasonality-pushing-rejections-and-rates-higher-ahead-of-the-fourth",
+      "time": "1779天前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "c5dd896589ea",
+      "category": "freightwaves消息",
+      "priority": "low",
+      "source": "freightwaves贸易组织",
+      "title": "Project44 收購 ClearMetal 以增強預測工具",
+      "summary": "“他們的團隊結構根本不同。當你觀察他們的數據科學、機器學習和計算機科學背景時，你會發現他們是同類中最好的。”\nProject44 收購 ClearMetal 以增強預測工具的訊息首先出現在 FreightWaves 上。",
+      "link": "https://www.freightwaves.com/news/project44-acquires-clearmetal-to-strengthen-predictive-tools",
+      "time": "1810天前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "73ca531c9245",
+      "category": "freightwaves消息",
+      "priority": "low",
+      "source": "freightwaves贸易组织",
+      "title": "Kodiak AI 報告第一季營收成長 74%，車隊數量達到 28 輛無人駕駛卡車",
+      "summary": "Kodiak AI 公佈 2026 年第一季營收成長 74%，達到 180 萬美元，並將其客戶擁有的無人駕駛車隊擴大到 28 輛卡車。仅本季度该公司就有超过 23,500 个带薪工作时间，并筹集了 1 亿美元用于扩大规模。\nKodiak AI 报告第一季度收入增长 74%，无人驾驶卡车车队达到 28 辆，这首先出现在 FreightWaves 上。",
+      "link": "https://www.freightwaves.com/news/kodiak-ai-q1-2026-earnings-28-driverless-trucks",
+      "time": "5小时前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "420fd933a9b7",
+      "category": "freightwaves消息",
+      "priority": "low",
+      "source": "freightwaves贸易组织",
+      "title": "美國郵政服務提議有限提高包裹價格",
+      "summary": "美國郵政局希望改變包裹運輸的一些定價機制，這將增加托運人的成本。\n美國郵政服務提議有限的包裹價格上漲首先出現在 FreightWaves 上。",
+      "link": "https://www.freightwaves.com/news/us-postal-service-proposes-limited-parcel-price-increases",
+      "time": "5小时前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "15dd6e984f61",
+      "category": "freightwaves消息",
+      "priority": "low",
+      "source": "freightwaves贸易组织",
+      "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+      "summary": "第三方物流供應商 Radiant Logistics 週一的季度業績超乎預期。\nRadiant Logistics 超越第三季預期的消息首先出現在 FreightWaves 上。",
+      "link": "https://www.freightwaves.com/news/radiant-logistics-beats-fq3-expectations",
+      "time": "5小时前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "39a3529947cd",
+      "category": "freightwaves消息",
+      "priority": "low",
+      "source": "freightwaves贸易组织",
+      "title": "CN：STB 應拒絕「不完整」的 UP-NS 合併申請",
+      "summary": "加拿大國民銀行敦促美國監管機構拒絕聯合太平洋公司和諾福克南方公司提交的經修訂但仍不完整的合併申請。\nCN：STB 應拒絕「不完整」的 UP-NS 合併申請一文首先出現在 FreightWaves 上。",
+      "link": "https://www.freightwaves.com/news/cn-stb-should-reject-incomplete-up-ns-merger-application",
+      "time": "6小时前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "cf58b887b18d",
+      "category": "maritime消息",
+      "priority": "low",
+      "source": "maritime消息",
+      "title": "Berg Propulsion 推動印度的綠色拖船轉型",
+      "summary": "船舶推進解決方案提供商 Berg Propulsion 將在印度航運業的綠色轉型中發揮關鍵作用，首先...",
+      "link": "https://maritime-executive.com/article/berg-propulsion-drives-india-s-green-tug-transition",
+      "time": "近期",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "5ffd19328873",
+      "category": "maritime消息",
+      "priority": "low",
+      "source": "maritime消息",
+      "title": "達門向大山商船業有限公司交付CSOV 9020 TSS巡洋艦",
+      "summary": "達門造船集團向位於 Ha Lo 的 Ta San Shang Marine Co., Ltd. (TSSM) 交付了兩艘調試服務作業船 (CSOV) 9020 中的第一艘...",
+      "link": "https://maritime-executive.com/article/damen-delivers-csov-9020-tss-cruiser-to-ta-san-shang-marine-co-ltd",
+      "time": "近期",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "47898a882ead",
+      "category": "maritime消息",
+      "priority": "low",
+      "source": "maritime消息",
+      "title": "港務局在紐瓦克機場啟動大型太陽能擴建項目",
+      "summary": "紐約和新澤西港務局今天宣布了紐瓦克自由國際機場太陽能基礎設施重大擴建計劃…",
+      "link": "https://maritime-executive.com/article/port-authority-launches-major-solar-energy-expansion-at-newark-airport",
+      "time": "近期",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "19fc6caaeeaa",
+      "category": "seatrade消息",
+      "priority": "low",
+      "source": "seatrade消息",
+      "title": "衝突的代價－動盪時期船員旅行的導航",
+      "summary": "在 Seatrade 海事新聞播客的最新一集中，我們探討了在機票價格上漲、航班取消和船員滯留在衝突地區的情況下海上旅行的複雜情況。",
+      "link": "https://www.seatrade-maritime.com/crewing/the-cost-of-conflict-navigating-crew-travel-in-turbulent-times",
+      "time": "2小时前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "75e972e6f666",
+      "category": "seatrade消息",
+      "priority": "low",
+      "source": "seatrade消息",
+      "title": "聯合海事公司利用第三艘新油輪擴大風力發電設施",
+      "summary": "這家總部位於倫敦的船東已接收了雙燃料油輪 Monza，該油輪配備了 BAR Technologies 的兩塊 WindWings 帆",
+      "link": "https://www.seatrade-maritime.com/sustainability/union-maritime-scales-up-wind-installations-with-third-new-tanker",
+      "time": "13小时前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "d99b0ad6100c",
+      "category": "seatrade消息",
+      "priority": "low",
+      "source": "seatrade消息",
+      "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+      "summary": "韓國調查顯示，HMM多用途船船體在5月4日的事件中被兩次擊中",
+      "link": "https://www.seatrade-maritime.com/security/hmm-namu-hit-twice-in-gulf-attack",
+      "time": "17小时前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "591ba6ee9662",
+      "category": "seatrade消息",
+      "priority": "low",
+      "source": "seatrade消息",
+      "title": "巴西批准航運公司競標桑托斯大型碼頭",
+      "summary": "巴西正在採取一項重要舉措，最終可能導致桑托斯港新碼頭的招標過程",
+      "link": "https://www.seatrade-maritime.com/ports-logistics/brazil-clears-shipping-lines-to-bid-for-santos-mega-terminal",
+      "time": "20小时前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "6e479ade40d4",
+      "category": "seatrade消息",
+      "priority": "low",
+      "source": "seatrade消息",
+      "title": "CU Lines 開闢新紅海航線",
+      "summary": "中國貨櫃班輪新增中國至約旦亞喀巴直航航線",
+      "link": "https://www.seatrade-maritime.com/containers/cu-lines-opens-up-new-red-sea-service",
+      "time": "20小时前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "79985cc8a777",
+      "category": "seatrade消息",
+      "priority": "low",
+      "source": "seatrade消息",
+      "title": "霍爾木茲襲擊後達飛輪船聖安東尼奧號上的視頻",
+      "summary": "5月5日，法國貨櫃船在霍爾木茲海峽遭烏克蘭海員槍擊，造成損壞程度",
+      "link": "https://www.seatrade-maritime.com/security/video-on-board-cma-cgm-san-antonio-after-hormuz-attack",
+      "time": "23小时前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
+      "tags": [
+        "物流政策"
+      ]
+    },
+    {
+      "id": "2e7f5df3b589",
+      "category": "seatrade消息",
+      "priority": "low",
+      "source": "seatrade消息",
+      "title": "保護海員是國際海事組織在中東衝突中的首要任務",
+      "summary": "國際海事組織秘書長阿塞尼奧·多明計斯繼續強調滯留在海灣的船員以及重要水道的重要性",
+      "link": "https://www.seatrade-maritime.com/crewing/protecting-seafarers-lives-imo-s-top-priority-in-middle-east-conflict",
+      "time": "1天前",
+      "region": "global",
+      "icon": "🌐",
+      "srcClass": "src-news",
+      "catClass": "cat-news-bg",
       "tags": [
         "物流政策"
       ]
@@ -417,7 +825,7 @@
       "title": "每週貿易焦點：APEC",
       "summary": "每週貿易焦點：APEC\n\n            美國貿易代表辦公室網站每週都會探討一個新的貿易主題，包括背景資訊和當前貿易資料。 7月21日至22日，美國貿易代表羅恩·柯克將在新加坡出席亞太經合組織(APEC)年度部長級會議－因此本週的貿易主題是美國與APEC成員經濟體的貿易關係。\n每週貿易焦點：APEC\n&nbsp;\n\n      drupal_管理員\n星期一, 07/20/2009 - 14",
       "link": "https://ustr.gov/about-us/policy-offices/press-office/blog/weekly-trade-focus-apec",
-      "time": "6138天前",
+      "time": "6139天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -432,9 +840,9 @@
       "priority": "low",
       "source": "美国贸易代表署",
       "title": "關於結構性產能過剩第 301 條調查的公開聽證會",
-      "summary": "關於結構性產能過剩第 301 條調查的公開聽證會\n迈尔伯勒\n星期一, 05/04/2026 - 09:54\n\n\n            华盛顿 — — 美国贸易代表办公室将于 5 月 5 日举行公开听证会，持续至 2026 年 5 月 8 日，内容涉及对 16 个经济体与制造业结构性产能过剩和生产相关的法案、政策和做法进行 301 调查。\n聽證會將於東部時間上午 10 點在美國國際貿易委員會位於華",
+      "summary": "關於結構性產能過剩第 301 條調查的公開聽證會\n邁爾伯勒\n星期一, 05/04/2026 - 09:54\n\n\n            華盛頓 — — 美國貿易代表辦公室將於 5 月 5 日舉行公開聽證會，持續至 2026 年 5 月 8 日，內容涉及對 16 個經濟體與製造業結構性產能過剩和生產相關的法案、政策和做法進行 301 調查。\n聽證會將於東部時間上午 10 點在美國國際貿易委員會位於華",
       "link": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/may/public-hearings-regarding-section-301-investigations-relating-structural-excess-capacity",
-      "time": "6天前",
+      "time": "7天前",
       "region": "america",
       "icon": "🇺🇸",
       "srcClass": "src-us",
@@ -449,334 +857,11 @@
       "priority": "low",
       "source": "美国贸易代表署",
       "title": "約瑟夫·巴隆",
-      "summary": "約瑟夫·巴隆\n賈特納\n星期三，2026 年 4 月 29 日 - 18:44\n\n\n  \n    領導職務\n              美國副貿易代表\n          \n\n  \n    領導力簡介\n              约瑟夫·巴隆大使是美国副贸易代表兼美国常驻瑞士日内瓦世界贸易组织代表团团长。除了在世贸组织中代表美国外，巴隆大使还在经济合作与发展组织、七国集团和二十国集团会议等其他多边论",
+      "summary": "約瑟夫·巴隆\n賈特納\n星期三，2026 年 4 月 29 日 - 18:44\n\n\n  \n    領導職務\n              美國副貿易代表\n          \n\n  \n    領導力簡介\n              約瑟夫‧巴隆大使是美國副貿易代表、美國常駐瑞士日內瓦世界貿易組織代表團團長。除了在世貿組織中代表美國外，巴隆大使還在經濟合作暨發展組織、七國集團和二十國集團會議等其他多邊論",
       "link": "https://ustr.gov/node/14318",
-      "time": "11天前",
+      "time": "12天前",
       "region": "america",
       "icon": "🇺🇸",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "8702f25753f6",
-      "category": "port",
-      "priority": "low",
-      "source": "Lloyd's List",
-      "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-      "summary": "巴拿馬運河已成為霍爾木茲海峽危機的最大受益者之一。運河的數字...\n&#160;&#160;&#160;&#160;&nbsp;相關故事BDI 已突破 3,000 點門檻 &#x2014;對現代散貨船的強勁需求推高了大多數細分市場的二手船價格，伊朗指責美國“破壞穩定”海上安全與保安&#160;",
-      "link": "https://www.lloydslist.com/LL1157125/Crisis-driven%20tanker%20demand%20propels%20Panama%20Canal%20to%20multiyear%20high?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
-      "time": "2天前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-port",
-      "catClass": "cat-port-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "2c995707e2c1",
-      "category": "port",
-      "priority": "low",
-      "source": "Lloyd's List",
-      "title": "BDI 已突破 3,000 點大關－船東看好更多",
-      "summary": "在大型油輪集會中，乾散貨一直沒有受到關注，但該行業正在成功開局…\n&#160;&#160;&#160;&#160;&nbsp;相關故事危機驅動的油輪需求推動巴拿馬運河達到多年來的新高對現代散貨船的強勁需求推高了大多數細分市場的二手價格伊朗指責美國“破壞穩定”海上安全與保安&#160;",
-      "link": "https://www.lloydslist.com/LL1157120/The%20BDI%20has%20crossed%20the%203000point%20threshold%20%20and%20owners%20are%20bullish%20for%20more?utm_source=search&utm_medium=RSS&utm_term=&utm_campaign=search_rss",
-      "time": "2天前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-port",
-      "catClass": "cat-port-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "1252df46af6f",
-      "category": "imo",
-      "priority": "low",
-      "source": "Splash247 航运新闻",
-      "title": "維多利亞承諾投入 9,000 萬美元開發黑斯廷斯港離岸風港",
-      "summary": "維多利亞州政府已在 2026/27 年度預算中承諾投入 1.245 億澳元（9,010 萬美元）來推進黑斯廷斯港擬議的可再生能源碼頭建設。這筆資金將推進澳洲第一個此類重型離岸風港的環境影響報告（EES）流程。該終端旨在啟用陸上渦輪機“",
-      "link": "https://splash247.com/victoria-commits-90m-to-progress-offshore-wind-port-at-port-of-hastings/",
-      "time": "1小时前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-imo",
-      "catClass": "cat-imo-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "51f6b9ca441d",
-      "category": "imo",
-      "priority": "low",
-      "source": "Splash247 航运新闻",
-      "title": "VLGC即期運價創歷史新高",
-      "summary": "超大型天然氣運輸船 (VLGC) 即期運價已飆升至創紀錄水平，休士頓至千葉航線的基準運費攀升至每噸 290 美元，每日收入飆升至近 17 萬美元。根據克拉克森研究公司的數據，這是該系列賽有史以來的最高水平。破紀錄的運行是由“”推動的。",
-      "link": "https://splash247.com/vlgc-spot-rates-hit-record-highs/",
-      "time": "4小时前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-imo",
-      "catClass": "cat-imo-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "7d9bffcb68aa",
-      "category": "imo",
-      "priority": "low",
-      "source": "Splash247 航运新闻",
-      "title": "碳成本、燃料選擇和不確定性塑造了日內瓦乾燥辯論",
-      "summary": "幹散貨產業的脫碳爭論已經超出了航運業是否會達到淨零排放的範圍，現在的焦點是該產業如何在日益不確定的世界中實現商業轉型。這是上個月日內瓦會議第二天第二次會議乾脫碳小組發出的明確訊息。",
-      "link": "https://splash247.com/carbon-costs-fuel-choices-and-uncertainty-shape-geneva-dry-debate/",
-      "time": "4小时前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-imo",
-      "catClass": "cat-imo-bg",
-      "tags": [
-        "减排"
-      ]
-    },
-    {
-      "id": "68437ddaee58",
-      "category": "imo",
-      "priority": "low",
-      "source": "Splash247 航运新闻",
-      "title": "Vroon 退出牲畜運輸業務",
-      "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-      "link": "https://splash247.com/vroon-cashes-out-of-livestock-shipping-business/",
-      "time": "5小时前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-imo",
-      "catClass": "cat-imo-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "c7550cf9feb5",
-      "category": "imo",
-      "priority": "low",
-      "source": "Splash247 航运新闻",
-      "title": "ONE 重返 HD Hyundai 達成價值 12 億美元的液化天然氣動力貨櫃船交易",
-      "summary": "Ocean Network Express 已返回韓國 HD 現代重工建造另一批具有液化天然氣能力的貨櫃船，儘管縮減了早期的擴張計劃，但仍繼續推進其長期替代燃料船隊更新戰略。市場消息人士稱，這家總部位於新加坡的班輪營運商是 HD 韓國造船公司宣布的價值 12.2 億美元的新造船合約的買家。近海&#8230;",
-      "link": "https://splash247.com/one-returns-to-hd-hyundai-for-1-2bn-lng-fuelled-boxship-deal/",
-      "time": "5小时前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-imo",
-      "catClass": "cat-imo-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "39a3aa81ebdb",
-      "category": "imo",
-      "priority": "low",
-      "source": "Splash247 航运新闻",
-      "title": "日本製造的ultramax值跳躍",
-      "summary": "上週，波羅的海幹散貨運價指數突破 3,000 點大關，創下多年來的最高水平，引發了買賣市場又一個炙手可熱的一周。 Lion Shipbrokers 週末報告了 16 筆交易，與其他經紀公司的評論相呼應，表明對 15-20 年船齡的日本製造巴拿馬型船的強烈需求。",
-      "link": "https://splash247.com/japanese-built-ultramax-values-jump/",
-      "time": "5小时前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-imo",
-      "catClass": "cat-imo-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "c5d87a7c62a1",
-      "category": "imo",
-      "priority": "low",
-      "source": "Splash247 航运新闻",
-      "title": "Awilco LNG 改變路線，執行長退出並重組董事會",
-      "summary": "挪威天然氣運輸船所有者 Awilco LNG 在長期任職的首席執行官 Jon Skule Storheill 辭職後立即生效，該公司準備進行更廣泛的領導層改組，該公司正在進入新的篇章。這家在奧斯陸上市的液化天然氣運輸公司表示，斯託海爾和董事會已共同同意，該公司應根據新的「規則」進入下一階段。",
-      "link": "https://splash247.com/awilco-lng-changes-course-with-ceo-exit-and-board-revamp/",
-      "time": "7小时前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-imo",
-      "catClass": "cat-imo-bg",
-      "tags": [
-        "LNG"
-      ]
-    },
-    {
-      "id": "5ab584eca8f0",
-      "category": "imo",
-      "priority": "low",
-      "source": "Splash247 航运新闻",
-      "title": "海員短缺並不像航運業所認為的那樣",
-      "summary": "InterManager 秘書長 Kuba Szymanski 今天為 Splash 撰寫。在人們日益擔心全球海員短缺的情況下，許多業內人士認為，招募是我們面臨的最大挑戰。我不同意。真正的問題是我們是否正確培訓、支持和保護我們已經擁有的勞動力來建立產業的未來。太久了，&#8230;",
-      "link": "https://splash247.com/the-seafarer-shortage-is-not-what-shipping-thinks-it-is/",
-      "time": "9小时前",
-      "region": "global",
-      "icon": "📰",
-      "srcClass": "src-imo",
-      "catClass": "cat-imo-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "089fb4ed3a90",
-      "category": "us",
-      "priority": "low",
-      "source": "FreightWaves",
-      "title": "大多數卡車司機一年中最不喜歡的一周背後的「巧妙策略」：國際路檢",
-      "summary": "突擊檢查讓卡車司機感到沮喪。但經濟學家發現，國際道路檢查週提高了整體道路安全。\n貼文「巧妙的策略」落後於大多數卡車司機的一年中最不受歡迎的一周：International Roadcheck 首先出現在 FreightWaves 上。",
-      "link": "https://www.freightwaves.com/news/the-ingenious-strategy-behind-most-truck-drivers-least-favorite-week-of-the-year",
-      "time": "1454天前",
-      "region": "america",
-      "icon": "📊",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "84ecc5dcf3c4",
-      "category": "us",
-      "priority": "low",
-      "source": "FreightWaves",
-      "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-      "summary": "東海岸的柴油庫存創歷史新低。卡車司機對庫存的減少和運費的飆升感到震驚。\n為什麼東北地區柴油悄悄耗盡的貼文首先出現在 FreightWaves 上。",
-      "link": "https://www.freightwaves.com/news/why-the-northeast-is-quietly-running-out-of-diesel",
-      "time": "1459天前",
-      "region": "america",
-      "icon": "📊",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "0e2003421e96",
-      "category": "us",
-      "priority": "low",
-      "source": "FreightWaves",
-      "title": "倉庫擁擠即將開始 — Freightonomics",
-      "summary": "在貨運經濟學的這一集中，扎克·斯特里克蘭 (Zach Strickland) 和安東尼·史密斯 (Anthony Smith) 與科羅拉多州立大學的紮克·羅傑斯 (Zac Rogers) 討論了擠佔倉庫空間的必要性。 \n倉儲補習即將開始——Freightonomics 首先出現在 FreightWaves 上。",
-      "link": "https://www.freightwaves.com/news/warehouse-cramming-is-about-to-begin-freightonomics",
-      "time": "1732天前",
-      "region": "america",
-      "icon": "📊",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "9a909bca6c84",
-      "category": "us",
-      "priority": "low",
-      "source": "FreightWaves",
-      "title": "季節性因素導致第四個節日之前的拒絕率和比率更高",
-      "summary": "本週 DHL 供應鏈定價能力指數：75（承運商） 上週 DHL 供應鏈定價能力指數：70（承運商）&#160;三個月 DHL 供應鏈定價能力指數展望：70（承運商）DHL 供應鏈定價能力指數使用 FreightWaves SONAR 中的分析和數據來分析並估計談判&#8230;#8230;#8230;\n後季節性因素在第四節之前推高了拒收率和費率，首先出現在 FreightWaves 上。",
-      "link": "https://www.freightwaves.com/news/seasonality-pushing-rejections-and-rates-higher-ahead-of-the-fourth",
-      "time": "1778天前",
-      "region": "america",
-      "icon": "📊",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "c5dd896589ea",
-      "category": "us",
-      "priority": "low",
-      "source": "FreightWaves",
-      "title": "Project44 收購 ClearMetal 以增強預測工具",
-      "summary": "“他們的團隊結構根本不同。當你觀察他們的數據科學、機器學習和計算機科學背景時，你會發現他們是同類中最好的。”\nProject44 收购 ClearMetal 以增强预测工具的消息首先出现在 FreightWaves 上。",
-      "link": "https://www.freightwaves.com/news/project44-acquires-clearmetal-to-strengthen-predictive-tools",
-      "time": "1809天前",
-      "region": "america",
-      "icon": "📊",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "d471051467f2",
-      "category": "us",
-      "priority": "low",
-      "source": "FreightWaves",
-      "title": "漢坦病毒與客運車隊：客運航空公司應該考慮什麼",
-      "summary": "新冠病毒幾乎摧毀了汽車產業。漢他病毒不是新冠病毒，但教訓仍然適用。以下是客運航空公司現在應該做的事情，不要失去理智。\n後漢他病毒和客運車隊：客運航空公司應該考慮什麼首先出現在 FreightWaves 上。",
-      "link": "https://www.freightwaves.com/news/hantavirus-and-passenger-fleets-what-passenger-carriers-should-be-thinking-about",
-      "time": "刚刚",
-      "region": "america",
-      "icon": "📊",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "badbb900dd9f",
-      "category": "us",
-      "priority": "low",
-      "source": "FreightWaves",
-      "title": "穆迪一年內第三次下調 Wabash 評級，高管關注“27 反彈”",
-      "summary": "穆迪一年內第三次下調 Wabash National 的債務評級。\n在穆迪一年內第三次下調 Wabash 評級後，高層關注的「27 反彈」首先出現在 FreightWaves 上。",
-      "link": "https://www.freightwaves.com/news/moodys-cuts-wabash-rating-third-time-in-a-year-execs-eye-27-rebound",
-      "time": "1小时前",
-      "region": "america",
-      "icon": "📊",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "c85eba27689b",
-      "category": "us",
-      "priority": "low",
-      "source": "FreightWaves",
-      "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-      "summary": "本週在墨西哥邊境：貿易、卡車運輸主導了伊格爾帕斯港年度峰會； Avant Technology 獲得德克薩斯州 Pharr 工廠擴建撥款；和SEG Solar將在休士頓建設4吉瓦太陽能組件工廠。\n《墨西哥無主之地：貿易、卡車運輸主導鷹口港年度高峰會》首先出現在 FreightWaves 上。",
-      "link": "https://www.freightwaves.com/news/borderlands-mexico-trade-trucking-dominate-port-of-eagle-pass-annual-summit",
-      "time": "1天前",
-      "region": "america",
-      "icon": "📊",
-      "srcClass": "src-us",
-      "catClass": "cat-us-bg",
-      "tags": [
-        "物流政策"
-      ]
-    },
-    {
-      "id": "b5a29ba81704",
-      "category": "us",
-      "priority": "low",
-      "source": "FreightWaves",
-      "title": "路檢週對貨運市場意味著什麼",
-      "summary": "卡車運輸業即將遭遇今年下一個最大的季節性幹擾，即檢查率增加。這對於本已緊張的市場意味著什麼？\n路檢週對貨運市場意味著什麼的貼文首先出現在 FreightWaves 上。",
-      "link": "https://www.freightwaves.com/news/what-roadcheck-week-means-for-freight-market",
-      "time": "1天前",
-      "region": "america",
-      "icon": "📊",
       "srcClass": "src-us",
       "catClass": "cat-us-bg",
       "tags": [
