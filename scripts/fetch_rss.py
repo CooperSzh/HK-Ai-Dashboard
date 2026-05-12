@@ -1,203 +1,113 @@
 #!/usr/bin/env python3
 """
-LogPulse RSS Fetcher
-全球物流政策情报 RSS 抓取脚本
-自动抓取 IMO / WTO / 中国海关 / 美欧贸易 / 主要港口 政策新闻
+LogPulse 情报抓取脚本
+- 精准抓取 Google News RSS（物流/海关主题）
+- 抓取香港海关与中国海关公告页面
+- 可维护式站点配置，便于后续扩展
 """
 
-import json
 import hashlib
+import json
 import re
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import quote_plus
 
-# --- 依赖检查 ---
 try:
     import feedparser
 except ImportError:
-    import subprocess, sys
+    import subprocess
+    import sys
+
     subprocess.check_call([sys.executable, "-m", "pip", "install", "feedparser"])
     import feedparser
 
 try:
     import requests
 except ImportError:
-    import subprocess, sys
+    import subprocess
+    import sys
+
     subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
     import requests
 
-# 可选翻译依赖（缺失时不影响主流程）
 try:
     from deep_translator import GoogleTranslator
 except ImportError:
     GoogleTranslator = None
 
-# ===================== RSS 源配置 =====================
-RSS_SOURCES = [
-    # --- 国际组织 ---
+# Google News 关键词（可维护）
+GOOGLE_NEWS_QUERIES = [
+    "Hong Kong logistics customs",
+    "港口 物流 海关",
+    "shipping tariff trade policy",
+    "中國 海關 公告",
+]
+
+SOURCE_CONFIG = [
     {
-        "id": "wto",
-        "name": "WTO 世界贸易组织",
-        "url": "https://www.wto.org/library/rss/latest_news_e.xml",
-        "category": "imo",
-        "region": "global",
-        "icon": "🌐",
-        "src_class": "src-imo",
-        "cat_class": "cat-imo-bg",
-    },
-    # --- freightwaves ---
-    {
-        "id": "freightwaves",
-        "name": "freightwaves贸易组织",
-        "url": "https://www.freightwaves.com/news/feed",
-        "category": "freightwaves消息",
-        "region": "global",
-        "icon": "🌐",
-        "src_class": "src-news",
-        "cat_class": "cat-news-bg",
-    },
-    # --- maritime ---
-    {
-        "id": "maritime",
-        "name": "maritime消息",
-        "url": "https://maritime-executive.com/articles.rss",
-        "category": "maritime消息",
-        "region": "global",
-        "icon": "🌐",
-        "src_class": "src-news",
-        "cat_class": "cat-news-bg",
-    },
-    # --- seatrade ---
-    {
-        "id": "seatrade",
-        "name": "seatrade消息",
-        "url": "https://www.seatrade-maritime.com/rss.xml",
-        "category": "seatrade消息",
-        "region": "global",
-        "icon": "🌐",
-        "src_class": "src-news",
-        "cat_class": "cat-news-bg",
-    },
-    # --- 美欧贸易 ---
-    {
-        "id": "ustr",
-        "name": "美国贸易代表署",
-        "url": "https://ustr.gov/rss.xml",
-        "category": "us",
-        "region": "america",
-        "icon": "🇺🇸",
-        "src_class": "src-us",
-        "cat_class": "cat-us-bg",
-    },
-    # --- 行业媒体 ---
-    {
-        "id": "lloyds",
-        "name": "Lloyd's List",
-        "url": "https://feeds.feedblitz.com/lloyds-list",
-        "category": "port",
-        "region": "global",
-        "icon": "📰",
-        "src_class": "src-port",
-        "cat_class": "cat-port-bg",
-    },
-    # --- 行业媒体 ---
-    {
-        "id": "splash247",
-        "name": "Splash247 航运新闻",
-        "url": "https://splash247.com/feed/",
-        "category": "imo",
-        "region": "global",
-        "icon": "📰",
-        "src_class": "src-imo",
-        "cat_class": "cat-imo-bg",
-    },
-    # --- scmp ---
-    {
-        "id": "scmp-hk",
-        "name": "SCMP 香港新闻",
-        "url": "https://www.scmp.com/rss/91/feed",
-        "category": "news",
+        "id": "hk-customs-press",
+        "name": "香港海關 新聞公報",
+        "type": "html",
+        "url": "https://www.customs.gov.hk/tc/customs-announcement/press-release/index.html",
+        "category": "hongkong",
         "region": "hongkong",
         "icon": "🇭🇰",
-        "src_class": "src-news",
-        "cat_class": "cat-news-bg"
+        "src_class": "src-hk",
+        "cat_class": "cat-hk-bg",
+        "item_pattern": r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>',
     },
     {
-        "id": "scmp-china",
-        "name": "SCMP 中国新闻",
-        "url": "https://www.scmp.com/rss/4/feed",
+        "id": "hk-customs-whatsnew",
+        "name": "香港海關 最新消息",
+        "type": "html",
+        "url": "https://www.customs.gov.hk/tc/customs-announcement/whats-new/index.html",
+        "category": "hongkong",
+        "region": "hongkong",
+        "icon": "🇭🇰",
+        "src_class": "src-hk",
+        "cat_class": "cat-hk-bg",
+        "item_pattern": r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>',
+    },
+    {
+        "id": "cn-customs-news",
+        "name": "中國海關 總署新聞",
+        "type": "html",
+        "url": "http://www.customs.gov.cn/customs/xwfb34/index.html",
         "category": "china",
         "region": "china",
         "icon": "🇨🇳",
         "src_class": "src-china",
-        "cat_class": "cat-china-bg"
-    },
-    {
-        "id": "scmp-asia",
-        "name": "SCMP 亚洲新闻",
-        "url": "https://www.scmp.com/rss/3/feed",
-        "category": "asia",
-        "region": "asia",
-        "icon": "🌏",
-        "src_class": "src-asia",
-        "cat_class": "cat-asia-bg"
-    },
-    {
-        "id": "scmp-business",
-        "name": "SCMP 商业新闻",
-        "url": "https://www.scmp.com/rss/92/feed",
-        "category": "business",
-        "region": "global",
-        "icon": "💹",
-        "src_class": "src-business",
-        "cat_class": "cat-business-bg"
-    },
-    {
-        "id": "freightwaves",
-        "name": "FreightWaves",
-        "url": "https://www.freightwaves.com/news/feed",
-        "category": "us",
-        "region": "america",
-        "icon": "📊",
-        "src_class": "src-us",
-        "cat_class": "cat-us-bg",
+        "cat_class": "cat-china-bg",
+        "item_pattern": r'<a[^>]+href="([^"]+)"[^>]*title="([^"]+)"',
     },
 ]
 
-# 物流/航运关键词过滤（提高精准度）
 KEYWORDS = [
     "shipping", "logistics", "port", "customs", "tariff", "trade",
-    "maritime", "freight", "container", "vessel", "cargo", "supply chain",
-    "航运", "物流", "港口", "海关", "关税", "贸易", "集装箱", "供应链",
-    "IMO", "WTO", "RCEP", "sanctions", "制裁", "emission", "排放",
-    "policy", "regulation", "政策", "法规"
+    "maritime", "freight", "container", "cargo", "supply chain",
+    "航运", "物流", "港口", "海关", "關稅", "贸易", "海關", "供應鏈",
 ]
-
-PRIORITY_KEYWORDS = {
-    "high": [
-        "sanction", "制裁", "tariff war", "关税战", "ban", "禁令",
-        "emergency", "紧急", "critical", "重大"
-    ],
-    "medium": [
-        "policy", "政策", "regulation", "法规", "update", "更新",
-        "new rule", "新规", "agreement", "协议"
-    ],
-}
 
 _TRANSLATION_CACHE = {}
 _ZH_TW_TRANSLATOR = GoogleTranslator(source="auto", target="zh-TW") if GoogleTranslator else None
 
 
 def clean_html(text: str) -> str:
-    """Remove HTML tags from text."""
     return re.sub(r"<[^>]+>", "", text or "").strip()
 
 
+def to_absolute_url(base_url: str, href: str) -> str:
+    if href.startswith("http://") or href.startswith("https://"):
+        return href
+    if href.startswith("/"):
+        m = re.match(r"(https?://[^/]+)", base_url)
+        return (m.group(1) if m else "") + href
+    return base_url.rsplit("/", 1)[0] + "/" + href
+
+
 def translate_to_zh_tw(text: str) -> str:
-    """Translate text to Traditional Chinese (zh-TW)."""
-    if not text:
-        return text
-    if _ZH_TW_TRANSLATOR is None:
+    if not text or _ZH_TW_TRANSLATOR is None:
         return text
     if text in _TRANSLATION_CACHE:
         return _TRANSLATION_CACHE[text]
@@ -210,145 +120,116 @@ def translate_to_zh_tw(text: str) -> str:
     return result
 
 
-def assess_priority(title: str, summary: str) -> str:
-    """Assess news priority based on keywords."""
-    content = (title + " " + summary).lower()
-    for kw in PRIORITY_KEYWORDS["high"]:
-        if kw.lower() in content:
-            return "high"
-    for kw in PRIORITY_KEYWORDS["medium"]:
-        if kw.lower() in content:
-            return "medium"
-    return "low"
-
-
 def is_relevant(title: str, summary: str) -> bool:
-    """Check if the article is relevant to logistics/shipping."""
     content = (title + " " + summary).lower()
     return any(kw.lower() in content for kw in KEYWORDS)
 
 
-def format_time(entry) -> str:
-    """Format RSS entry published time."""
-    try:
-        if hasattr(entry, "published_parsed") and entry.published_parsed:
-            dt = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
-            delta = datetime.now(timezone.utc) - dt
-            hours = int(delta.total_seconds() // 3600)
-            if hours < 1:
-                return "刚刚"
-            elif hours < 24:
-                return f"{hours}小时前"
-            else:
-                return f"{delta.days}天前"
-    except Exception:
-        pass
-    return "近期"
+def assess_priority(title: str, summary: str) -> str:
+    content = (title + " " + summary).lower()
+    if any(kw in content for kw in ["sanction", "制裁", "禁令", "emergency", "重大"]):
+        return "high"
+    if any(kw in content for kw in ["policy", "政策", "regulation", "法规", "新规"]):
+        return "medium"
+    return "low"
 
 
-def extract_tags(title: str, summary: str) -> list:
-    """Extract relevant tags from content."""
-    content = title + " " + summary
-    tag_map = {
-        "港口": "港口", "port": "港口",
-        "关税": "关税", "tariff": "关税",
-        "排放": "减排", "emission": "减排", "carbon": "碳减排",
-        "制裁": "制裁", "sanction": "制裁",
-        "自动化": "自动化", "automation": "自动化",
-        "供应链": "供应链", "supply chain": "供应链",
-        "集装箱": "集装箱", "container": "集装箱",
-        "LNG": "LNG", "绿色": "绿色航运", "green": "绿色航运",
-        "RCEP": "RCEP", "WTO": "WTO", "IMO": "IMO",
+def format_recent_time() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+
+def build_item(source: dict, title: str, summary: str, link: str) -> dict:
+    item_id = hashlib.md5((source["id"] + title + link).encode("utf-8")).hexdigest()[:12]
+    zh_title = translate_to_zh_tw(title)
+    zh_summary = translate_to_zh_tw(summary) if summary else zh_title
+    return {
+        "id": item_id,
+        "category": source["category"],
+        "priority": assess_priority(title, summary),
+        "source": source["name"],
+        "title": zh_title,
+        "summary": (zh_summary or zh_title)[:220],
+        "link": link,
+        "time": format_recent_time(),
+        "region": source["region"],
+        "icon": source["icon"],
+        "srcClass": source["src_class"],
+        "catClass": source["cat_class"],
+        "tags": ["海关动态"],
     }
-    tags = []
-    for kw, label in tag_map.items():
-        if kw.lower() in content.lower() and label not in tags:
-            tags.append(label)
-        if len(tags) >= 3:
-            break
-    return tags if tags else ["物流政策"]
 
 
-def fetch_source(source: dict) -> list:
-    """Fetch and parse a single RSS source."""
+def fetch_google_news() -> list:
+    print("  → 抓取: Google News 精准主题 ...")
+    source = {
+        "id": "google-news",
+        "name": "Google News",
+        "category": "global",
+        "region": "global",
+        "icon": "🌐",
+        "src_class": "src-news",
+        "cat_class": "cat-news-bg",
+    }
     items = []
-    try:
-        print(f"  → 抓取: {source['name']} ...")
-        feed = feedparser.parse(
-            source["url"],
-            request_headers={"User-Agent": "LogPulse/1.0 RSS Reader"},
-        )
-        for entry in feed.entries[:10]:  # Max 10 per source
-            original_title = clean_html(getattr(entry, "title", ""))
-            original_summary = clean_html(getattr(entry, "summary", getattr(entry, "description", "")))
+    for query in GOOGLE_NEWS_QUERIES:
+        rss_url = f"https://news.google.com/rss/search?q={quote_plus(query)}&hl=zh-TW&gl=HK&ceid=HK:zh-Hant"
+        feed = feedparser.parse(rss_url, request_headers={"User-Agent": "LogPulse/2.0"})
+        for entry in feed.entries[:8]:
+            title = clean_html(getattr(entry, "title", ""))
+            summary = clean_html(getattr(entry, "summary", getattr(entry, "description", "")))
             link = getattr(entry, "link", "#")
-
-            if not original_title:
-                continue
-            if not is_relevant(original_title, original_summary):
-                continue
-
-            title = translate_to_zh_tw(original_title)
-            summary = translate_to_zh_tw(original_summary)
-
-            item_id = hashlib.md5((source["id"] + original_title).encode()).hexdigest()[:12]
-            items.append({
-                "id": item_id,
-                "category": source["category"],
-                "priority": assess_priority(original_title, original_summary),
-                "source": source["name"],
-                "title": title,
-                "summary": summary[:200] if summary else title,
-                "link": link,
-                "time": format_time(entry),
-                "region": source["region"],
-                "icon": source["icon"],
-                "srcClass": source["src_class"],
-                "catClass": source["cat_class"],
-                "tags": extract_tags(title, summary),
-            })
-
-        print(f"     ✓ 获取 {len(items)} 条相关动态")
-    except Exception as e:
-        print(f"     ✗ 失败: {e}")
+            if title and is_relevant(title, summary):
+                items.append(build_item(source, title, summary, link))
+    print(f"     ✓ 获取 {len(items)} 条")
     return items
 
 
-def generate_stats(items: list) -> dict:
-    """Generate summary statistics."""
+def fetch_html_source(source: dict) -> list:
+    print(f"  → 抓取: {source['name']} ...")
+    items = []
+    try:
+        resp = requests.get(source["url"], timeout=20, headers={"User-Agent": "LogPulse/2.0"})
+        resp.raise_for_status()
+        html = resp.text
+        matches = re.findall(source["item_pattern"], html, flags=re.IGNORECASE | re.DOTALL)
+        for href, raw_title in matches[:60]:
+            title = clean_html(raw_title)
+            if not title or len(title) < 6:
+                continue
+            link = to_absolute_url(source["url"], href)
+            summary = title
+            if is_relevant(title, summary):
+                items.append(build_item(source, title, summary, link))
+        print(f"     ✓ 获取 {len(items)} 条")
+    except Exception as exc:
+        print(f"     ✗ 失败: {exc}")
+    return items
+
+
+def generate_stats(items: list, sources_count: int) -> dict:
     return {
         "total": len(items),
         "high_risk": len([i for i in items if i["priority"] == "high"]),
         "by_category": {
-            "port": len([i for i in items if i["category"] == "port"]),
-            "imo": len([i for i in items if i["category"] == "imo"]),
+            "hongkong": len([i for i in items if i["category"] == "hongkong"]),
             "china": len([i for i in items if i["category"] == "china"]),
-            "us": len([i for i in items if i["category"] == "us"]),
+            "global": len([i for i in items if i["category"] == "global"]),
         },
-        "by_region": {
-            "asia": len([i for i in items if i["region"] == "asia"]),
-            "europe": len([i for i in items if i["region"] == "europe"]),
-            "america": len([i for i in items if i["region"] == "america"]),
-            "global": len([i for i in items if i["region"] == "global"]),
-        },
-        "sources_count": len(RSS_SOURCES),
+        "sources_count": sources_count,
     }
 
 
 def main():
     print("=" * 50)
-    print("🚢 LogPulse RSS 抓取器启动")
+    print("🚢 LogPulse 抓取器启动")
     print(f"   时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print(f"   信息源: {len(RSS_SOURCES)} 个")
-    print(f"   翻译: {'已启用 (zh-TW)' if _ZH_TW_TRANSLATOR else '未启用 (缺少 deep-translator)'}")
     print("=" * 50)
 
     all_items = []
-    for source in RSS_SOURCES:
-        items = fetch_source(source)
-        all_items.extend(items)
+    all_items.extend(fetch_google_news())
+    for source in SOURCE_CONFIG:
+        all_items.extend(fetch_html_source(source))
 
-    # Deduplicate by id
     seen = set()
     unique_items = []
     for item in all_items:
@@ -356,30 +237,22 @@ def main():
             seen.add(item["id"])
             unique_items.append(item)
 
-    # Sort: high priority first
-    priority_order = {"high": 0, "medium": 1, "low": 2}
-    unique_items.sort(key=lambda x: priority_order.get(x["priority"], 2))
-
-    # Limit to 50 most relevant
-    unique_items = unique_items[:50]
+    unique_items.sort(key=lambda x: {"high": 0, "medium": 1, "low": 2}.get(x["priority"], 2))
+    unique_items = unique_items[:80]
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "stats": generate_stats(unique_items),
+        "stats": generate_stats(unique_items, sources_count=(1 + len(SOURCE_CONFIG))),
         "items": unique_items,
     }
 
-    # Write output
     out_dir = Path(__file__).parent.parent / "data"
     out_dir.mkdir(exist_ok=True)
     out_file = out_dir / "news.json"
-
-    with open(out_file, "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
+    out_file.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print("\n" + "=" * 50)
-    print(f"✅ 完成！共抓取 {len(unique_items)} 条相关动态")
-    print(f"   高风险: {output['stats']['high_risk']} 条")
+    print(f"✅ 完成！共抓取 {len(unique_items)} 条")
     print(f"   输出: {out_file}")
     print("=" * 50)
 
