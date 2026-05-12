@@ -45,6 +45,39 @@ RSS_SOURCES = [
         "src_class": "src-imo",
         "cat_class": "cat-imo-bg",
     },
+    # --- freightwaves ---
+    {
+        "id": "freightwaves",
+        "name": "freightwaves贸易组织",
+        "url": "https://www.freightwaves.com/news/feed",
+        "category": "freightwaves消息",
+        "region": "global",
+        "icon": "🌐",
+        "src_class": "src-news",
+        "cat_class": "cat-news-bg",
+    },
+    # --- maritime ---
+    {
+        "id": "maritime",
+        "name": "maritime消息",
+        "url": "https://maritime-executive.com/articles.rss",
+        "category": "maritime消息",
+        "region": "global",
+        "icon": "🌐",
+        "src_class": "src-news",
+        "cat_class": "cat-news-bg",
+    },
+    # --- seatrade ---
+    {
+        "id": "seatrade",
+        "name": "seatrade消息",
+        "url": "https://www.seatrade-maritime.com/rss.xml",
+        "category": "seatrade消息",
+        "region": "global",
+        "icon": "🌐",
+        "src_class": "src-news",
+        "cat_class": "cat-news-bg",
+    },
     # --- 美欧贸易 ---
     {
         "id": "ustr",
@@ -67,6 +100,7 @@ RSS_SOURCES = [
         "src_class": "src-port",
         "cat_class": "cat-port-bg",
     },
+    # --- 行业媒体 ---
     {
         "id": "splash247",
         "name": "Splash247 航运新闻",
@@ -76,6 +110,47 @@ RSS_SOURCES = [
         "icon": "📰",
         "src_class": "src-imo",
         "cat_class": "cat-imo-bg",
+    },
+    # --- scmp ---
+    {
+        "id": "scmp-hk",
+        "name": "SCMP 香港新闻",
+        "url": "https://www.scmp.com/rss/91/feed",
+        "category": "news",
+        "region": "hongkong",
+        "icon": "🇭🇰",
+        "src_class": "src-news",
+        "cat_class": "cat-news-bg"
+    },
+    {
+        "id": "scmp-china",
+        "name": "SCMP 中国新闻",
+        "url": "https://www.scmp.com/rss/4/feed",
+        "category": "china",
+        "region": "china",
+        "icon": "🇨🇳",
+        "src_class": "src-china",
+        "cat_class": "cat-china-bg"
+    },
+    {
+        "id": "scmp-asia",
+        "name": "SCMP 亚洲新闻",
+        "url": "https://www.scmp.com/rss/3/feed",
+        "category": "asia",
+        "region": "asia",
+        "icon": "🌏",
+        "src_class": "src-asia",
+        "cat_class": "cat-asia-bg"
+    },
+    {
+        "id": "scmp-business",
+        "name": "SCMP 商业新闻",
+        "url": "https://www.scmp.com/rss/92/feed",
+        "category": "business",
+        "region": "global",
+        "icon": "💹",
+        "src_class": "src-business",
+        "cat_class": "cat-business-bg"
     },
     {
         "id": "freightwaves",
